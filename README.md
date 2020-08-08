@@ -1,5 +1,5 @@
 # vlabiitkgpAE
-## Virtual Labs IIT Kharagpur for Electronics and Communications Engineering Labs
+## Virtual Labs IIT Kharagpur for Analog Electronics Lab
 ## Empty template of Virtual labs IIT Khargpur webpage.
 
 ## Read the instructions in [Readme.pdf](https://github.com/vlabsiitkgp/vlabiitkgpECE/blob/master/Readme.pdf) document to use Atom to upload to GitHub.
