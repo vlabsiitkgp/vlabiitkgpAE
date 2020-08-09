@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Virtual Lab Name</title>
+        <title>Analog Electronics </title>
         <script type="text/javascript" async
         src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"></script>
     </head>
@@ -22,7 +22,7 @@
                     <!-- Write the name of your lab and link it to the home
           page of your lab (h1 tag is preferred while writing your
           lab name)-->
-                    <a href="../index.html">Virtual Lab Name</a>
+                    <a href="../index.html">Analog Electronics </a>
                 </div><!-- Add any additional element you want to add to the lab
         header, For example : Help (Enclosing them with suitable
         div is recommended)-->
@@ -36,7 +36,7 @@
                 <div class="breadcrumb" id="experiment-article-breadcrumb"></div>
 
                 <header class="heading" id="experiment-article-heading">
-                    Name of Experiment 2
+                    Active Filter
                 </header><!-- Navigation menu is useful to organize the view of multiple sections inside the article-->
 
                 <nav class="default" id="experiment-article-navigation">
@@ -52,21 +52,37 @@
                 <div id="experiment-article-sections">
                     <!------------------------------- First section of the article---------------------------------->
 
-                    <section id="experiment-article-section-1">
+                  <!--  <section id="experiment-article-section-1">
                         <div class="icon" id="experiment-article-section-1-icon">
                             <!-- Enclose the icon image of your lab -->
-                            <img src="../images/introduction.jpg"></div>
+                        <!--    <img src="../images/introduction.jpg"></div>
                         <!-- The heading for the section can be enclosed in a div tag. -->
 
-                        <div class="heading" id="experiment-article-section-1-heading">
+                       <!-- <div class="heading" id="experiment-article-section-1-heading">
                             Introduction
                         </div><!-- Write the section content inside a paragraph element, You can also include images with &lt;img&gt; tag -->
 
-                        <div class="content" id="experiment-article-section-1-content">
+                     <!--   <div class="content" id="experiment-article-section-1-content">
                             <p style="text-align: justify">
                               Introduction to Experiment
 
                             </p>
+                        </div>
+                    </section>-->
+					
+					 <!-------------------------- Third section of the article---------------------------------------->
+
+                    <section id="experiment-article-section-3">
+                        <div class="icon" id="experiment-article-section-3-icon">
+                            <!-- Enclose the icon image of your lab. -->
+                            <img src="../images/objective.jpg"></div>
+
+                        <div class="heading" id="experiment-article-section-3-heading">
+                            Objective
+                        </div>
+
+                        <div class="content" id="experiment-article-section-3-content">
+                            Objective of Experiment
                         </div>
                     </section>
                     <!-------------------------- Second section of the article---------------------------------------->
@@ -83,21 +99,7 @@
                             </p>
                         </div>
                     </section>
-                    <!-------------------------- Third section of the article---------------------------------------->
-
-                    <section id="experiment-article-section-3">
-                        <div class="icon" id="experiment-article-section-3-icon">
-                            <!-- Enclose the icon image of your lab. -->
-                            <img src="../images/objective.jpg"></div>
-
-                        <div class="heading" id="experiment-article-section-3-heading">
-                            Objective
-                        </div>
-
-                        <div class="content" id="experiment-article-section-3-content">
-                            Objective of Experiment
-                        </div>
-                    </section>
+                    
                     <!-------------------------- Fourth section of the article---------------------------------------->
 
                     <section id="experiment-article-section-4">
@@ -126,11 +128,17 @@
                             Simulator
                         </div>
 
-                        <div class="content" id="experiment-article-section-5-content">
+                        <div class="content" id="experiment-article-section-5-content" style="background-color:Gainsboro;position:relative;top:-22px;width:500px;height:410px;left:210px;">
 
-                            <p style="text-align: justify; padding-bottom: 20px">
+                            <!--p style="text-align: justify; padding-bottom: 20px">
                                 Simulator for the Experiment
-                            </p>
+                            </p-->
+							<h2><marquee style="color:green;font-size:25pt;">Active Filter</marquee></h2>   
+
+                            <input type="button" onclick="window.open('./active_lpf.html', '_blank');" value="Active Low Pass Filter" style="position:absolute; top:70px;  right:110px;"/><!--opens in new tab-->
+							<input type="button" onclick="window.open('./active_hpf.html', '_blank');" value="Active How Pass Filter" style="position:absolute; top:120px;  right:110px;"/><!--opens in new tab-->
+                            <input type="button" onclick="window.open('./active_bandpass.html', '_blank');" target="_blank" value="Active Band Pass Filter" style="position:absolute; top:170px; right:110px;" />
+     
                         </div>
                     </section>
 

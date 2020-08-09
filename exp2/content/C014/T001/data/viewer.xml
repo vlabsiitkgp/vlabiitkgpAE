@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation width="720" height="540" defaultSlideDuration="5" start="play" buildNum="7.0.0.7328">
+	<presentationTitle>Low Pass Filter</presentationTitle>
+	<speakers></speakers>
+	<search url="srchdata.xml"/>
+	<presentationBg url="bg.swf"/>
+	<masters><master url="Master0.swf" id="1" totalFrames="1"><backdrop frameNum="0"/></master></masters>
+	<layouts><layout url="Layout0.swf" id="1" totalFrames="1"><backdrop frameNum="1" displayBgSp="false"/></layout><layout url="Layout1.swf" id="2" totalFrames="1"><backdrop displayBgSp="true"/></layout><layout url="Layout2.swf" id="3" totalFrames="1"><backdrop frameNum="2" displayBgSp="false"/></layout><layout url="Layout3.swf" id="4" totalFrames="1"><backdrop displayBgSp="true"/></layout></layouts>
+	<slides>
+		<slide id="256" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="5" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide0.swf" id="256"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="1"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>ADVANCED PULSE and switching lab</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="1"/>
+		</slide>
+		<slide id="257" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="5" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide1.swf" id="257"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="2"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>Objectives</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="2"/>
+		</slide>
+		<slide id="258" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="5" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide2.swf" id="258"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="3"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>RC Circuit as Filters</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="3"/>
+		</slide>
+		<slide id="261" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="5" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide3.swf" id="261"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="4"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>Impedance of a capacitor</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="4"/>
+		</slide>
+		<slide id="277" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="5" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide4.swf" id="277"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="4"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>RC Voltage Dividers</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="5"/>
+		</slide>
+		<slide id="278" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="5" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide5.swf" id="278"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="4"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>RC Voltage Dividers</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="6"/>
+		</slide>
+		<slide id="279" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="5" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide6.swf" id="279"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="4"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>RC Voltage Dividers</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="7"/>
+		</slide>
+		<slide id="280" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="5" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide7.swf" id="280"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="4"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>RC Voltage Dividers</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="8"/>
+		</slide>
+		<slide id="281" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="5" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide8.swf" id="281"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="4"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>Low Pass Filter</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="9"/>
+		</slide>
+		<slide id="282" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="5" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide9.swf" id="282"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="4"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>High Pass Filter</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="10"/>
+		</slide>
+		<slide id="288" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="5" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide10.swf" id="288"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="4"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>Bode Plots</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="11"/>
+		</slide>
+		<slide id="260" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="5" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide11.swf" id="260"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="3"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>RC as Low Pass filter</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="12"/>
+		</slide>
+		<slide id="264" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="5" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide12.swf" id="264"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="4"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>Conclusion</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="13"/>
+		</slide>
+		<slide id="265" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="5" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide13.swf" id="265"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="4"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>Example Frequency Response of RC Low Pass Filter</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="14"/>
+		</slide>
+	</slides>
+	<quizzes>
+		<reportingOptions isTracked="true" LMSType="BREEZE" AuthorwareDelimeter="," trackingLevel="score" completionValueToSend="default" completionTrigger="breeze" trackingURLEncodeVersionAndSession="true" trackingCharsToNotUrlEncode="" trackingSendInterval="1" completionSlideViewPercentage="100" trackingSendResumeData="true" sendScoreAsPercent="false"></reportingOptions>
+		<quizSettings showQuestionList="true" showScores="true" showPassScore="false" showCurrentScore="false" showQuestionMarks="false" showAttempts="true" showQuizAttempts="false" showQuestionAttempts="false" showQuestionCorrectFeedback="true" showQuestionIncorrectFeedback="true" showQuizNavigationWarning="true"></quizSettings>
+		<quiz quizID="10010" title="RC Filters" numQuizAttemptsAllowed="1" minScore="0" passingScore="80" percent="true" passingGradeAction="nextSlide" passingGradeActionArg1="" passingGradeActionArg2="" failingGradeAction="nextSlide" failingGradeActionArg1="" failingGradeActionArg2="" questionAdvance="optional" quizAdvance="mustTake" showProgress="minimal" allowBackwardMovementInQuiz="true" allowReviewMode="true" passedScoreFeedback="Passed" failedScoreFeedback="Failed" shuffleQuestions="0">
+			<questiongroups></questiongroups>
+		</quiz>
+		<quiz quizID="10004" title="Quiz" numQuizAttemptsAllowed="1" minScore="0" passingScore="80" percent="true" passingGradeAction="nextSlide" passingGradeActionArg1="" passingGradeActionArg2="" failingGradeAction="nextSlide" failingGradeActionArg1="" failingGradeActionArg2="" questionAdvance="optional" quizAdvance="optional" showProgress="minimal" allowBackwardMovementInQuiz="true" allowReviewMode="true" passedScoreFeedback="Passed" failedScoreFeedback="Failed" shuffleQuestions="0">
+			<questiongroups></questiongroups>
+		</quiz>
+	</quizzes>
+	<attachments></attachments>
+</presentation>

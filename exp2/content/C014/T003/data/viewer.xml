@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation width="720" height="540" defaultSlideDuration="5" start="play" buildNum="7.0.0.7328">
+	<presentationTitle>Low Pass Filter</presentationTitle>
+	<speakers></speakers>
+	<search url="srchdata.xml"/>
+	<presentationBg url="bg.swf"/>
+	<masters><master url="Master0.swf" id="1" totalFrames="1"><backdrop frameNum="0"/></master></masters>
+	<layouts><layout url="Layout0.swf" id="1" totalFrames="1"><backdrop frameNum="1" displayBgSp="false"/></layout><layout url="Layout1.swf" id="2" totalFrames="1"><backdrop frameNum="2" displayBgSp="false"/></layout><layout url="Layout2.swf" id="3" totalFrames="1"><backdrop displayBgSp="true"/></layout></layouts>
+	<slides>
+		<slide id="256" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="5" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide0.swf" id="256"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="1"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>ADVANCED PULSE and switching lab</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="1"/>
+		</slide>
+		<slide id="276" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="5" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide1.swf" id="276"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="2"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>RC Low Pass Filter</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="2"/>
+		</slide>
+		<slide id="301" showInTOC="false" inSequence="" frameRate="30" totalFrames="153" swfConvertorEngine="Nova" slideDuration="5.1" advance="pause" blockMovement="false" type="quiz" quiz="10010" group="-1">
+			<questions>
+				<question index="10015" weight="10" showCorrectFeedback="true" showIncorrectFeedback="true" isMandatory="0" scoreType="scored" shuffleAnswers="false"/>
+			</questions>
+			<audioFeedbacks></audioFeedbacks>
+			<content url="Slide2.swf" id="301"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="3"/>
+			<clickAnimations>
+				<click startTime="167" isStartRelative="false" duration="666"/>
+				<click startTime="867" isStartRelative="false" duration="666"/>
+				<click startTime="1567" isStartRelative="false" duration="666"/>
+				<click startTime="2267" isStartRelative="false" duration="666"/>
+				<click startTime="2967" isStartRelative="false" duration="666"/>
+				<click startTime="3667" isStartRelative="false" duration="666"/>
+				<click startTime="4367" isStartRelative="false" duration="666"/>
+			</clickAnimations>
+			<flvContents/>
+			<slideTitle>A signal generator with a negligible internal resistance RS is connected to a resistor R=10kΩ through a coupling capacitor C=1µF . RC Combination acts as</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="3"/>
+		</slide>
+		<slide id="302" showInTOC="false" inSequence="" frameRate="30" totalFrames="153" swfConvertorEngine="Nova" slideDuration="5.1" advance="pause" blockMovement="false" type="quiz" quiz="10010" group="-1">
+			<questions>
+				<question index="10027" weight="10" showCorrectFeedback="true" showIncorrectFeedback="true" isMandatory="0" scoreType="scored" shuffleAnswers="false"/>
+			</questions>
+			<audioFeedbacks></audioFeedbacks>
+			<content url="Slide3.swf" id="302"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="3"/>
+			<clickAnimations>
+				<click startTime="167" isStartRelative="false" duration="666"/>
+				<click startTime="867" isStartRelative="false" duration="666"/>
+				<click startTime="1567" isStartRelative="false" duration="666"/>
+				<click startTime="2267" isStartRelative="false" duration="666"/>
+				<click startTime="2967" isStartRelative="false" duration="666"/>
+				<click startTime="3667" isStartRelative="false" duration="666"/>
+				<click startTime="4367" isStartRelative="false" duration="666"/>
+			</clickAnimations>
+			<flvContents/>
+			<slideTitle>A signal generator with a negligible internal resistance RS is connected to a resistor R=10kΩ through a coupling capacitor C=1µF . The upper cut off frequency is fH &amp; lower cut off frequency is fL</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="4"/>
+		</slide>
+		<slide id="303" showInTOC="false" inSequence="" frameRate="30" totalFrames="153" swfConvertorEngine="Nova" slideDuration="5.1" advance="pause" blockMovement="false" type="quiz" quiz="10010" group="-1">
+			<questions>
+				<question index="10039" weight="10" showCorrectFeedback="true" showIncorrectFeedback="true" isMandatory="0" scoreType="scored" shuffleAnswers="false"/>
+			</questions>
+			<audioFeedbacks></audioFeedbacks>
+			<content url="Slide4.swf" id="303"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="3"/>
+			<clickAnimations>
+				<click startTime="167" isStartRelative="false" duration="666"/>
+				<click startTime="867" isStartRelative="false" duration="666"/>
+				<click startTime="1567" isStartRelative="false" duration="666"/>
+				<click startTime="2267" isStartRelative="false" duration="666"/>
+				<click startTime="2967" isStartRelative="false" duration="666"/>
+				<click startTime="3667" isStartRelative="false" duration="666"/>
+				<click startTime="4367" isStartRelative="false" duration="666"/>
+			</clickAnimations>
+			<flvContents/>
+			<slideTitle>Given the approximate equivalent circuit of an amplifier. R=effective output impedance of the amplifier C=effective capacitance across the output of the amplifier. Vout=Signal output voltage when no load is connected. R=250Ω and C=200pF. RC Combination acts as</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="5"/>
+		</slide>
+		<slide id="304" showInTOC="false" inSequence="" frameRate="30" totalFrames="153" swfConvertorEngine="Nova" slideDuration="5.1" advance="pause" blockMovement="false" type="quiz" quiz="10010" group="-1">
+			<questions>
+				<question index="10051" weight="10" showCorrectFeedback="true" showIncorrectFeedback="true" isMandatory="0" scoreType="scored" shuffleAnswers="false"/>
+			</questions>
+			<audioFeedbacks></audioFeedbacks>
+			<content url="Slide5.swf" id="304"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="3"/>
+			<clickAnimations>
+				<click startTime="167" isStartRelative="false" duration="666"/>
+				<click startTime="867" isStartRelative="false" duration="666"/>
+				<click startTime="1567" isStartRelative="false" duration="666"/>
+				<click startTime="2267" isStartRelative="false" duration="666"/>
+				<click startTime="2967" isStartRelative="false" duration="666"/>
+				<click startTime="3667" isStartRelative="false" duration="666"/>
+				<click startTime="4367" isStartRelative="false" duration="666"/>
+			</clickAnimations>
+			<flvContents/>
+			<slideTitle>Given the approximate equivalent circuit of an amplifier. R=effective output impedance of the amplifier C=effective capacitance across the output of the amplifier. Vout=Signal output voltage when no load is connected. R=250Ω and C=200pF. fH and fL are upper and lower cut off frequency respectively.</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="6"/>
+		</slide>
+		<slide id="314" showInTOC="false" inSequence="" frameRate="30" totalFrames="27" swfConvertorEngine="Nova" slideDuration="5" advance="pause" blockMovement="false" type="scoring" quiz="10010">
+			<content url="Slide6.swf" id="314"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="3"/>
+			<clickAnimations>
+				<click startTime="167" isStartRelative="false" duration="666"/>
+			</clickAnimations>
+			<flvContents/>
+			<slideTitle>RC Filters</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="7"/>
+		</slide>
+	</slides>
+	<quizzes>
+		<reportingOptions isTracked="true" LMSType="BREEZE" AuthorwareDelimeter="," trackingLevel="score" completionValueToSend="default" completionTrigger="breeze" trackingURLEncodeVersionAndSession="true" trackingCharsToNotUrlEncode="" trackingSendInterval="1" completionSlideViewPercentage="100" trackingSendResumeData="true" sendScoreAsPercent="false"></reportingOptions>
+		<quizSettings showQuestionList="true" showScores="true" showPassScore="false" showCurrentScore="false" showQuestionMarks="false" showAttempts="true" showQuizAttempts="false" showQuestionAttempts="false" showQuestionCorrectFeedback="true" showQuestionIncorrectFeedback="true" showQuizNavigationWarning="true"></quizSettings>
+		<quiz quizID="10010" title="RC Filters" numQuizAttemptsAllowed="1" minScore="0" passingScore="80" percent="true" passingGradeAction="nextSlide" passingGradeActionArg1="" passingGradeActionArg2="" failingGradeAction="nextSlide" failingGradeActionArg1="" failingGradeActionArg2="" questionAdvance="optional" quizAdvance="mustTake" showProgress="minimal" allowBackwardMovementInQuiz="true" allowReviewMode="true" passedScoreFeedback="Passed" failedScoreFeedback="Failed" shuffleQuestions="0">
+			<questiongroups></questiongroups>
+		</quiz>
+		<quiz quizID="10004" title="Quiz" numQuizAttemptsAllowed="1" minScore="0" passingScore="80" percent="true" passingGradeAction="nextSlide" passingGradeActionArg1="" passingGradeActionArg2="" failingGradeAction="nextSlide" failingGradeActionArg1="" failingGradeActionArg2="" questionAdvance="optional" quizAdvance="optional" showProgress="minimal" allowBackwardMovementInQuiz="true" allowReviewMode="true" passedScoreFeedback="Passed" failedScoreFeedback="Failed" shuffleQuestions="0">
+			<questiongroups></questiongroups>
+		</quiz>
+	</quizzes>
+	<attachments></attachments>
+</presentation>

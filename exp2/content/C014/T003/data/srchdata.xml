@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document-metadata version="1.0" xmlns="http://breeze.macromedia.com/">
+	<document-info>
+		<title>Low Pass Filter</title>
+		<summary></summary>
+		<author/>
+		<keywords/>
+		<thumbnail href="data/thumb/thumb_slide_000001.jpg"/>
+		<view-link href="/Viewer.swf?slide={position}"/>
+	</document-info>
+	<section type="slide" position="1" xmlns="">
+		<title>ADVANCED PULSE and switching lab</title>
+		<content>ADVANCED PULSE and switching lab Studies on RC Low Pass Filter  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000001.jpg"/>
+	</section>
+	<section type="slide" position="2" xmlns="">
+		<title>RC Low Pass Filter</title>
+		<content>Post Test RC Low Pass Filter  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000002.jpg"/>
+	</section>
+	<section type="slide" position="3" xmlns="">
+		<title>A signal generator with a negligible internal resistance RS is connected to a resistor R=10kΩ through a coupling capacitor C=1µF . RC Combination acts as </title>
+		<content>A signal generator with a negligible internal resistance RS is connected to a resistor R=10kΩ through a coupling capacitor C=1µF . RC Combination acts as  Correct - Click anywhere to continue Incorrect - Click anywhere to continue You answered this correctly! Your answer: The correct answer is: You did not answer this question completely You must answer the question before continuing SubmitSubmit ClearClear A) Low Pass Filter B) High Pass Filter C) None of the above   </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000003.jpg"/>
+	</section>
+	<section type="slide" position="4" xmlns="">
+		<title>A signal generator with a negligible internal resistance RS is connected to a resistor R=10kΩ through a coupling capacitor C=1µF . The upper cut off frequency is fH &amp; lower cut off frequency is fL</title>
+		<content> A signal generator with a negligible internal resistance RS is connected to a resistor R=10kΩ through a coupling capacitor C=1µF . The upper cut off frequency is fH &amp; lower cut off frequency is fL Correct - Click anywhere to continue Incorrect - Click anywhere to continue You answered this correctly! Your answer: The correct answer is: You did not answer this question completely You must answer the question before continuing SubmitSubmit ClearClear A) fH and fL can not be determined from given data B) fH = 6.28 kHz C) 15Hz  ≤  fL  ≤  20HZ  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000004.jpg"/>
+	</section>
+	<section type="slide" position="5" xmlns="">
+		<title>Given the approximate equivalent circuit of an amplifier. R=effective output impedance of the amplifier C=effective capacitance across the output of the amplifier. Vout=Signal output voltage when no load is connected. R=250Ω and C=200pF. RC Combination acts as </title>
+		<content>Given the approximate equivalent circuit of an amplifier. R=effective output impedance of the amplifier C=effective capacitance across the output of the amplifier. Vout=Signal output voltage when no load is connected. R=250Ω and C=200pF. RC Combination acts as  Correct - Click anywhere to continue Incorrect - Click anywhere to continue You answered this correctly! Your answer: The correct answer is: You did not answer this question completely You must answer the question before continuing SubmitSubmit ClearClear B) High Pass Filter C) None of the above A) Low Pass Filter   </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000005.jpg"/>
+	</section>
+	<section type="slide" position="6" xmlns="">
+		<title>Given the approximate equivalent circuit of an amplifier. R=effective output impedance of the amplifier C=effective capacitance across the output of the amplifier. Vout=Signal output voltage when no load is connected. R=250Ω and C=200pF. fH and fL are upper and lower cut off frequency respectively.</title>
+		<content>Given the approximate equivalent circuit of an amplifier. R=effective output impedance of the amplifier C=effective capacitance across the output of the amplifier. Vout=Signal output voltage when no load is connected. R=250Ω and C=200pF. fH and fL are upper and lower cut off frequency respectively. Correct - Click anywhere to continue Incorrect - Click anywhere to continue You answered this correctly! Your answer: The correct answer is: You did not answer this question completely You must answer the question before continuing SubmitSubmit ClearClear A) fL and fH can not be determined from the given data B) fH = 6.28 kHz C) 15Hz  ≤  fL  ≤  20HZ   </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000006.jpg"/>
+	</section>
+	<section type="slide" position="7" xmlns="">
+		<title>RC Filters</title>
+		<content>RC Filters Your ScoreMax ScoreNumber of Quiz Attempts Question Feedback/Review Information Will Appear Here Review Quiz Continue  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000007.jpg"/>
+	</section>
+</document-metadata>

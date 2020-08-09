@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document-metadata version="1.0" xmlns="http://breeze.macromedia.com/">
+	<document-info>
+		<title>Low Pass Filter</title>
+		<summary></summary>
+		<author/>
+		<keywords/>
+		<thumbnail href="data/thumb/thumb_slide_000001.jpg"/>
+		<view-link href="/Viewer.swf?slide={position}"/>
+	</document-info>
+	<section type="slide" position="1" xmlns="">
+		<title>ADVANCED PULSE and switching lab</title>
+		<content>ADVANCED PULSE and switching lab Studies on RC Low Pass Filter  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000001.jpg"/>
+	</section>
+	<section type="slide" position="2" xmlns="">
+		<title>Example Frequency Response of RC Low Pass Filter</title>
+		<content>Example Frequency Response of RC Low Pass Filter  A frequency characterizing a boundary between a passband and a stopband for which the output of the circuit deviates 3 dB from the nominal passband value. This describes the steepness of transition between a stopband and passband measured per decade ( 1 decade = 10 times increase in frequency ).  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000002.jpg"/>
+	</section>
+	<section type="slide" position="3" xmlns="">
+		<title>Experiment Frequency - Response of RC circuit ( Low Pass Filter )</title>
+		<content>Experiment Frequency - Response of RC circuit ( Low Pass Filter ) Drag a function generator and Oscilloscope from the ‘Basic’ Panel. Drag a Resistor and Capacitor.Construct the circuit as below take R = 509 ohm and C= 2 uF.Connect the function generator and oscilloscope as shown below.Connect the ground of the circuit.     </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000003.jpg"/>
+	</section>
+	<section type="slide" position="4" xmlns="">
+		<title>Experiment Frequency - Response of RC circuit ( Low Pass Filter )</title>
+		<content>Experiment Frequency - Response of RC circuit ( Low Pass Filter ) For the function generator select sine wave, and Amplitude 2V. In the Function generator, vary the frequency from 0 Hz to 1 KHz in steps of 100 Hz. For each time, note the peak amplitude of the 2 channels in the scope.     </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000004.jpg"/>
+	</section>
+	<section type="slide" position="5" xmlns="">
+		<title>Experiment Frequency - Response of RC circuit ( Low Pass Filter )</title>
+		<content>Experiment Frequency - Response of RC circuit ( Low Pass Filter )          Note the PEAKS of  CH1 and CH2 from Oscilloscope </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000005.jpg"/>
+	</section>
+	<section type="slide" position="6" xmlns="">
+		<title>Experiment Frequency - Response of RC circuit ( Low Pass Filter )</title>
+		<content>Experiment Frequency - Response of RC circuit ( Low Pass Filter ) Note the readings of Vout, Vin and frequency over the frequencies and plot a bode graph ( 20 log(Gain) vs frequency ). Observe the ‘3db’ cut off point in the bode plot.   Vin ( V)Vout ( V) Freq ( Hz )Gain ( Vout/ Vin )20log(Gain )220102100..2200..2300..2400..……………21000..  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000006.jpg"/>
+	</section>
+	<section type="slide" position="7" xmlns="">
+		<title>Experiment Frequency - Response of RC circuit ( Low Pass Filter )</title>
+		<content>Experiment Frequency - Response of RC circuit ( Low Pass Filter ) Confirm that the circuit indeed is passing lower frequencies and blocking higher frequencies.      </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000007.jpg"/>
+	</section>
+	<section type="slide" position="8" xmlns="">
+		<title>Is there an easier way of doing this ?</title>
+		<content>Indeed there is – a way to perform simulations in frequency domain. Is there an easier way of doing this ?  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000008.jpg"/>
+	</section>
+	<section type="slide" position="9" xmlns="">
+		<title>Experiment Frequency - Response of RC circuit ( Low Pass Filter )</title>
+		<content>Experiment Frequency - Response of RC circuit ( Low Pass Filter ) Construct the circuit as before, take R = 500 ohm and C= 2 uF. For the function generator select sine wave, and Amplitude 2V. In the simulation properties, select ‘Frequency Domain Analysis’ and  vary the frequency from 0 Hz to 1 KHz in steps of 100 Hz. Click on ‘Run simulation’.      </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000009.jpg"/>
+	</section>
+	<section type="slide" position="10" xmlns="">
+		<title>Experiment Frequency - Response of RC circuit ( Low Pass Filter )</title>
+		<content>Experiment Frequency - Response of RC circuit ( Low Pass Filter )     </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000010.jpg"/>
+	</section>
+	<section type="slide" position="11" xmlns="">
+		<title>Experiment Frequency - Response of RC circuit ( Low Pass Filter )</title>
+		<content>Experiment Frequency - Response of RC circuit ( Low Pass Filter ) Click on the ‘Data Analyzer’ to see the results. Plot both the voltages ( Vin and Vout ) wrt Frequency. We can see that the lower frequencies as passed while the higher frequencies are not passed.     </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000011.jpg"/>
+	</section>
+	<section type="slide" position="12" xmlns="">
+		<title>Experiment Frequency - Response of RC circuit ( Low Pass Filter )</title>
+		<content> Experiment Frequency - Response of RC circuit ( Low Pass Filter ) Let us now plot the Vout/Vin vs frequency and see the results and find out the ‘3db’ point. Click on ‘Add Equations’ and add the Gain as an equation of Vout/Vin. Run simulation again and click on ‘Data Analyzer’.    </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000012.jpg"/>
+	</section>
+	<section type="slide" position="13" xmlns="">
+		<title>Experiment Frequency - Response of RC circuit ( Low Pass Filter )</title>
+		<content>Experiment Frequency - Response of RC circuit ( Low Pass Filter ) On the Data Analyzer, plot Gain vs Frequency and Select the Log scale for both X and Y axis to see the bode-plot. Select the full frequency range for the X axis.     The ‘3db’ or the turning point can now be mapped in the plot.  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000013.jpg"/>
+	</section>
+	<section type="slide" position="14" xmlns="">
+		<title>Exploratory : RC circuit ( Low Pass Filter )</title>
+		<content>Exploratory : RC circuit ( Low Pass Filter ) Having measured the 3db point, let us try and understand how the 3db point changes with change in Resistor and change in Capacitor.     </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000014.jpg"/>
+	</section>
+	<section type="slide" position="15" xmlns="">
+		<title>Exploratory : RC circuit ( Low Pass Filter )</title>
+		<content>Exploratory : RC circuit ( Low Pass Filter ) Construct the circuit as before. In the simulation properties, select ‘Frequency Domain Analysis’ and  vary the frequency from 0 Hz to 1 KHz in steps of 100 Hz. Click Advanced and vary the resistance from 0 Ohms to 2500 Ohms. Run simulation.      </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000015.jpg"/>
+	</section>
+	<section type="slide" position="16" xmlns="">
+		<title>Exploratory : RC circuit ( Low Pass Filter )</title>
+		<content>Exploratory : RC circuit ( Low Pass Filter ) Click on Data Analyzer to view the change in 3db point. We can see that 3db point is inversely proportional to change in R.       </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000016.jpg"/>
+	</section>
+	<section type="slide" position="17" xmlns="">
+		<title>Exploratory : RC circuit ( Low Pass Filter )</title>
+		<content>Exploratory : RC circuit ( Low Pass Filter ) Let us now vary the capacitance. In the simulation properties, select ‘Frequency Domain Analysis’Vary the frequency from 0 Hz to 1 KHz in steps of 100 Hz. Click Advanced and vary the Capacitance from 0 F to 10 uF. Run simulation.      </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000017.jpg"/>
+	</section>
+	<section type="slide" position="18" xmlns="">
+		<title>Exploratory : RC circuit ( Low Pass Filter )</title>
+		<content>Exploratory : RC circuit ( Low Pass Filter ) Click on Data Analyzer to view the change in 3db point. We can see that 3db point is inversely proportional to change in C.       </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000018.jpg"/>
+	</section>
+</document-metadata>

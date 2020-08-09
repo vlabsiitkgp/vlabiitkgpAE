@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tracking-metadata generator="Presenter ver 7.0" version="1.0">
+	<objective id="Quiz10010" max-score="40" passing-score="32" min-score="0">
+		<name>RC Filters</name>
+		<interactions>
+			<interaction id="Interaction10015" type="choice" score="10" correct-response="B">
+				<name>Question 1</name>
+				<title>A signal generator with a negligible internal resistance RS is connected to a resistor R=10kΩ through a coupling capacitor C=1µF . RC Combination acts as </title>
+				<responses>
+					<response id="A">Low Pass Filter </response>
+					<response id="B">High Pass Filter </response>
+					<response id="D">C) None of the above </response>
+				</responses>
+			</interaction>
+			<interaction id="Interaction10027" type="choice" score="10" correct-response="A">
+				<name>Question 2</name>
+				<title>A signal generator with a negligible internal resistance RS is connected to a resistor R=10kΩ through a coupling capacitor C=1µF . The upper cut off frequency is fH &amp; lower cut off frequency is fL</title>
+				<responses>
+					<response id="A">fH and fL can not be determined from given data </response>
+					<response id="B">fH = 6.28 kHz </response>
+					<response id="C">15Hz  ≤  fL  ≤  20HZ </response>
+				</responses>
+			</interaction>
+			<interaction id="Interaction10039" type="choice" score="10" correct-response="D">
+				<name>Question 3</name>
+				<title>Given the approximate equivalent circuit of an amplifier. R=effective output impedance of the amplifier C=effective capacitance across the output of the amplifier. Vout=Signal output voltage when no load is connected. R=250Ω and C=200pF. RC Combination acts as </title>
+				<responses>
+					<response id="B">High Pass Filter </response>
+					<response id="C">None of the above </response>
+					<response id="D">A) Low Pass Filter </response>
+				</responses>
+			</interaction>
+			<interaction id="Interaction10051" type="choice" score="10" correct-response="A">
+				<name>Question 4</name>
+				<title>Given the approximate equivalent circuit of an amplifier. R=effective output impedance of the amplifier C=effective capacitance across the output of the amplifier. Vout=Signal output voltage when no load is connected. R=250Ω and C=200pF. fH and fL are upper and lower cut off frequency respectively.</title>
+				<responses>
+					<response id="A">fL and fH can not be determined from the given data </response>
+					<response id="B">fH = 6.28 kHz </response>
+					<response id="C">15Hz  ≤  fL  ≤  20HZ </response>
+				</responses>
+			</interaction>
+		</interactions>
+	</objective>
+</tracking-metadata>

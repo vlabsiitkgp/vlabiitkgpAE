@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document-metadata version="1.0" xmlns="http://breeze.macromedia.com/">
+	<document-info>
+		<title>Low Pass Filter</title>
+		<summary></summary>
+		<author/>
+		<keywords/>
+		<thumbnail href="data/thumb/thumb_slide_000001.jpg"/>
+		<view-link href="/Viewer.swf?slide={position}"/>
+	</document-info>
+	<section type="slide" position="1" xmlns="">
+		<title>ADVANCED PULSE and switching lab</title>
+		<content>ADVANCED PULSE and switching lab Studies on RC Low Pass Filter  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000001.jpg"/>
+	</section>
+	<section type="slide" position="2" xmlns="">
+		<title>Objectives</title>
+		<content>Objectives At the end of the module, the student would be able to Explain RC Voltage DividersExplain RC Circuit as a Low Pass FilterExplain Bode plots  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000002.jpg"/>
+	</section>
+	<section type="slide" position="3" xmlns="">
+		<title>RC Circuit as Filters </title>
+		<content>RC circuits can also be used to "filter" a signal waveform, changing the relative amounts of low frequency and high frequency information in their output signals relative to their input signals. There are high-pass filter and low-pass filter and band-pass filter versions of this. RC Circuit as Filters   </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000003.jpg"/>
+	</section>
+	<section type="slide" position="4" xmlns="">
+		<title>Impedance of a capacitor</title>
+		<content>Impedance of a capacitor Z = 1 / wCZ = Impedance of Capacitorw = Angular FrequencyC = Capacitance  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000004.jpg"/>
+	</section>
+	<section type="slide" position="5" xmlns="">
+		<title>RC Voltage Dividers</title>
+		<content>RC Voltage Dividers  Let us consider RC circuits as voltage dividers to understand how they would perform as ‘filters’.  Note that Vout = ( Z2/ Z1 + Z2 )*Vin.In  this case – Since Z1 or Z2 is dependent upon frequency, the output is dependent upon the frequency of the input waveform.  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000005.jpg"/>
+	</section>
+	<section type="slide" position="6" xmlns="">
+		<title>RC Voltage Dividers</title>
+		<content>RC Voltage Dividers Consider the extreme cases. For the left one – at f = 0, Z2 = infinite ( huge ), thus all Vout = Vin. The lower the ‘f’, the more Vout will resemble Vin. Thus this one easily passes lower frequency signals through.    </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000006.jpg"/>
+	</section>
+	<section type="slide" position="7" xmlns="">
+		<title>RC Voltage Dividers</title>
+		<content>RC Voltage Dividers For the right one – at f = very high, Z1 =  very small, thus all Vout = Vin. The higher the ‘f’, the more Vout will resemble Vin. Thus this one easily passes higher frequency signals through.    </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000007.jpg"/>
+	</section>
+	<section type="slide" position="8" xmlns="">
+		<title>RC Voltage Dividers</title>
+		<content>RC Voltage Dividers Now let us determine, where the output turns the corner in each case. We will call this ‘corner’, where is the output is  3db less than the input. This is henceforth called the ‘3db’ point. Let us look at how the Vout/Vin ratio will change wrt frequency for each now. The plot of this ratio tells us if the circuit behaves as a high pass or as a low pass filter.   </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000008.jpg"/>
+	</section>
+	<section type="slide" position="9" xmlns="">
+		<title>Low Pass Filter</title>
+		<content>Low Pass Filter As frequency increases, the impedance of the capacitor ( Z2) decreases, thus reducing the Vout ( = ( Z2/R + Z2)*Vin ). At very high frequency, impedance Z2 = very tiny thus forcing Vout to be nearly 0. The ‘3db’ point is given by f 3db = 1/(2πR*C).    </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000009.jpg"/>
+	</section>
+	<section type="slide" position="10" xmlns="">
+		<title>High Pass Filter</title>
+		<content>High Pass Filter As frequency increases, the impedance of the capacitor decreases, thus increasing the Vout ( = ( R/Z1 + R)*Vin ). At very high frequency, impedance Z1 = very tiny thus making Vout to be nearly equal to Vin. The ‘3db’ point is given by f 3db = 1/(2πR*C).    </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000010.jpg"/>
+	</section>
+	<section type="slide" position="11" xmlns="">
+		<title>Bode Plots</title>
+		<content>Bode Plots  We have been plotting ‘linear’ plots – Gain ( Vout/Vin ) vs Frequency. Ideally both the axis are compressed and expressed in the log scale. This is known as ‘bode-plots’.  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000011.jpg"/>
+	</section>
+	<section type="slide" position="12" xmlns="">
+		<title>RC as Low Pass filter</title>
+		<content>RC as Low Pass filter  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000012.jpg"/>
+	</section>
+	<section type="slide" position="13" xmlns="">
+		<title>Conclusion</title>
+		<content>Conclusion The circuit produces its greatest response at DC. As the frequency is increased, the response drops. Finally, the response drops to zero. The RC circuit passes 'low' frequencies fairly well, but attenuates 'high‘ frequencies.So, we can conclude that RC circuit acts a low-pass filter (LPF).  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000013.jpg"/>
+	</section>
+	<section type="slide" position="14" xmlns="">
+		<title>Example Frequency Response of RC Low Pass Filter</title>
+		<content>Example Frequency Response of RC Low Pass Filter  A frequency characterizing a boundary between a passband and a stopband for which the output of the circuit deviates 3 dB from the nominal passband value. This describes the steepness of transition between a stopband and passband measured per decade ( 1 decade = 10 times increase in frequency ).  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000014.jpg"/>
+	</section>
+</document-metadata>
