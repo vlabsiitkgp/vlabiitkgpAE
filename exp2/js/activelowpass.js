@@ -48,15 +48,16 @@ function tabled(){
 	var r=document.getElementById("rloadtext").value* Math.pow(10, 3);
 	var passbandgain=(1+(rf/r1)); //passband gain
 	//alert(passbandgain);
-	var fhigh= Math.sqrt(1 / (2 * 3.14 *r * parseFloat(cld)));//high cut-off frequency
+	var fhigh= 1 / (2 * 3.14 *r * parseFloat(cld));//high cut-off frequency
+	
     //-----------------------------------------------------------phase calculation----------------------------------------------------//        
         var phi = -Math.atan(parseFloat(f) /parseFloat(fhigh));//phase shift
         var theta = ((180 / 3.14) * parseFloat(phi)).toPrecision(6);
     
 //--------------------------------------------------------------magnitude calculation-----------------------------------------------//
-        var absolute = (passbandgain)/(Math.sqrt(1+Math.pow((f/fhigh),2)));
+        var absolute = ((passbandgain)/ +(Math.sqrt(1+Math.pow((f/fhigh),2)))).toPrecision(3);
        // h += absolute + "<br>";
-        var mag = 20 * Math.log10(parseFloat(absolute)).toPrecision(6);
+        var mag = 20 * Math.log10(parseFloat(absolute)).toPrecision(6); //gain in db
         //mg += mag + "<br>";
        // dataPoints.push({x: parseFloat(f), y: parseFloat(mag)});
         //alert(mag);
@@ -66,9 +67,10 @@ function tabled(){
     table = document.getElementById("mytable");
     arr[0] = tabrowindex + 1;
     arr[1] = Math.round(f);
-    arr[2] = mag;
-    arr[3]=theta;
-    arr[4]=vo;
+	arr[2] = absolute //gain
+    //arr[3] = mag; //gain in db
+    arr[3] = theta;
+    arr[4] = vo;
     
     if (document.getElementById("rloadtext").value == "") {
         alert("Enter the  load Resistance");
@@ -175,7 +177,7 @@ function plotfrequency(){
             labelFormatter: addSymbols,
         },
         axisY: {
-            title: "Magnitude(dB)",
+            title: "Gain ",//(dB)
         },
         data: [
             {
@@ -215,7 +217,7 @@ function plotphase() {
             gridThickness: 2,
             title: "Frequency(Hz)",
             includeZero: false,
-            labelFormatter: addSymbols,
+           labelFormatter: addSymbols,
         },
         axisY: {
             title: "Phase(theta)",
@@ -244,4 +246,32 @@ function addSymbols(e) {
     var suffix = suffixes[order];
     return CanvasJS.formatNumber(e.value / Math.pow(1000, order)) + suffix;
 }
-
+function cleard(){
+	
+	//-------------------------table clearing-------------------------------//
+    var rowCount = mytable.rows.length;
+    for (var j = rowCount - 1; j > 0; j--) {
+        mytable.deleteRow(j);
+    }
+    tabrowindex = 0;
+    dataPoints = [];
+	dataPointsth = [];
+//--------------------------text box clearing---------------------------//
+    document.getElementById("fqr").value = "";
+	document.getElementById("fq").value = "";
+    document.getElementById("vin").value = "";
+	document.getElementById("inpvolt").value = "";
+	document.getElementById("r1range").value = "";
+    document.getElementById("r1text").value = "";
+	document.getElementById("rfrange").value = "" ;//feedback resistance
+    document.getElementById("resftext").value = "";
+	document.getElementById("cldrange").value = "";
+    document.getElementById("cloadtext").value = "";
+	document.getElementById("rldsld").value = "";
+    document.getElementById("rloadtext").value = "" ;
+	document.getElementById("highfq").value = "";
+    document.getElementById("midbnd").value = "";
+    document.getElementById("chartContainer").innerHTML = "";
+	document.getElementById("chartContainers").innerHTML = "";
+	
+}

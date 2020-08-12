@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document-metadata version="1.0" xmlns="http://breeze.macromedia.com/">
+	<document-info>
+		<title>Basic electronics – exp 5</title>
+		<summary></summary>
+		<author/>
+		<keywords/>
+		<thumbnail href="data/thumb/thumb_slide_000001.jpg"/>
+		<view-link href="/Viewer.swf?slide={position}"/>
+	</document-info>
+	<section type="slide" position="1" xmlns="">
+		<title>Basic electronics</title>
+		<content>Basic electronics Half wave Rectifiers </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000001.jpg"/>
+	</section>
+	<section type="slide" position="2" xmlns="">
+		<title>Half Rectifier - Experiment</title>
+		<content>Half Rectifier - Experiment Take a diode, and Load resistor of 1KOhms.Connect to AC Voltage Source of 50 Hz , 2 VConnect Oscilloscope and Ground. Run simulation.  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000002.jpg"/>
+	</section>
+	<section type="slide" position="3" xmlns="">
+		<title>Half Rectifier - Results</title>
+		<content>Half Rectifier - Results Double Click on Oscilloscope to view results. In half wave rectification, either the positive or negative half of the AC wave is passed, while the other half is blocked. Because only one half of the input waveform reaches the output, it is very inefficient if used for power transfer.  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000003.jpg"/>
+	</section>
+	<section type="slide" position="4" xmlns="">
+		<title>Half Rectifier - Experiment</title>
+		<content>Half Rectifier - Experiment Questions.Explain why there is a difference in amplitude between original waveform and rectified waveform ?Explain why there is a difference in the time period between the non rectified portions between the input and the output waveforms ?    1. 2. </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000004.jpg"/>
+	</section>
+</document-metadata>

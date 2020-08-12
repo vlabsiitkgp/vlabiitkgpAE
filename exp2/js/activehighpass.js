@@ -51,7 +51,7 @@ function tabled(){
 	var passbandgain=(1+(rf/r1)); //passband gain
 	//alert(cld);
 	//alert(r);
-	var flow= Math.sqrt(1 / (2 * 3.14 *r * parseFloat(cld)));
+	var flow= 1 / (2 * 3.14 *r * parseFloat(cld));
 	//alert(flow);
 	//-----------------------------------------------------------phase calculation----------------------------------------------------//        
        
@@ -60,7 +60,7 @@ function tabled(){
         //h2 += theta + "<br>";
       //alert(theta);
 //--------------------------------------------------------------magnitude calculation-----------------------------------------------//
-       var absolute = (passbandgain*(f/flow))/(Math.sqrt(1+Math.pow((f/flow),2)));
+       var absolute = ((passbandgain*(f/flow))/ +(Math.sqrt(1+Math.pow((f/flow),2)))).toPrecision(3);
        // h += absolute + "<br>";
         var mag = 20 * Math.log10(parseFloat(absolute)).toPrecision(6);
         //mg += mag + "<br>";
@@ -72,7 +72,7 @@ function tabled(){
     table = document.getElementById("mytable");
     arr[0] = tabrowindex + 1;
     arr[1] = Math.round(f);
-    arr[2] = mag;
+    arr[2] = absolute;
     arr[3]=theta;
     arr[4]=vo;
     
@@ -251,4 +251,33 @@ function addSymbols(e) {
     var suffix = suffixes[order];
     return CanvasJS.formatNumber(e.value / Math.pow(1000, order)) + suffix;
 }
-
+function cleard(){
+	
+	//-------------------------table clearing-------------------------------//
+    var rowCount = mytable.rows.length;
+    for (var j = rowCount - 1; j > 0; j--) {
+        mytable.deleteRow(j);
+    }
+    tabrowindex = 0;
+    dataPoints = [];
+	dataPointsth = [];
+//--------------------------text box clearing---------------------------//
+    document.getElementById("fqr").value = "";
+	document.getElementById("fq").value = "";
+    document.getElementById("vin").value = "";
+	document.getElementById("inpvolt").value = "";
+	document.getElementById("r1range").value = "";
+    document.getElementById("r1text").value = "";
+	document.getElementById("rfrange").value = "" ;//feedback resistance
+    document.getElementById("resftext").value = "";
+	document.getElementById("cldrange").value = "";
+    document.getElementById("cloadtext").value = "";
+	document.getElementById("rldsld").value = "";
+    document.getElementById("rloadtext").value = "" ;
+    document.getElementById("lowfq").value = "";
+    document.getElementById("midbnd").value = "";
+    document.getElementById("chartContainer").innerHTML = "";
+	 document.getElementById("chartContainers").innerHTML = "";
+	
+}
+	

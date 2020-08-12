@@ -64,60 +64,152 @@
 /** ELEMENT POSITIONS **/
 #ld1 {
  position: absolute;
-    top: 270px;
-    left: 150px;
+    top: 145px;
+    left: 20px;
 }
 
-
+#ld12 {
+ position: absolute;
+    top: 280px;
+    left: 100px;
+    
+}
+#ld22 {
+ position: absolute;
+    top: 280px;
+    left: 410px;
+    
+}
 
 #ld3 {
  position: absolute;
-    top:35px;
-    left:145px;
+    top:75px;
+    left:60px;
 }
 
 #ld4 {
  position: absolute;
-    top: 35px;
-    left:360px;
+    top: 75px;
+    left:130px;
 }
 
 #ld5 {
  position: absolute;
-    top:25px;
-    left:430px;
+    top:28px;
+    left:190px;
 }
 #ld6 {
  position: absolute;
-    top:235px;
-    left:430px;
+    top:28px;
+    left:260px;
 }
 
 #ld7 {
  position: absolute;
-    top:72px;
-    left:500px;
+    top:78px;
+    left:190px;
 }
 #ld8{
  position: absolute;
-    top:205px;
-    left:500px;
+    top:110px;
+    left:195px;
 }
-
 
 #ld9 {
  position: absolute;
-    top:270px;
-    left:360px;
+    top:95px;
+    left:315px;
 }
 
-
-#ld12 {
+#ld10 {
  position: absolute;
-    top: 330px;
-    left: 410px;
-    
+    top:172px;
+    left:60px;
 }
+
+#ld11 {
+ position: absolute;
+    top: 172px;
+    left:118px;
+}
+
+#ld13 {
+ position: absolute;
+    top:185px;
+    left:165px;
+}
+
+#ld14 {
+ position: absolute;
+    top: 295px;
+    left:163px;
+}
+/*-----2nd part circuit----//*/
+
+#ld15 {
+ position: absolute;
+    top:28px;
+    left:500px;
+}
+#ld16 {
+ position: absolute;
+    top:28px;
+    left:570px;
+}
+
+
+#ld17 {
+ position: absolute;
+    top:78px;
+    left:500px;
+}
+#ld18{
+ position: absolute;
+    top:110px;
+    left:505px;
+}
+
+#ld19 {
+ position: absolute;
+    top:95px;
+    left:625px;
+}
+
+#ld20 {
+ position: absolute;
+    top:172px;
+    left:350px;
+}
+
+#ld21 {
+ position: absolute;
+    top: 172px;
+    left:420px;
+}
+#ld23 {
+ position: absolute;
+    top:185px;
+    left:475px;
+}
+
+#ld24 {
+ position: absolute;
+    top: 280px;
+    left:475px;
+}
+
+#ld2 {
+ position: absolute;
+    top:75px;
+    left:370px;
+}
+
+#ld25 {
+ position: absolute;
+    top: 75px;
+    left:440px;
+}
+
 path, .jtk-endpoint {
     cursor: pointer;
 }
