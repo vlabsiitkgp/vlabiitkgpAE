@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document-metadata version="1.0" xmlns="http://breeze.macromedia.com/">
+	<document-info>
+		<title>RC_freq_domain_analysis</title>
+		<summary></summary>
+		<author/>
+		<keywords/>
+		<thumbnail href="data/thumb/thumb_slide_000001.jpg"/>
+		<view-link href="/Viewer.swf?slide={position}"/>
+	</document-info>
+	<section type="slide" position="1" xmlns="">
+		<title>BASIC Electronics lab</title>
+		<content>BASIC Electronics lab Halfwave Rectifiers  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000001.jpg"/>
+	</section>
+	<section type="slide" position="2" xmlns="">
+		<title>Halfwave Rectifier</title>
+		<content>Post Test Halfwave Rectifier  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000002.jpg"/>
+	</section>
+	<section type="slide" position="3" xmlns="">
+		<title>Ripple factor of a half wave rectifier is </title>
+		<content>Ripple factor of a half wave rectifier is  Correct - Click anywhere to continue Incorrect - Click anywhere to continue You answered this correctly! Your answer: The correct answer is: You did not answer this question completely You must answer the question before continuing SubmitSubmit ClearClear A) 0.31 B) 0.48 C) 0.707 D) 1.21  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000003.jpg"/>
+	</section>
+	<section type="slide" position="4" xmlns="">
+		<title>the peak applied signal voltage is Vm then for a half wave rectifier circuit the PIV of the diode should be:</title>
+		<content>the peak applied signal voltage is Vm then for a half wave rectifier circuit the PIV of the diode should be: Correct - Click anywhere to continue Incorrect - Click anywhere to continue You answered this correctly! Your answer: The correct answer is: You did not answer this question completely You must answer the question before continuing SubmitSubmit ClearClear A) &gt; 2Vm B) ≤ 2Vm C) ≥Vm D) &lt; Vm  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000004.jpg"/>
+	</section>
+	<section type="slide" position="5" xmlns="">
+		<title>An ideal Si diode is used in a half wave rectifier circuit with peak input sinusoidal signal amplitude of 5V (Vm = 5V &amp; VT = 0.7V). The average dc voltage is</title>
+		<content>An ideal Si diode is used in a half wave rectifier circuit with peak input sinusoidal signal amplitude of 5V (Vm = 5V &amp; VT = 0.7V). The average dc voltage is Correct - Click anywhere to continue Incorrect - Click anywhere to continue You answered this correctly! Your answer: The correct answer is: You did not answer this question completely You must answer the question before continuing SubmitSubmit ClearClear A) &lt;1.27V B) =1.37V C) &gt;1.87V  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000005.jpg"/>
+	</section>
+	<section type="slide" position="6" xmlns="">
+		<title>Halfwave Rectifier</title>
+		<content>Halfwave Rectifier Your ScoreMax ScoreNumber of Quiz Attempts Question Feedback/Review Information Will Appear Here Review Quiz Continue  </content>
+		<related-content>&lt;br&gt;&lt;br&gt;</related-content>
+		<thumbnail href="data/thumb/thumb_slide_000006.jpg"/>
+	</section>
+</document-metadata>

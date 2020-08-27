@@ -1,0 +1,183 @@
+
+<!--DOCTYPE html>
+<!--Document Name:monostable.html
+    Author:Sukriti--->
+<html>
+    <head>
+        <title>Monostable Multivibrator using 555</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+       
+       
+<!---- library file ----->
+        <script src="./js/canvasjs.min.js"></script>
+        <script class="include" type="text/javascript" src="./js/jquery_files/jquery.min.js"></script>
+        <script class="include" type="text/javascript" src="./js/jquery_files/jquery.jqplot.min.js"></script>
+       
+		<script src="./js/graph.ob.js"></script>
+		<script src="./js/graph_use.ob.js"></script>
+		<!--script src="https://d3js.org/d3.v5.min.js"></script-->
+<!--------------------------> 
+        
+		
+		
+        <link rel="stylesheet" type="text/css" href="./css/monostable_astable.css">
+         
+       <link rel="stylesheet" href="./css/cktconnection_monostable.css">
+   
+  
+
+    </head>
+    <body bgcolor="#000066";data-demo-id="animation"; style="width=100%"> 
+        <header class="default" id="experiment-header">
+            <div class="logo" id="experiment-header-logo" style="text-align:center">
+
+                <img src="./image/logo.jpg" style="height:150px;width:1075px;"></div>
+        </header>
+
+        <div id="dialogoverlay"></div>
+        <div id="dialogbox">
+            <div>
+                <div id="dialogboxhead"></div>
+                <div id="dialogboxbody"></div>
+                <div id="dialogboxfoot"></div>
+            </div>
+        </div>
+		<!--div class="jtk-demo-main" -->
+            <!-- demo -->
+            
+        <div id="whole_body" style=" background-color:white;position:relative; margin-left:auto; margin-right:auto; top:0px;height:930px; width:1075px;">
+            <div style="font-size:30px; text-align:center;padding-right:50px; height:60px"> <b> Monostable Multivibrator using 555 </b></div>
+			
+            <div id="ckt_values1" style="left: 220px; position: relative; top: 20px;">
+                <p>
+                    <img src="image/monostable.png" width=350px; height=350px;/>
+
+
+<div class="jtk-demo-canvas canvas-wide animation-demo jtk-surface jtk-surface-nopan" id="canvas">
+                <div class="littledot" id="ld1"></br><a href="#" class="cmdLink detach" rel="ld1"></a></div>			
+				<div class="littledot" id="ld2"></br><a href="#" class="cmdLink detach" rel="ld2"></a></div>
+                <div class="littledot" id="ld3"></br><a href="#" class="cmdLink detach" rel="ld3"></a></div>
+                <div class="littledot" id="ld4"></br><a href="#" class="cmdLink detach" rel="ld4"></a></div>
+                <div class="littledot" id="ld5"></br><a href="#" class="cmdLink detach" rel="ld5"></a></div>
+                <div class="littledot" id="ld6"></br><a href="#" class="cmdLink detach" rel="ld6"></a></div>
+                <div class="littledot" id="ld7"></br><a href="#" class="cmdLink detach" rel="ld7"></a></div>
+                <div class="littledot" id="ld8"></br><a href="#" class="cmdLink detach" rel="ld8"></a></div>
+                <div class="littledot" id="ld9"></br><a href="#" class="cmdLink detach" rel="ld9">9</a></div>     
+				<div class="littledot" id="ld10"></br><a href="#" class="cmdLink detach" rel="ld10">10</a></div>
+				<div class="littledot" id="ld11"></br><a href="#" class="cmdLink detach" rel="ld11">11</a></div>
+                <div class="littledot" id="ld12"></br><a href="#" class="cmdLink detach" rel="ld12">12</a></div>
+				<div class="littledot" id="ld13"></br><a href="#" class="cmdLink detach" rel="ld13">13</a></div>
+				<div class="littledot" id="ld14"></br><a href="#" class="cmdLink detach" rel="ld14">14</a></div>
+				<div class="littledot" id="ld15"></br><a href="#" class="cmdLink detach" rel="ld15">15</a></div>
+				<div class="littledot" id="ld16"></br><a href="#" class="cmdLink detach" rel="ld16">16</a></div>
+				<div class="littledot" id="ld17"></br><a href="#" class="cmdLink detach" rel="ld17">17</a></div>
+		
+</div>
+<script src="./js/jsplumb1.js"></script>
+
+
+                
+               
+                <input type="text" value=""  id="dc"   placeholder="Volt"   style="background-color:#e6f5ff;position:absolute; top:20px;  left:100px; width:50px" readonly/>
+                <input type ="text" value="" id="capac1"   placeholder="Capacitance"  style="background-color:#e6f5ff;position:absolute; top:240px;  left:-30px; width:40px"readonly />
+				<input type ="text" value="" id="res"    placeholder="Resistance"   style="background-color:#e6f5ff;position:absolute; top:110px;  left:-20px; width:40px"readonly />            
+                <input type="number" value="" id ='voutput' placeholder="output Volt"  style="background-color:#e6f5ff;position:absolute; top:152px;  right:635px; width:70px" readonly/>
+                <input type="number" value="" id ='timeprdata' placeholder="Time period"  style="background-color:#e6f5ff;position:absolute; top:152px;  right:635px; width:70px" readonly/>
+         <input type="text" value="" id='tout' placeholder="Tout"  style="background-color:#e6f5ff;position:absolute; top:212px;  right:635px; width:70px" readonly/>
+           <input type="text" value="" id='toff' placeholder="Toff"  style="background-color:#e6f5ff;position:absolute; top:242px;  right:635px; width:70px" readonly/>
+          
+		   </div><!---div ckt--->
+
+           <div id="cntrwrap" style="position:absolute;border: 2px solid #3385ff; top:50px;width:380px;height:170px;right:12px;">
+
+                <div id="cntrlr" style="position:absolute; background-color:#3385ff;   height:50px; top:0px; right:0px; width:380px;font-size: 16px;font-weight: bold;"><p style="text-align:center;padding-right:210px;color:white"><b>CONTROLS</b></p> 
+                </div>
+            
+
+
+
+                <div id="slide" style=" position:absolute; top:60px; right:0px; width:380px;  border-radius: 10px;">
+
+                    &nbsp&nbsp Resistance (R<sub>a</sub>) : <input type="range" name="resis" id="res1" min="1" max="10" step="1" value="1" oninput="resChange()" style="width:150px;cursor:pointer;">  &nbsp; k&#937;<br>
+                    &nbsp&nbsp Capacitance (C) : <input type="range" name="capa" id="capa1" min="1" max="10" step="1" value="1" oninput="capldChange()" style="width:150px;cursor:pointer;">  &nbsp;&#181;f<br>                    
+					&nbsp&nbsp Supply voltage (V<sub>cc</sub>) : &nbsp&nbsp&nbsp <input type="range" name="inpdc" id="vdc" min="0" max="15" step="1" value="0"  oninput="vinChange()" style="width:130px;cursor:pointer;"> &nbsp; Volt<br>	
+                    &nbsp&nbsp Time period (T<sub>in</sub>) : &nbsp&nbsp&nbsp <input type="range" name="timeprange" id="tinrange" min="10" max="100" step="10" value="0"  oninput="tinChange()" style="width:150px;cursor:pointer;"> &nbsp; mSec<br>	
+                   
+                    <br>	
+       
+                    <input type="button" id="clr" value="Clear" onclick="cleard()" disabled="true" style="position:absolute; top:120px; width:100px; right:30px;cursor:pointer; " />
+<button type="button" onclick="voutput()" id ="calculte" disabled="true" style="position:absolute; top:120px; width:100px;  right:280px;cursor:pointer; "/> Calculate </button>
+					 
+					<select name="graphplot" id="graphplot" disabled="true"  onclick="showDiv()" style="cursor: pointer; background-color:#85D2EE;position:absolute;  right:140px; width:127px">
+ <option value="0">Plot</option>
+<option value="1" >Trigger input voltage</option>
+<option value="2">Output Voltage</option>
+<option value="3">Capacitor Voltage</option>
+</select><br>
+            <button id="check-button" style="position:absolute; top:160px; width:100px; right:140px;cursor:pointer;  ">Check connection</button>
+		<button  id="delete-connct"  onclick="deleteconnection()"  style="position:absolute; top:160px; width:100px; right:30px;cursor:pointer; ">Delete all connection</button>
+            <!--input id="reset" type="reset" onclick="window.location.href = 'index.html';" value="Reset"-->
+                       
+			   </div>
+            </div>
+            <div id="msg" style="position:absolute;top:350px;right:50px;width:270px;height:150px;">
+                <p id="demo" style="color:red;"></p>
+                <p id="demos" style="color:green;"></p>
+
+            </div>
+            
+            <div id="description" style="background-color: #3385ff;   position:absolute; top:50px; left:10px; width:307px;font-size: 16px;font-weight: bold;">
+
+
+                <div class="dropdown">
+                    <p style="text-align:center;padding-right:150px;color:white"> INSTRUCTION</p>
+                    <div class="dropdown-content">
+                        <ol type="1">
+						<li>Connect the components as mentioned below:<br>
+                        L1-L12, L14-L12, L16-L12, L4-L9, L8-L9, L9-L10, L3-L17, L11-L13, L7-L11, L6-L13, L5-L15.(For eg. click on 1 and then drag to 5 and so on.)</li>
+				<li> Click on  'Check Connection' button to check the connections.</li>
+				<li> If connected wrong click on  'Delete all connection' button to erase all the connections.	</li>	
+				<li>Set the Resistance (R <sub>a</sub>) value (1 k&#937; - 10 k&#937;).</li>
+				<li>Set the Capacitance (C) value  .</li>
+                            <li>Set supply voltage (V<sub>cc</sub>).</li> 
+							<li>Intially  set R <sub>a</sub>=10 k&#937;, C=1 &#181;f, V<sub>cc</sub>=5 V. </li>
+                            <li>Now note the output voltage.  </li>
+                            <li>Click on "Plot" button to plot, Trigger Input Voltage, Output Voltage, Capacitance Voltage</li>
+							<li>Click on "Clear" button to clear the data.</li>
+							<li>Repeat the experiment for another set of resistance value. </li>
+
+                        </ol> 
+
+                    </div>
+                </div>
+            </div>
+           
+
+         	  <div id="grpwrap" style="position:absolute;border: 2px solid #3385ff; top:550px;width:1050px;height:360px;left:10px">
+                <div style="position:absolute; font-size:16px; top:0px;left:0px;  height:50px;background-color:#3385ff;  width:1050px;font-weight: bold;"><p> <b style="text-align:center;padding-right:910px;color:white"> GRAPH PLOT</b></p>
+                    <div class="tooltip" ><button id="calci"  onclick="printf()" style="position:absolute;padding-right:40px; cursor:pointer;top:13px;right:20px;width:5px;height:25px;border:none; background-color:#3385ff;">
+                            <img src="./image/Print Filled.png" alt="Save icon" style="width:20px;height:20px;top:13px;"/></button> 
+                        <span class="tooltiptext">Print</span></div>
+
+
+                     <div id="chartContainer" style="display:block;position:absolute;  top:50px;  left:0px; height:300px; width:1050px;"> </div><!---output voltage-->
+					 <div id="chartContainers" style="display:block;position:absolute;  top:50px;  left:0px; height:300px; width:1050px;"> </div><!--trigger input voltage----->
+					 <div id="chartContainerc" style="display:block;position:absolute; top:50px;  left:0px; height:300px; width:1050px;"> </div><!-- capacitor voltage-->
+            </div>
+
+        <div id="lab-footer" style="height:20px;width:1310px;text-align: center;padding:bottom">
+            <div style="margin-left:40%; margin-right:40% ">
+                Copyright &copy; 2011 Indian Institute of Technology Kharagpur,<a href="license/index.html" target="_blank" style="margin:auto"> Licensing Terms </a>
+            </div>
+        </div>
+		<script src="./js/monostablecal.js"></script>
+
+ <script src="./js/cktconnection_monostable.js"></script>
+
+    </body>
+	
+</html>

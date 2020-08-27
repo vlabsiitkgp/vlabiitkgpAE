@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation width="720" height="540" defaultSlideDuration="0" start="play" buildNum="7.0.0.7328">
+	<presentationTitle>Basic electronics – exp 5</presentationTitle>
+	<speakers></speakers>
+	<search url="srchdata.xml"/>
+	<presentationBg url="bg.swf"/>
+	<masters><master url="Master0.swf" id="1" totalFrames="1"><backdrop frameNum="0"/></master></masters>
+	<layouts><layout url="Layout0.swf" id="1" totalFrames="1"><backdrop frameNum="1" displayBgSp="false"/></layout><layout url="Layout1.swf" id="2" totalFrames="1"><backdrop displayBgSp="true"/></layout><layout url="Layout2.swf" id="3" totalFrames="1"><backdrop displayBgSp="true"/></layout></layouts>
+	<slides>
+		<slide id="256" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="0.03333333333333333" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide0.swf" id="256"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="1"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>Basic electronics</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="1"/>
+		</slide>
+		<slide id="257" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="0.03333333333333333" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide1.swf" id="257"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="2"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>Objectives</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="2"/>
+		</slide>
+		<slide id="258" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="0.03333333333333333" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide2.swf" id="258"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="3"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>Exploratory Circuit</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="3"/>
+		</slide>
+		<slide id="259" showInTOC="" inSequence="" frameRate="30" totalFrames="98" swfConvertorEngine="Nova" slideDuration="3.2666666666666666" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide3.swf" id="259"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="3"/>
+			<clickAnimations>
+				<click startTime="167" isStartRelative="false" duration="3034"/>
+			</clickAnimations>
+			<flvContents/>
+			<slideTitle>Exploratory Circuit</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="4"/>
+		</slide>
+		<slide id="260" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="0.03333333333333333" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide4.swf" id="260"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="3"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>Exploratory Circuit</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="5"/>
+		</slide>
+		<slide id="261" showInTOC="" inSequence="" frameRate="30" totalFrames="98" swfConvertorEngine="Nova" slideDuration="3.2666666666666666" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide5.swf" id="261"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="3"/>
+			<clickAnimations>
+				<click startTime="167" isStartRelative="false" duration="3034"/>
+			</clickAnimations>
+			<flvContents/>
+			<slideTitle>Exploratory Circuit</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="6"/>
+		</slide>
+		<slide id="262" showInTOC="" inSequence="" frameRate="30" totalFrames="68" swfConvertorEngine="Nova" slideDuration="2.2666666666666666" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide6.swf" id="262"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="3"/>
+			<clickAnimations>
+				<click startTime="167" isStartRelative="false" duration="2034"/>
+			</clickAnimations>
+			<flvContents/>
+			<slideTitle>Putting them together</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="7"/>
+		</slide>
+		<slide id="264" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="0.03333333333333333" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide7.swf" id="264"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="3"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>Rectification</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="8"/>
+		</slide>
+		<slide id="263" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="0.03333333333333333" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide8.swf" id="263"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="3"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>Half Wave Rectification</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="9"/>
+		</slide>
+		<slide id="265" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="0.03333333333333333" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide9.swf" id="265"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="3"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>Half Wave Rectifiers – Waveforms</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="10"/>
+		</slide>
+	</slides>
+	<attachments></attachments>
+</presentation>

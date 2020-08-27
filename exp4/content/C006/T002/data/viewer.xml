@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation width="720" height="540" defaultSlideDuration="0" start="play" buildNum="7.0.0.7328">
+	<presentationTitle>Basic electronics – exp 5</presentationTitle>
+	<speakers></speakers>
+	<search url="srchdata.xml"/>
+	<presentationBg url="bg.swf"/>
+	<masters><master url="Master0.swf" id="1" totalFrames="1"><backdrop frameNum="0"/></master></masters>
+	<layouts><layout url="Layout0.swf" id="1" totalFrames="1"><backdrop frameNum="1" displayBgSp="false"/></layout><layout url="Layout1.swf" id="2" totalFrames="1"><backdrop displayBgSp="true"/></layout></layouts>
+	<slides>
+		<slide id="256" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="0.03333333333333333" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide0.swf" id="256"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="1"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>Basic electronics</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="1"/>
+		</slide>
+		<slide id="266" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="0.03333333333333333" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide1.swf" id="266"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="2"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>Half Rectifier - Experiment</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="2"/>
+		</slide>
+		<slide id="267" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="0.03333333333333333" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide2.swf" id="267"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="2"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>Half Rectifier - Results</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="3"/>
+		</slide>
+		<slide id="286" showInTOC="" inSequence="" frameRate="30" totalFrames="1" swfConvertorEngine="Nova" slideDuration="0.03333333333333333" advance="pause" blockMovement="false" type="normal">
+			<content url="Slide3.swf" id="286"/>
+			<backdrop displayBgSp="true"/>
+			<master id="1"/>
+			<layout id="2"/>
+			<clickAnimations></clickAnimations>
+			<flvContents/>
+			<slideTitle>Half Rectifier - Experiment</slideTitle>
+			<notes isHTML="true">&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="4"/>
+		</slide>
+	</slides>
+	<attachments></attachments>
+</presentation>
