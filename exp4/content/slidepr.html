@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <title>Half Wave Rectification Procedure</title>
+
+<style>
+#img2 {
+        position: fixed;
+        right:0;
+        bottom:0;
+        cursor:pointer;
+        display: none;
+      }
+  #img1{
+         position: fixed;
+        right:0;
+        bottom:0;
+        cursor:pointer;
+        display: none;  
+      }
+</style>
+<body>
+<div class="outer" id="arrow" style="max-width:1000px;margin:auto;position:relative;">
+<div class="content" id="kol" style="max-width:800px;margin:auto;position:relative;">
+
+<img class="mySlides" src="images/slidepr1.png" style="width:100%">
+<img class="mySlides" src="images/slidepr2.png" style="width:100%">
+<img class="mySlides" src="images/slidepr3.png" style="width:100%">
+<img class="mySlides" src="images/slidepr4.png" style="width:100%">
+
+</div>
+    
+
+<img id="img1" src="images/farrow.png" style="position:absolute;top:40%;right:0" onclick="Divs(1)">
+<img id="img2" src="images/backarrow.png" style="position:absolute;top:40%;left:0" onclick="Divs(-1)">
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function Divs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {
+      slideIndex = 1
+  }    
+  if (n < 1) {
+      slideIndex = x.length
+  } ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";  
+  setTimeout(showDivs, 2000); 
+}
+
+    var img1 = document.getElementById("img1"),
+          img2 = document.getElementById("img2");
+
+     arrow.onmouseover = function(){
+        img2.style.display = "block";
+        img1.style.display="block";
+      }
+
+        arrow.onmouseout = function(){
+        img2.style.display = "none";
+         img1.style.display = "none";
+      }
+      
+</script>
+
+</body>
+</html> 

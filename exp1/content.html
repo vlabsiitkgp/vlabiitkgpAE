@@ -84,6 +84,33 @@
                             Objective of Experiment
                         </div>
                     </section>
+					
+					 <!------------------------------- First section of the article---------------------------------->
+					 <section id="experiment-article-section-1">
+                      <div class="icon" id="experiment-article-section-1-icon">
+                            <!-- Enclose the icon image of your lab. -->
+                            <img src="../images/quizzes.jpg"></div>
+                        <!-- The heading for the section can be enclosed in a div tag. -->
+
+                        <div class="heading" id="experiment-article-section-1-heading">
+                           Pre Quiz
+                        </div><!-- Write the section content inside a paragraph element, we can also include images with &lt;img&gt; tag -->
+
+                        <div class="content" id="experiment-article-section-1-content">
+                 
+						
+                          <div id="vlab-quiz-wrapper">
+                                <p style="text-align:left; font-size:18px; font-weight:bold;">Test Your Knowledge!!</p><br/>
+                                <div id="vlab-quiz-question-answer-options-pre"></div>  
+								<div id="vlab-quiz-result-pre"></div>								
+                                <br/>
+                                <div id="vlab-quiz-trigger">
+                                    <button id="vqt-start-pre" onclick="prequizInitializeAllQuestion()" style="display: block;">Start</button>  
+									<button id="vqt-try-again-pre" onclick="prequiztryAgain()" style="display: none;">Try Again!</button>									
+                                </div>            
+                            </div>  
+                        </div>
+                    </section>  
                     <!-------------------------- Second section of the article---------------------------------------->
 
                     <section id="experiment-article-section-2">
@@ -111,7 +138,80 @@
                         </div>
 
                         <div class="content" id="experiment-article-section-4-content">
-                            Procedure to do Experiment
+						<ul>
+						<li><b>3 bit Binary Wighted Resistors</b></li>
+                            <ol type="1">
+						<li>Connect the components as mentioned below:<br>
+                        L1-L5, L4-L6, L3-L5.(For eg. click on 1 and then drag to 5 and so on.)</li>
+				<li> Click on  'Check Connection' button to check the connections.</li>
+				<li> If connected wrong click on  'Delete all connection' button to erase all the connections.	</li>	
+				<li>Set the Resistance (R) value (1 Kohm - 10 Kohm).</li>
+				<li>Set the Feedback Resistance (R<sub>f</sub>) value same as the Resistance (R) .</li>
+                            <li>Set input voltage (Vin).</li> 
+							<li>Intially  B<sub>2</sub>B<sub>1</sub>B<sub>0</sub>are set to 000.(B<sub>2</sub>B<sub>1</sub>B<sub>0</sub> are 3 bit input)</li>
+                            <li>Now note the output voltage and click on 'Add to table' button.  </li>
+                            <!--li>Increase the input voltage by a factor of 2</li-->
+							<li>Change the B<sub>2</sub>B<sub>1</sub>B<sub>0</sub> and note the output voltage and click on 'Add to table' button.</li>
+                            <!--li>Click on 'Plot' button to plot the output voltage vs input voltage.</li-->
+                           <li>Repeat the experiment for another set of resistance value. </li>
+
+                        </ol> <br>
+							
+							 <div align="center">
+                                <p>
+                                    <img src="image/3bitbwr_prc.png" style ="width:420px;height:300px">
+                                </p><br>
+                                Figure:1
+                            </div><br>
+							<li><b>4 bit Binary Wighted Resistors</b></li>
+							 <ol type="1">
+						<li>Connect the components as mentioned below:<br>
+                        L1-L5, L4-L6, L3-L5.(For eg. click on 1 and then drag to 5 and so on.)</li>
+				<li> Click on  'Check Connection' button to check the connections.</li>
+				<li> If connected wrong click on  'Delete all connection' button to erase all the connections.	</li>	
+				<li>Set the Resistance (R) value (1 Kohm - 10 Kohm).</li>
+				<li>Set the Feedback Resistance (R<sub>f</sub>) value same as the Resistance (R) .</li>
+                            <li>Set input voltage (Vin).</li> 
+							<li>Intially  B<sub>3</sub>B<sub>2</sub>B<sub>1</sub>B<sub>0</sub>are set to 0000.(B<sub>3</sub>B<sub>2</sub>B<sub>1</sub>B<sub>0</sub> are 4 bit input)</li>
+                            <li>Now note the output voltage and click on 'Add to table' button.  </li>
+                            <!--li>Increase the input voltage by a factor of 2</li-->
+							<li>Change the B<sub>3</sub>B<sub>2</sub>B<sub>1</sub>B<sub>0</sub> and note the output voltage and click on 'Add to table' button.</li>
+                            <!--li>Click on 'Plot' button to plot the output voltage vs input voltage.</li-->
+                           <li>Repeat the experiment for another set of resistance value. </li>
+
+                        </ol> <br>
+							
+							 <div align="center">
+                                <p>
+                                    <img src="image/4bitbwr_prc.png" style ="width:420px;height:300px">
+                                </p><br>
+                                Figure:2
+                            </div><br>
+							<li><b> 4 bit Binary Ladder </b></li>
+							<ol type="1">
+						<li>Connect the components as mentioned below:<br>
+                        L1-L5, L4-L6, L3-L5, L9-L12.(For eg. click on 1 and then drag to 5 and so on.)</li>
+				<li> Click on  'Check Connection' button to check the connections.</li>
+				<li> If connected wrong click on  'Delete all connection' button to erase all the connections.	</li>	
+				<li>Set the Resistance (R) value (1 Kohm - 10 Kohm).</li>
+				<li>Set the Feedback Resistance (R<sub>f</sub>) value same as the Resistance (R) .</li>
+                            <li>Set input voltage (Vin).</li> 
+							<li>Intially  B<sub>3</sub>B<sub>2</sub>B<sub>1</sub>B<sub>0</sub>are set to 0000.(B<sub>3</sub>B<sub>2</sub>B<sub>1</sub>B<sub>0</sub> are 4 bit input)</li>
+                            <li>Now note the output voltage and click on 'Add to table' button.  </li>
+                            <!--li>Increase the input voltage by a factor of 2</li-->
+							<li>Change the B<sub>3</sub>B<sub>2</sub>B<sub>1</sub>B<sub>0</sub> and note the output voltage and click on 'Add to table' button.</li>
+                            <!--li>Click on 'Plot' button to plot the output voltage vs input voltage.</li-->
+                           <li>Repeat the experiment for another set of resistance value. </li>
+
+                        </ol> <br>
+							
+							 <div align="center">
+                                <p>
+                                    <img src="image/4bitbl_prc.png" style ="width:420px;height:300px">
+                                </p><br>
+                                Figure:3
+                            </div><br>
+							</ul>
                         </div>
                     </section>
 
@@ -149,11 +249,20 @@
                             <img src="../images/quizzes.jpg"></div>
 
                         <div class="heading" id="experiment-article-section-6-heading">
-                            Quizzes
+                            Post   Quiz
                         </div>
 
                         <div class="content" id="experiment-article-section-6-content">
-                            <p>Quizzes content.....</p>
+                           <div id="vlab-quiz-wrapper">
+                                            <p style="text-align:left; font-size:18px; font-weight:bold;">Test Your Knowledge!!</p><br/>
+                                            <div id="vlab-quiz-question-answer-options"></div>  
+<div id="vlab-quiz-result"></div>											
+                                            <br/>
+                                            <div id="vlab-quiz-trigger">
+                                                <button id="vqt-start" onclick="quizInitializeAllQuestion()" style="display: block;">Start</button>  
+<button id="vqt-try-again" onclick="tryAgain()" style="display: none;">Try Again!</button>													
+                                            </div>            
+                                        </div> 
                         </div>
                     </section>
                     <!-------------------------- Seventh section of the article---------------------------------------->

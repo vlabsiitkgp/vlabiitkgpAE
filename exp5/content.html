@@ -1,0 +1,305 @@
+<!-- This file needs to be edited by the lab developer to suit the requirements of their lab in particular.-->
+<!-- Add class="default" to include any element as it is specified in default.html. Do not include class="default" to the elements that you want to edit -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Analog Electronics </title>
+        <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"></script>
+    </head>
+
+    <body>
+        <div id="experiment">
+            <!-- The Experiment Document Container-->
+            <!-- The lab Header contains the logo and the name of the lab, usually displayed on the top of the page-->
+
+            <header class="default" id="experiment-header">
+                <div class="logo" id="experiment-header-logo">
+                    <!-- Enclose the logo image of your lab or write it in text-->
+                    <img src="../images/logo.jpg"></div>
+
+                <div class="heading" id="experiment-header-heading">
+                    <!-- Write the name of your lab and link it to the home
+          page of your lab (h1 tag is preferred while writing your
+          lab name)-->
+                    <a href="../index.html">Analog Electronics </a>
+                </div><!-- Add any additional element you want to add to the lab
+        header, For example : Help (Enclosing them with suitable
+        div is recommended)-->
+            </header><!-- The lab article is the main content area where all the experiment content sits-->
+
+            <article id="experiment-article">
+                <!-- The lab article has an header, optional navigational
+        menu, number of sections, an optional sidebar and a closing
+        footer-->
+
+                <div class="breadcrumb" id="experiment-article-breadcrumb"></div>
+
+                <header class="heading" id="experiment-article-heading">
+                  Schmitt Trigger
+                </header><!-- Navigation menu is useful to organize the view of multiple sections inside the article-->
+
+                <nav class="default" id="experiment-article-navigation">
+                    <ul id="experiment-article-navigation-menu">
+                        <!-- The menu can be dynamically generated to contain
+              the headings of your sections or instead write the
+              menu items of your choice individually enclosedu in
+              &lt;li&gt; tag as shown below-->
+                    </ul>
+                </nav><!-- All the sections of your lab or experiment can be
+          enclosed together with a div element as shown below-->
+
+                <div id="experiment-article-sections">
+				
+				 <!-------------------------- Third section of the article---------------------------------------->
+
+                    <section id="experiment-article-section-3">
+                        <div class="icon" id="experiment-article-section-3-icon">
+                            <!-- Enclose the icon image of your lab. -->
+                            <img src="../images/objective.jpg"></div>
+
+                        <div class="heading" id="experiment-article-section-3-heading">
+                            Objective
+                        </div>
+
+                        <div class="content" id="experiment-article-section-3-content">
+                            Objective of Experiment
+                        </div>
+                    </section>
+                    <!------------------------------- First section of the article---------------------------------->
+					 <section id="experiment-article-section-1">
+                      <div class="icon" id="experiment-article-section-1-icon">
+                            <!-- Enclose the icon image of your lab. -->
+                            <img src="../images/quizzes.jpg"></div>
+                        <!-- The heading for the section can be enclosed in a div tag. -->
+
+                        <div class="heading" id="experiment-article-section-1-heading">
+                           Pre Quiz
+                        </div><!-- Write the section content inside a paragraph element, we can also include images with &lt;img&gt; tag -->
+
+                        <div class="content" id="experiment-article-section-1-content">
+                 
+						
+                          <div id="vlab-quiz-wrapper">
+                                <p style="text-align:left; font-size:18px; font-weight:bold;">Test Your Knowledge!!</p><br/>
+                                <div id="vlab-quiz-question-answer-options-pre"></div>  
+								<div id="vlab-quiz-result-pre"></div>								
+                                <br/>
+                                <div id="vlab-quiz-trigger">
+                                    <button id="vqt-start-pre" onclick="prequizInitializeAllQuestion()" style="display: block;">Start</button>  
+									<button id="vqt-try-again-pre" onclick="prequiztryAgain()" style="display: none;">Try Again!</button>									
+                                </div>            
+                            </div>  
+                        </div>
+                    </section>  
+					
+					
+                    <!-------------------------- Second section of the article---------------------------------------->
+
+                    <section id="experiment-article-section-2">
+                        <div class="icon" id="experiment-article-section-2-icon">
+                            <!-- Enclose the icon image of your lab. -->
+                            <img src="../images/theory.jpg"></div>
+                        <!-- The heading for the section can be enclosed in a div tag. -->
+
+                        <div class="content" id="experiment-article-section-2-content">
+                            <p style="text-align: justify; font-weight: bold">Theory</p>
+                              Theory of Experiment
+                            </p>
+                        </div>
+                    </section>
+                    
+                    <!-------------------------- Fourth section of the article---------------------------------------->
+
+                    <section id="experiment-article-section-4">
+                        <div class="icon" id="experiment-article-section-4-icon">
+                            <!-- Enclose the icon image of your lab.-->
+                            <img src="../images/procedure.jpg"></div>
+
+                        <div class="heading" id="experiment-article-section-4-heading">
+                            Procedure
+                        </div>
+
+                        <div class="content" id="experiment-article-section-4-content">
+                             <ol type="1">
+						<li>Connect the components as mentioned below:<br>
+							L1-L7 or L1-L3 , L3-L7, L4-L5, L6-L11 or L6-L14, L8-L15, L12-L16, L8-L9, L13-L16, L14-L11.(For eg. click on 1 and then drag to 3 and so on.)</li>
+							<li> Click on  'Check Connection' button to check the connections.</li>
+							<li> If connected wrong, double click on the wrong connection. Else click on 'Delete all connection' button to erase all the connections.	</li>	
+                            <li>Click on 'ON' button to start the experiment.</li>
+                            <li>Click on 'Sine Wave' button to generate input waveform (10 V<sub>p-p</sub>, 1kHz)</li>
+                            <li>Click on 'Oscilloscope' button to get the output waveform. </li>
+                            <li>Vary the Amplitude, Frequency, volt/div  using the controllers.</li> 
+                            <li>Click on "Dual" button to observe both the waveform.</li>
+                            <li>Channel 1 shows the input sine waveform, Channel 2 shows the output square  waveform. </li>
+                            <li>Click on "X-Y" button to observe the Hysteresis curve.</li>
+                            
+                        </ol> <br>
+						
+						 <div align="center">
+                                <p>
+                                    <img src="image/schmitttrg_prc.png" style ="width:500px;height:300px">
+                                </p><br>
+                                Figure:1
+                            </div><br>
+							
+                        </div>
+                    </section>
+ <!-----------------------------------SECTION - 8--------------------------------------------------------------------------------->                    
+
+                                 <section id="experiment-article-section-8">
+                                     <div class="icon" id="experiment-article-section-8-icon">
+                                <!-- Enclose the icon image of your lab.  --> 
+                                <img src="image/oscilo.png"></div>
+            
+                            <div class="heading" id="experiment-article-section-8-heading">
+                                Oscilloscope <br>Tutorial
+                            </div>
+            
+                            <div class="content" id="experiment-article-section-8-content">                           
+                                
+								
+								An oscilloscope displays a voltage waveform versus time and has the following components:
+<ol>
+<li> a screen to display a waveform,</li> 
+<li>input jacks for connecting the signal to be displayed, </li>
+<li> dials to control how the signal will be displayed.</li>
+</ol>
+<p>
+<br><br>
+The screen is cathode ray tube found in most television sets where the face of the screen is divided up into a
+ 2 dimensional grid (or axes or scale); In this experiment we consider  8x10 grid. 
+The vertical grid is divided up into 8 (major) divisions and the horizontal grid is divided into 10 major divisions. 
+To improve the precision, each of these divisions is further broken up into 5 minor divisions. 
+The horizontal axis (X-axis) represents time and the vertical axis (Y-axis) represents voltage. The scope displays (also called a signal trace or trace) the input signal voltage along the vertical (or Y-axis) while an internally generated signal (called the horizontal sweep or sweep signal) is simultaneously produced along the X-axis creating a 2- dimensional time trace of the input signal. 
+
+</p>
+<div align="center">
+                                    <p>
+                                        <img src="image/oscilloscope.png" style="width:380px;height:300px">
+                                    </p><br>
+                                    Figure:1
+                                </div><br><br>
+								
+volts/div- This control lets you change how many volts are represented by each vertical increment of grid (vertical axis) on the screen. Basically, it allows you to zoom in and out along the y axis. 
+<br><br>
+time/div- This control lets you change how much time is represented by each horizontal increment of the grid overlay on the screen. It allows you to zoom in and out along the x axis.
+<br><br>
+If volt/div is set to 1 volt which implies each mazor vertical division is 1 volt where as each minor vertical  division is 0.2 volt. 
+And time/div is set to 0.1ms/div which implies each maor horiontal division is 0.1ms.
+Voltage on the vertical scale is 1 volt/div multiply by (number of division).
+Time on the horizontalscale is 0.1msec  multiply by (number of division). 
+In the figure 2, 1 volt/div and amplitude of the input signal is 1 volt. Here 0.1mses/div, the frequency is 1 kHz and its period is 1 complete cycle in 1m sec. 
+
+<div align="center">
+                                    <p>
+                                        <img src="image/oscilloscope_1vd.png" style="width:350px;height:300px">
+                                    </p><br>
+                                    Figure:2
+                                </div><br><br>
+In the figure 3, if volt/div is set to 2volt/div, which implies each mazor division is 2 volt where as each minor division is 0.5volt. 
+<div align="center">
+                                    <p>
+                                        <img src="image/oscilloscope_2vd.png" style="width:350px;height:300px">
+                                    </p><br>
+                                    Figure:3
+                                </div><br><br>
+Note: If you set the Volts/Div too low, you’ll clip the signal. Similarly, setting it too high, and you’ll won’t find the signal, i.e. the signal will b flat.
+ncreasing the Timebase will display more cycles of a periodic signal. Conversely, reducing the Timebase, fewer cycles will be displayed. 
+
+                                    <!--object width="900" height="500" data="./content/C006/T003/viewer.swf" type="application/x-shockwave-flash">
+                                        <param name="src" value="./content/C006/T003/viewer.swf"/>
+                                    </object-->
+                                                            
+                            </div>
+                        </section>   
+
+                    <!-------------------------- Fifth section of the article---------------------------------------->
+
+                    <section id="experiment-article-section-5">
+                        <div class="icon" id="experiment-article-section-5-icon">
+                            <!-- Enclose the icon image of your lab.-->
+                            <img src="../images/simulation.jpg"></div>
+
+                        <div class="heading" id="experiment-article-section-5-heading">
+                            Simulator
+                        </div>
+
+                        <div class="content" id="experiment-article-section-5-content" style="background-color:Gainsboro;position:relative;top:-22px;width:500px;height:150px;left:210px;">
+
+                            <!--p style="text-align: justify; padding-bottom: 20px">
+                                Simulator for the Experiment
+                            </p-->
+							<!--h2><marquee style="color:green;font-size:25pt;">Astable multivibrator using IC 555</marquee></h2-->   
+
+                            <input type="button" onclick="window.open('./schmitt_trigger.html', '_blank');" value="Schmitt Trigger" style="position:absolute; top:70px;  right:110px;"/><!--opens in new tab-->
+							
+                        </div>
+                    </section>
+
+                    <!-------------------------- Sixth section of the article---------------------------------------->
+
+                    <section id="experiment-article-section-6">
+                        <div class="icon" id="experiment-article-section-6-icon">
+                            <!-- Enclose the icon image of your lab.-->
+                            <img src="../images/quizzes.jpg"></div>
+
+                        <div class="heading" id="experiment-article-section-6-heading">
+                            Post   Quiz
+                        </div>
+
+                        <div class="content" id="experiment-article-section-6-content">
+                           <div id="vlab-quiz-wrapper">
+                                            <p style="text-align:left; font-size:18px; font-weight:bold;">Test Your Knowledge!!</p><br/>
+                                            <div id="vlab-quiz-question-answer-options"></div>  
+<div id="vlab-quiz-result"></div>											
+                                            <br/>
+                                            <div id="vlab-quiz-trigger">
+                                                <button id="vqt-start" onclick="quizInitializeAllQuestion()" style="display: block;">Start</button>  
+<button id="vqt-try-again" onclick="tryAgain()" style="display: none;">Try Again!</button>													
+                                            </div>            
+                                        </div> 
+                        </div>
+                    </section>
+                    <!-------------------------- Seventh section of the article---------------------------------------->
+
+                    <section id="experiment-article-section-7">
+                        <div class="icon" id="experiment-article-section-7-icon">
+                            <!-- Enclose the icon image of your lab.-->
+                            <img src="../images/reference.jpg"></div>
+
+                        <div class="heading" id="experiment-article-section-7-heading">
+                            Reference
+                        </div>
+
+                        <div class="content" id="experiment-article-section-7-content">
+                            <strong>Books </strong>
+                            <ol>
+                              <li></li>
+                              <li></li>
+                            </ol>
+                            <strong>Papers</strong>
+                            <ol>
+                              <li></li>
+                              <li></li>
+                            </ol>
+
+                            <strong>NPTEL</strong>
+                            <ol>
+                              <li></li>
+                              <li></li>
+                            </ol>
+                          </div>
+                    </section>
+
+                </div>
+            </article>
+            <footer class="default" id="lab-footer">
+                <!-- Put the content here-->
+                <div style="margin-left:40%; margin-right:40% ">
+                    Copyright &copy; 2011 Indian Institute of Technology Kharagpur,<a href="../license/index.html" target="_blank" style="margin:auto"> Licensing Terms </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

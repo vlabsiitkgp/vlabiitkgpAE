@@ -85,6 +85,33 @@
                             Objective of Experiment
                         </div>
                     </section>
+					
+					 <!------------------------------- First section of the article---------------------------------->
+					 <section id="experiment-article-section-1">
+                      <div class="icon" id="experiment-article-section-1-icon">
+                            <!-- Enclose the icon image of your lab. -->
+                            <img src="../images/quizzes.jpg"></div>
+                        <!-- The heading for the section can be enclosed in a div tag. -->
+
+                        <div class="heading" id="experiment-article-section-1-heading">
+                           Pre Quiz
+                        </div><!-- Write the section content inside a paragraph element, we can also include images with &lt;img&gt; tag -->
+
+                        <div class="content" id="experiment-article-section-1-content">
+                 
+						
+                          <div id="vlab-quiz-wrapper">
+                                <p style="text-align:left; font-size:18px; font-weight:bold;">Test Your Knowledge!!</p><br/>
+                                <div id="vlab-quiz-question-answer-options-pre"></div>  
+								<div id="vlab-quiz-result-pre"></div>								
+                                <br/>
+                                <div id="vlab-quiz-trigger">
+                                    <button id="vqt-start-pre" onclick="prequizInitializeAllQuestion()" style="display: block;">Start</button>  
+									<button id="vqt-try-again-pre" onclick="prequiztryAgain()" style="display: none;">Try Again!</button>									
+                                </div>            
+                            </div>  
+                        </div>
+                    </section>  
                     <!-------------------------- Second section of the article---------------------------------------->
 
                     <section id="experiment-article-section-2">
@@ -112,7 +139,81 @@
                         </div>
 
                         <div class="content" id="experiment-article-section-4-content">
-                            Procedure to do Experiment
+                            <br>
+							<ul>
+							<li><b>Active Low Pass Filter </b></li>
+							<ol type="1">
+						<li>Connect the components as mentioned below:<br>
+                        L1-L8, L3-L4 or L4-L5, L3-L5, L6-L10 or L6-L9, L9-L10, L7-L13, L2-L12, L11-L12.(For eg. click on 1 and then drag to 8 and so on.)</li>
+				<li> Click on  'Check Connection' button to check the connections.</li>
+<li> If connected wrong click on  'Delete all connection' button to erase all the connections.	</li>	
+                            <li>Set  Resistance(R<sub>1</sub>)=10 K&#937;.</li>
+							<li>Set  Resistance(R<sub>f</sub>)=10 K&#937;.</li>
+							<li>Set  Resistance(R)=15 K&#937;.</li>
+                            <li>Set  Capacitor(C)=0.01 &#181;F.</li>
+                            <li>The source voltage (V<sub>in</sub>) is set to 10V.</li>
+                            <li>Keeping source voltage constant, vary the frequency from 50 Hz in regular steps.</li>                           
+                            <li>Click on "Add to Table" button to add the readings to the table.</li>
+                            <li>Vary the Frequency by keeping the  resistances and  capacitance constant. </li>                           
+                            <li>Select  "Plot" button to plot the frequency graph or the phase graph  of the RC frequency, Frequency(Hz) along X-axis and Magnitude along Y-axis.</li>
+                            <li>Click on "Clear" button to take another set of readings.</li>
+                        </ol> 
+<br>
+							 <div align="center">
+                                <p>
+                                    <img src="image/lowpass_prc.png" style ="width:420px;height:300px">
+                                </p><br>
+                                Figure:1
+                            </div><br>
+							<li><b>Active High Pass Filter</b></li>
+							<ol type="1">
+						<li>Connect the components as mentioned below:<br>
+                        L1-L8, L3-L4 or L4-L5, L3-L5, L6-L10 or L6-L9, L9-L10, L7-L13, L2-L12, L11-L12.(For eg. click on 1 and then drag to 8 and so on.)</li>
+				<li> Click on  'Check Connection' button to check the connections.</li>
+<li> If connected wrong click on  'Delete all connection' button to erase all the connections.	</li>	
+                            <li>Set  Resistance(R<sub>1</sub>)=10 K&#937;.</li>
+							<li>Set  Resistance(R<sub>f</sub>)=10 K&#937;.</li>
+							<li>Set  Resistance(R)=15 K&#937;.</li>
+                            <li>Set  Capacitor(C)=0.01 &#181;F.</li>
+                            <li>The source voltage (V<sub>in</sub>) is set to 10V.</li>
+                            <li>Keeping source voltage constant, vary the frequency from 50 Hz in regular steps.</li>                           
+                            <li>Click on "Add to Table" button to add the readings to the table.</li>
+                            <li>Vary the Frequency by keeping the  resistances and  capacitance constant. </li>                           
+                            <li>Select  "Plot" button to plot the frequency graph or the phase graph  of the RC frequency, Frequency(Hz) along X-axis and Magnitude along Y-axis.</li>
+                            <li>Click on "Clear" button to take another set of readings.</li>
+                      </ol> <br>
+							 <div align="center">
+                                <p>
+                                    <img src="image/highpass_prc.png" style ="width:420px;height:300px">
+                                </p><br>
+                                Figure:2
+                            </div><br>
+							<li><b>Active Band Pass Filter</b></li>
+							<ol type="1">
+                           <li>Connect the components as mentioned below:<br>
+                        L1-L10, L3-L12, L12-L14, L11-L13, L8-L13 or L8-L11, L4-L7, L4-L5 or L5-L7, L6-L9, L9-L20, L2-L22, L22-L24, L21-L23, L18-L23 or L21-L18, L25-L17, L25-L15 or L15-L17, L16-L19.(For eg. click on 1 and then drag to 8 and so on.)</li>
+				<li> Click on  'Check Connection' button to check the connections.</li>
+			<li> If connected wrong click on  'Delete all connection' button to erase all the connections.	</li>	
+                            <li>Set  Resistance(R<sub>1</sub>  and R'<sub>1</sub>)=10 K&#937;.</li>
+							<li>Set  Resistance(R<sub>f</sub> and R'<sub>f</sub>)=10 K&#937;.</li>
+							<li>Set  Resistance(R)=20 K&#937;.</li>
+                            <li>Set  Capacitor(C)=0.05 &#181;F.</li>
+							<li>Set  Resistance(R')=20 K&#937;.</li>
+                            <li>Set  Capacitor(C')=0.01 &#181;F.</li>
+                            <li>The source voltage (V<sub>in</sub>) is set to 10V.</li>
+                            <li>Keeping source voltage constant, vary the frequency from 50 Hz in regular steps.</li>                           
+                            <li>Click on "Add to Table" button to add the readings to the table.</li>
+                            <li>Vary the Frequency by keeping the  resistances and  capacitance constant. </li>                           
+                            <li>Select  "Plot" button to plot the frequency graph or the phase graph  of the RC frequency, Frequency(Hz) along X-axis and Magnitude along Y-axis.</li>
+                            <li>Click on "Clear" button to take another set of readings.</li>
+                        </ol> <br>
+							 <div align="center">
+                                <p>
+                                    <img src="image/bandpass_prc.png" style ="width:420px;height:300px">
+                                </p><br>
+                                Figure:3
+                            </div><br>
+							</ul>
                         </div>
                     </section>
 
@@ -150,11 +251,20 @@
                             <img src="../images/quizzes.jpg"></div>
 
                         <div class="heading" id="experiment-article-section-6-heading">
-                            Quizzes
+                            Post   Quiz
                         </div>
 
                         <div class="content" id="experiment-article-section-6-content">
-                            <p>Quizzes content.....</p>
+                           <div id="vlab-quiz-wrapper">
+                                            <p style="text-align:left; font-size:18px; font-weight:bold;">Test Your Knowledge!!</p><br/>
+                                            <div id="vlab-quiz-question-answer-options"></div>  
+<div id="vlab-quiz-result"></div>											
+                                            <br/>
+                                            <div id="vlab-quiz-trigger">
+                                                <button id="vqt-start" onclick="quizInitializeAllQuestion()" style="display: block;">Start</button>  
+<button id="vqt-try-again" onclick="tryAgain()" style="display: none;">Try Again!</button>													
+                                            </div>            
+                                        </div> 
                         </div>
                     </section>
                     <!-------------------------- Seventh section of the article---------------------------------------->

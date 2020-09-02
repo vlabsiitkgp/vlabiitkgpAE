@@ -85,6 +85,32 @@
                             Objective of Experiment
                         </div>
                     </section>
+					 <!------------------------------- First section of the article---------------------------------->
+					 <section id="experiment-article-section-1">
+                      <div class="icon" id="experiment-article-section-1-icon">
+                            <!-- Enclose the icon image of your lab. -->
+                            <img src="../images/quizzes.jpg"></div>
+                        <!-- The heading for the section can be enclosed in a div tag. -->
+
+                        <div class="heading" id="experiment-article-section-1-heading">
+                           Pre Quiz
+                        </div><!-- Write the section content inside a paragraph element, we can also include images with &lt;img&gt; tag -->
+
+                        <div class="content" id="experiment-article-section-1-content">
+                 
+						
+                          <div id="vlab-quiz-wrapper">
+                                <p style="text-align:left; font-size:18px; font-weight:bold;">Test Your Knowledge!!</p><br/>
+                                <div id="vlab-quiz-question-answer-options-pre"></div>  
+								<div id="vlab-quiz-result-pre"></div>								
+                                <br/>
+                                <div id="vlab-quiz-trigger">
+                                    <button id="vqt-start-pre" onclick="prequizInitializeAllQuestion()" style="display: block;">Start</button>  
+									<button id="vqt-try-again-pre" onclick="prequiztryAgain()" style="display: none;">Try Again!</button>									
+                                </div>            
+                            </div>  
+                        </div>
+                    </section>  
                     <!-------------------------- Second section of the article---------------------------------------->
 
                     <section id="experiment-article-section-2">
@@ -112,7 +138,31 @@
                         </div>
 
                         <div class="content" id="experiment-article-section-4-content">
-                            Procedure to do Experiment
+                            <br>
+							 <b> Astable Multivibrator using 555 </b>
+							 <ol type="1">
+						<li>Connect the components as mentioned below:<br>
+                        L1-L12, L14-L12, L16-L12, L4-L9, L8-L9, L10-L19, L3-L17, L11-L13, L7-L19, L6-L13, L2-L13, L5-L15, L18-L9.(For eg. click on 1 and then drag to 12 and so on.)</li>
+				<li> Click on  'Check Connection' button to check the connections.</li>
+				<li> If connected wrong click on  'Delete all connection' button to erase all the connections.	</li>	
+				<li>Intially  set R <sub>a</sub>=3.3 k&#937;, R <sub>b</sub>=6.8k&#937;, C=0.1&#181;f, V<sub>cc</sub>=5 V. </li>
+				<li> Click on "Calculate" button.</li>
+				<li>Now note the output voltage.  </li>
+                            <li>Click on "Plot" button to plot, Trigger Input Voltage, Output Voltage, Capacitance Voltage</li>
+							<li>Click on "Clear" button to clear the data.</li>
+							<li>Repeat the experiment for another set of resistance value. </li>
+							<li>Set the Resistance (R <sub>a</sub>) value (1 k&#937; - 10 k&#937;).</li>
+				<li>Set the Resistance (R <sub>b</sub>) value (1 k&#937; - 10 k&#937;).</li>
+				<li>Set the Capacitance (C) value (0.1 &#181;f - 10 &#181;f) .</li>
+                            <li>Set supply voltage (V<sub>cc</sub>).</li> 
+
+                        </ol> <br>
+							 <div align="center">
+                                <p>
+                                    <img src="image/astable_prc.png" style ="width:420px;height:300px">
+                                </p><br>
+                                Figure:1
+                            </div><br>
                         </div>
                     </section>
 
@@ -148,11 +198,20 @@
                             <img src="../images/quizzes.jpg"></div>
 
                         <div class="heading" id="experiment-article-section-6-heading">
-                            Quizzes
+                            Post   Quiz
                         </div>
 
                         <div class="content" id="experiment-article-section-6-content">
-                            <p>Quizzes content.....</p>
+                           <div id="vlab-quiz-wrapper">
+                                            <p style="text-align:left; font-size:18px; font-weight:bold;">Test Your Knowledge!!</p><br/>
+                                            <div id="vlab-quiz-question-answer-options"></div>  
+<div id="vlab-quiz-result"></div>											
+                                            <br/>
+                                            <div id="vlab-quiz-trigger">
+                                                <button id="vqt-start" onclick="quizInitializeAllQuestion()" style="display: block;">Start</button>  
+<button id="vqt-try-again" onclick="tryAgain()" style="display: none;">Try Again!</button>													
+                                            </div>            
+                                        </div> 
                         </div>
                     </section>
                     <!-------------------------- Seventh section of the article---------------------------------------->
