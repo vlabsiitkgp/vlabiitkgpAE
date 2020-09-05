@@ -35,7 +35,7 @@ function mainswt() {
         document.getElementById("sinecrv").disabled = false;
         document.getElementById("rectifiedop").disabled = true;
        
-        document.getElementById("resistor").disabled=true;
+       // document.getElementById("resistor").disabled=true;
         document.getElementById("chhn1").disabled = true;
         document.getElementById("chhn2").disabled = true;
         document.getElementById("dual").disabled = true;

@@ -19,7 +19,7 @@ function tabled() {
     if (document.getElementById("dc").value == "") {
         //Alert.render("Enter the Input Voltage");
         document.getElementById("dc").style.borderColor = "red";
-        document.getElementById("demo").innerHTML = "Enter the Input Voltage";
+        document.getElementById("demo").innerHTML = "Enter the Reference Voltage";
     }
     else if (document.getElementById("res").value == "") {
         // Alert.render("Enter the Resistance Value");
@@ -35,8 +35,12 @@ function tabled() {
         
          alert("Change binary input");
     }
+	 else if (document.getElementById("voutput").value ==""){
+		  document.getElementById("dc").style.borderColor = "red";
+        document.getElementById("demo").innerHTML = "Enter the Reference Voltage";
+	 }
    
-    else if (table.rows.length <= 15) {
+    else if (table.rows.length <= 25) {
         document.getElementById("dc").style.borderColor = "";
         document.getElementById("res").style.borderColor = "";
         document.getElementById("voutput").style.borderColor = "";
@@ -59,13 +63,17 @@ function tabled() {
     clmns = table.rows[tabrowindex].cells[1];
     vlt = clmns.innerHTML;
 
-    if (document.getElementById("res").value != document.getElementById("rs").value) {
+    if (document.getElementById("res").value != document.getElementById("resrf").value) {
         //  document.getElementById("add").style.display = "none";
         //Alert.render("Same resistance value required for linear graph");
         document.getElementById("demo").innerHTML = "Keep the Resistance Value Constant";
         document.getElementById("res").style.borderColor = "red";
     }
-
+else if (document.getElementById("dc").value == "") {
+        //Alert.render("Enter the Input Voltage");
+        document.getElementById("dc").style.borderColor = "red";
+        document.getElementById("demo").innerHTML = "Enter the Reference Voltage";
+    }
 }
 
 

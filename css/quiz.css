@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1 Nov, 2016, 10:20:29 AM
+    Author     : sukriti
+*/
+
+/* List styling */
+.questionList, .questionList ul {
+    margin-top: 0;
+    padding-left: 1em;
+    list-style-type: none;
+}
+.questionList li:before {
+    position: absolute;
+    margin-left: -1.3em;
+    font-weight: bold;
+}
+.questionList li.tick:before {
+    content: "\2713";
+    color: darkgreen;
+}
+.questionList li.cross:before {
+    content: "\2717";
+    color: crimson;
+}
+
+/* List styling */
+.prequestionList, .prequestionList ul {
+    margin-top: 0;
+    padding-left: 1em;
+    list-style-type: none;
+}
+.prequestionList li:before {
+    position: absolute;
+    margin-left: -1.3em;
+    font-weight: bold;
+}
+.prequestionList li.tick:before {
+    content: "\2713";
+    color: darkgreen;
+}
+.prequestionList li.cross:before {
+    content: "\2717";
+    color: crimson;
+}
