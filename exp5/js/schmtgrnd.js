@@ -115,9 +115,10 @@ function sinesqrwvgrnd(){
 tmaxs= document.getElementById("fq-knob").value *10*Math.pow(10,-3);// in msec  0.001; //in sec
   var vref=3.33;
 	var vcc =12;
-	var vutp = 3.48;
-	var vltp = 3.02;
+	var vutp = 4;//3.48;
+	var vltp = -4;//3.02;
 	var vsat =0;// 0.9*vcc;
+	var shift = Math.asin(vutp/vp);
 //---------------------------------------------------------Sine wave-------------------------------------------------------------------------------//
 
     var x = new Array(), y = new Array();  // x,y plotting variables
@@ -160,7 +161,7 @@ tmaxs= document.getElementById("fq-knob").value *10*Math.pow(10,-3);// in msec  
 
     ctx.stroke();
     
-    //-------------------rctfy---------------//
+    //-------------------square---------------//
     
     var x1 = new Array(), y1 = new Array(),ys1 = new Array();  // x,y plotting variables
     var dt1, tstart1, tstop1;             // time variables

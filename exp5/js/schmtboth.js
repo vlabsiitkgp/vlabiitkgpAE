@@ -116,9 +116,10 @@ function sinesqrwv(){
    tmaxs= document.getElementById("fq-knob").value *10*Math.pow(10,-3);// in msec  0.001; //in sec
    var vref=3.33;
 	var vcc =12;
-	var vutp = 3.48;
-	var vltp = 3.02;
+	var vutp = 4;//3.48;
+	var vltp = -4;//3.02;
 	var vsat = 0.9*vcc;
+	var shift = Math.asin(vutp/vp);
 //---------------------------------------------------------Sine wave-------------------------------------------------------------------------------//
 
     var x = new Array(), y = new Array();  // x,y plotting variables
@@ -174,7 +175,7 @@ function sinesqrwv(){
     // create function 
     for (var j = 0; j < axes.N; j++) {
         x1[j] = tstart1 + j * dt1;
-        y1[j] = vsat * Math.sin(2 * 3.1415 * frqfng * x1[j] -10+phsl * 3.1415 / 180);
+        y1[j] = vsat * Math.sin(2 * 3.1415 * frqfng * x1[j]+90+phsl * 3.1415 / 180);
 		ys1[j] = vsat * Math.sign(y1[j]);
     }
 

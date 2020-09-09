@@ -71,6 +71,9 @@
                             <li>Click on "Dual" button to observe both the waveform.</li>
                             <li>Channel 1 shows the input sine waveform, Channel 2 shows the output square  waveform. </li>
                             <li>Click on "X-Y" button to observe the Hysteresis curve.</li>
+							<li>Note :  Sometimes due to page load or cache, the graph may not come exact at one click. So
+it is better to double click on the channel-1 function/ channel-2 function/ dual function/
+ground function to get the respective signals. </li>
                             
                         </ol> 
                     </div>
@@ -201,6 +204,7 @@
                                 <label>Time(ms)/div</label>
                             </div>
                         </div><!--------------- end of .knob-container----------------------->
+						
 
                     </div> <!--------------- end of .middlerightupper--------------------->
                 </div>  <!--------------- end of .controllSection----------------------->
@@ -210,10 +214,20 @@
                     <div class="tooltip" ><button id="calci"  onclick="calcul()" style="position:absolute;padding-right:40px; cursor:pointer;top:11px;right:20px;width:20px;height:20px;border:none; background-color:#3385ff;">
                             <img src="./image/Calculator.png" alt="Save icon" style="width:20px;height:20px;top:11px;"/></button> 
                         <span class="tooltiptext">Calculator</span></div></div>
-                <div style=" position:absolute;  top:50px;  left:0px; height:190px; width:520px;">
-                   <br>
-                    
+                <div style=" position:absolute;  top:50px;  left:0px; height:280px; width:520px;">
               
+				   <p><b>Theoretical Calculation</b></p>
+                   &nbsp; \(V_{UTP}= \frac{R_1}{(R_1+R_2)} \times (V_{sat})\) , 
+				   &nbsp; \(V_{LTP}= \frac{R_1}{(R_1+R_2)} \times (-V_{sat})\) , <br>
+				    &nbsp;\(V_{UTP}\) is the upper threshold voltage and \(V_{LTP}\) is the lower threshold voltage<br>
+                  
+					 <p><b>Practical  Calculation</b></p>
+					  &nbsp;  \(V_{UTP}\)= Divisions covered by the intersection of
+both the waves in positive cycle along y-axis
+(vertically) x Multiplying factor,<br><br>
+				  &nbsp;  \(V_{LTP}\)= Divisions covered by the intersection of
+both the waves in negative cycle along y-axis
+(vertically) x Multiplying factor<br>
                 </div>
             </div>    <!--------------- end of .calcln----------------------->
         </div><!--------------- end of .wholebody----------------------->

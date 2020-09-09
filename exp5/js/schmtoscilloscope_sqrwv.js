@@ -101,9 +101,10 @@ function schmtsqr() {
 	tmaxs= document.getElementById("fq-knob").value *10*Math.pow(10,-3);// in msec  0.001; //in sec
 	var vref=3.33;
 	var vcc =12;
-	var vutp = 3.48;
-	var vltp = 3.02;
+	var vutp = 4;//3.48;
+	var vltp = -4;//3.02;
 	var vsat = 0.9*vcc;
+	var shift = Math.asin(vutp/vp);
 //---------------------------------------------------------rectified  wave-------------------------------------------------------------------------------//
 
     var x = new Array(), y = new Array(),ys = new Array();  // x,y plotting variables
@@ -117,7 +118,7 @@ function schmtsqr() {
     // create function 
     for (var i = 0; i < axes.N; i++) {
         x[i] = tstart + i * dt;
-        y[i] = vsat * Math.sin(2 * 3.1415 * frqfng * x[i] - 10+ phsl * 3.1415 / 180);
+        y[i] = vsat * Math.sin(2 * 3.1415 * frqfng * x[i] + 90+ phsl * 3.1415 / 180);
 		ys[i] = vsat * Math.sign(y[i]);
     }
 
