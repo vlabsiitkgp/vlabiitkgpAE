@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Duty Cycle</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+ <script src="./js/canvasjs.min.js"></script>
+    </head>
+    <body>
+        <div id="plot" style=" position:absolute;  top:70px;  left:10px; height:700px; width:1100px;border:1px solid black;">
+		<div style="border:1px solid black;height:300px; width:1050px;">
+<div id="chartContainer" style="position:absolute;  top:50px;  left:0px; height:300px; width:1050px;">
+</div></div>
+<div style="border:1px solid black;height:300px; width:1050px;top:480px;">
+					 <div id="chartContainers" style="position:absolute;  top:480px;  left:0px; height:300px; width:1050px;">
+					 </div></div>
+           
+           <!-- Frequency:&nbsp; <input type="range" id="frqcs"  min="0" max="100" step="10" value="0" oninput="freqchngs()" style="cursor:pointer;"> 
+                <input type="text" id="freqs" size="8" min="0" max="100" step="10" value="0" ><br><br>-->
+             
+        </div>
+		 <button type="button" onclick="voutput()">Click Me!</button>
+				<button type="button" onclick="plot()">Plot Me!</button>
+		<!--div id="grpwrap" style="position:absolute;border: 2px solid #3385ff; top:550px;width:1050px;height:360px;left:10px">
+                <div style="position:absolute; font-size:16px; top:0px;left:0px;  height:50px;background-color:#3385ff;  width:1050px;font-weight: bold;"><p> <b style="text-align:center;padding-right:910px;color:white"> GRAPH PLOT</b></p>
+                    <div class="tooltip" ><button id="calci"  onclick="printf()" style="position:absolute;padding-right:40px; cursor:pointer;top:13px;right:20px;width:5px;height:25px;border:none; background-color:#3385ff;">
+                            <img src="./image/Print Filled.png" alt="Save icon" style="width:20px;height:20px;top:13px;"/></button> 
+                        <span class="tooltiptext">Print</span></div-->
+
+
+                   
+
+                <!--/div>
+            </div-->
+
+        <script>
+		var r1=3.3*1000;//document.getElementById("res1").value;
+		var r2=6.8*1000;//document.getElementById("res2").value;
+		var c=0.1*0.000001;//document.getElementById("capa").value; 
+		var vcc=5;//;document.getElementById("vccvolt").value; 
+		var datapoints=[];
+		var datapoints1=[];
+		var t;
+		var dutycycle;
+		function voutput(){
+			var frq=(1.44/((parseInt(r1)+(2*parseInt(r2)))*parseFloat(c))); // in hertz //852.07 hz
+		//alert(frq);
+			 dutycycle=((r1+r2)/(r1+(2*r2)))*100; //59.76
+			var vo=vcc;
+		
+		//document.getElementById("fout").value=frq*Math.pow(10,-3) // khz
+		
+		var i,j=0;
+		 t=(1/frq)*Math.pow(10,3); //1.1736ms
+		//alert(t); 
+	//	alert(frq);
+	//	alert(dutycycle);
+		
+			for(i=0;i<=3;i=i+1){
+				for(j=0;j<=t;j=j+0.1){
+					if(j<(t*(dutycycle/100))){
+						
+						datapoints.push({x:j+(t*i),y:vcc});
+					
+					}
+					else if(j<t){
+					
+						datapoints.push({x:j+(t*i),y:0});
+						
+					}
+				}
+			}
+			console.log(datapoints);
+			
+			plot();
+			vcapacitor();		
+			
+	}
+		function vcapacitor(){
+		var t_high = 0.693*(r1+r2)*c*Math.pow(10,3); //0.699ms
+		var t1=0.405*(r1+r2)*c*Math.pow(10,3); //0.409ms
+		var t2 =1.0986*(r1+r2)*c*Math.pow(10,3); //1.109ms
+		var t_low = 0.693*(r2)*c*Math.pow(10,3); //0.471ms
+			for(i=0;i<=3;i=i+1){
+				var ct=t*Math.pow(10,-3) //t=//1.1736ms
+				for(var j=0.1*Math.pow(10,-3);j<=ct;j=j+(0.1*Math.pow(10,-3))){//(0.7*Math.pow(10,-3))
+					if(j<(ct*(dutycycle/100))){//0.409*Math.pow(10,3)<j<1.10*Math.pow(10,3)// t_high //0.5*Math.pow(10,-3))
+						var vc=vcc*(1-Math.exp(-(j)/((r1+r2)*c*1)));
+						datapoints1.push({x:(j+(ct*i))*Math.pow(10,3),y:vc});						
+						
+					}
+					else if(j<ct){//(1.10*Math.pow(10,3)<j<0.47*Math.pow(10,3))
+						vc=vcc*(Math.exp(-(j)/(r2*c)));
+						datapoints1.push({x:(j+(ct*i))*Math.pow(10,3),y:vc});
+						//alert("els");
+					}
+				}
+				//var temp=0.1*Math.pow(10,-3);
+				//j=temp;
+			}
+			console.log(datapoints1);
+			plotcapacitor();
+			//alert(t1);
+			//alert(t2);
+		}
+	var chart,charts;	
+function plot(){
+chart = new CanvasJS.Chart("chartContainer", {
+        theme: "theme1", //theme1
+        // backgroundColor: "#bdf5bd",
+        title: {
+            text: ""
+        },
+        // animationEnabled: true,
+        // change to true
+        legend: {
+            verticalAlign: "bottom",
+            horizontalAlign: "center",
+        },
+        axisX: {
+            title: "Time (ms) ",
+			//valueFormatString: "#,##0.##",
+			//labelFormatter: addSymbols,
+			//includeZero: false,
+        },
+        axisY: {
+            title: "Output Voltage (V)",
+        },
+        data: [
+            {
+                type: "stepLine",
+				
+                dataPoints: datapoints
+            }
+        ]
+    });
+
+    chart.render();
+
+   // document.getElementById("demos").innerHTML = "Print It <br><br>Take another sets of readings for different R1 and Rf";
+
+}
+function plotcapacitor(){
+charts = new CanvasJS.Chart("chartContainers", {
+        theme: "theme1", //theme1
+        // backgroundColor: "#bdf5bd",
+        title: {
+            text: ""
+        },
+        // animationEnabled: true,
+        // change to true
+        legend: {
+            verticalAlign: "bottom",
+            horizontalAlign: "center",
+        },
+        axisX: {
+            title: "Time (ms) ",
+			//valueFormatString: "#,##0.##",
+			//labelFormatter: addSymbols,
+			//includeZero: false,
+        },
+        axisY: {
+            title: "Capacitor Voltage (Vc)",
+        },
+        data: [
+            {
+                type: "spline",
+				
+                dataPoints: datapoints1
+            }
+        ]
+    });
+
+    charts.render();
+
+   // document.getElementById("demos").innerHTML = "Print It <br><br>Take another sets of readings for different R1 and Rf";
+
+}
+
+        </script>
+    </body>
+</html>

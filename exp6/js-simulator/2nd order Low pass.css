@@ -1,0 +1,338 @@
+<style>
+.clearfix { clear:both; }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.button1{
+
+background-image:url('roundON.png');	
+	
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width:0px;
+  max-width :610px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#mycanvas {
+    color: #0000FF;
+    margin-top: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+}
+.canvas2d-view{
+    margin:0 auto;
+    width:450px;
+    margin-top:40px;
+	position:absolute;
+	left:-90px;
+    height:300px;
+    border:1px solid red;
+}
+.middlerightmiddle{
+    position:absolute; 
+    top:720px;
+	left:-60px;
+    width:530px;
+    height:190px;
+    border:1px solid #737373;
+
+}
+
+.middlerightupper{
+    position:absolute;
+    top:914px;
+	left:-60px;
+    width:530px;
+    height:178px;
+    border:1px solid #737373;
+ 
+}
+
+.lowerleftsection{
+    position:absolute;
+    margin:0 auto;
+    top:535px;
+	left:-60px;
+    width:530px;
+    height:180px;
+    border:1px solid #737373; 
+}
+#sinecrv{
+    position:relative;
+    top:10px;
+    left:10px;
+    cursor:pointer; 
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px #999;
+}
+#sincrv{
+    position:relative;
+    top:10px;
+    left:20px;
+    cursor:pointer; 
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px #999;
+}
+
+
+#chhn1{
+    position:relative;
+    left:100px;
+    top:10px;
+    cursor:pointer;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px #999;
+	
+}
+#chhn2{
+    position:relative;
+    left:120px;
+    top:10px;
+    cursor:pointer;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px #999;
+	
+}
+#dual{
+    position:relative;
+    left:160px;
+    top:10px;
+    cursor:pointer;
+    text-align: center;
+    border-radius: 5px;box-shadow: 0 2px #999;
+	
+}
+/********************************************    knob freqency   **********************************/
+#knob-container{
+    /* position: absolute;
+       top:2%;*/
+}
+#frequency-knob-container {
+    //border: 1px solid red;
+    // margin-bottom: 20px;
+    position:relative;
+    top:30px;
+    float: left;
+    left:160px;
+    width: 100px;
+    height: 110px;
+    padding: 5px;
+    /*background-color: orange;*/
+    text-align: center;
+    cursor:pointer;
+}
+#frequency-knob-container label,#amplitude-knob-container label{
+    font-style: italic;
+}	
+	
+
+
+/*************************    knob for amplitude   **********************************/
+#knob-container-amp{
+    /* position: absolute;
+       top:2%;*/
+}
+#amplitude-knob-container1 {
+    //border: 1px solid red;
+    //margin-bottom: 20px;
+    position:relative;
+    top:40px;
+    float:left;
+    left:100px;
+    width: 80px;
+    height: 110px;
+    padding: 5px;
+    // background-color: grey;
+    text-align: center;
+    cursor:pointer;
+}
+
+    #amp-knob1{
+		position:relative;
+		top:2px;
+		left:105px;
+    
+}
+#amp-knob2{
+		position:relative;
+		top:2px;
+		left:105px;
+    
+}
+
+
+#amplitude-knob-container2 {
+    // border: 1px solid red;
+    // margin-bottom: 20px;
+    position:relative;
+    top:40px;
+    float:left;
+    left:220px;
+    width: 80px;
+    height: 110px;
+    padding: 5px;
+    // background-color: grey;
+    text-align: center;
+    cursor:pointer;
+}
+#amplitude-knob-container1 label,#amplitude-knob-container2 label{
+    font-style: italic;
+}
+
+/*************************    knob for function Generator   **********************************/
+#knob-container-fng{
+    /* position: absolute;
+       top:2%;*/
+}
+#frequency-knob-container-fng {
+    // border: 1px solid red;
+    // margin-bottom: 20px;
+    position:relative;
+    float: left;
+    left:20px;
+    top:30px;
+    width: 100px;
+    height: 110px;
+    padding: 5px;
+    /*background-color: orange;*/
+    text-align: center;
+    cursor:pointer;
+}
+#amplitude-knob-container-fng {
+    /*border: 1px solid red;
+    margin-bottom: 20px;*/
+    position:relative;
+    float:right;
+    right:150px;
+    top:30px;
+    width: 100px;
+    height: 110px;
+    padding: 5px;
+    // background-color: grey;
+    text-align: center;
+    cursor:pointer;
+}
+/*#voltage-knob-container-fng {
+    /*border: 1px solid red;
+    margin-bottom: 20px;
+    position:relative;
+    float:right;
+    right:100px;
+    top:30px;
+    width: 100px;
+    height: 110px;
+    padding: 5px;
+    // background-color: grey;
+    text-align: center;
+    cursor:pointer;
+}*/
+
+#frequency-knob-container-fng label,#amplitude-knob-container-fng label/*,#voltage-knob-container-fng label*/{
+    font-style: italic;
+}
+//---------------------------vertical range slider-------------------------//
+input[type=range][orient=vertical]
+{
+
+}
+#positiony1{
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 8px;
+    height: 175px;
+    padding: 0 5px;
+    position:relative;
+    top:10px;
+    float:right;
+    right:490px;
+}
+#positnlabely1{
+    position:relative;
+    top:190px;
+    float:right;
+    right:430px;
+}
+#positnlabelch1{
+    position:relative;
+    top:190px;
+    float:right;
+    right:230px;
+}
+#positiony2{
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 8px;
+    height: 175px;
+    padding: 0 5px;
+    position:relative;
+    top:10px;
+    float:left;
+    left:60px;
+}
+#positnlabely2{
+    position:relative;
+    top:190px;
+    float:left;
+    left:30px;
+}
+#positnlabelch2{
+    position:relative;
+    top:173px;  
+    float:left;
+    left:140px;
+}
+#positionx{
+    position:relative;
+    top:80px;
+    left:-50px;
+}
+#positnlabelx{
+    position:relative;
+    top:120px;
+    float:left;
+    left:50px;
+}
+
+	table {
+  font-family: arial, sans-serif;
+  border:2px solid black;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+
+
+
+
+
+
+
+
+</style>

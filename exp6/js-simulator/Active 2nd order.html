@@ -1,0 +1,1359 @@
+<html>
+<head>
+
+
+
+
+       
+        <!--<link rel="stylesheet" href="jsplumbtoolkit-demo.css">-->
+
+
+
+
+<link rel="stylesheet" type="text/css" href="2nd order low pass.css">
+<link rel="stylesheet" type="text/css" href="demo.css">
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+
+
+
+
+<!---<script src="squarewave.js"></script>-->
+
+</head>
+
+<body  id="container"  >
+ 
+<div id="whole_body" style=" position:relative; margin-left:auto; margin-right:auto; top:0px; width:1160px; height:1160px">
+<div style="font-size:20px; color:#3344FF;text-align:center; height:100px;position:relative; left:50px"> <b>To Familiarize with 2nd order Sallen Key Active Low pass Filter and to measure its Frequency response</b></div>
+
+<form name='f1'>
+<div id="main_circuit" style="position:relative; left:0px">
+<p style="position:relative; top:-60px;left:1030px"><b>Main Circuit </b></p>
+	<img src="images/opamphead.png" alt="Tutorials Point" style="position:absolute; top:-17px;  left:1050px;size:20px"/>
+	<img src="images/R2.png" alt="Tutorials Point" style="position:absolute; top:-15px;  left:800px;size:20px"/>
+	<img src="images/R1.png" alt="Tutorials Point" style="position:absolute; top:-17px;  left:700px;size:20px"/>
+	<img src="images/v1.png" alt="Tutorials Point" style="position:absolute; top:0px;  left:600px;size:20px"/>
+	<img src="images/v0.png" alt="Tutorials Point" style="position:absolute; top:-5px;  left:1200px;size:20px"/>
+	<img src="images/Ri.png" alt="Tutorials Point" style="position:absolute; top:47px;  left:990px;size:20px"/>
+	<img src="images/downcapacitor.png" alt="Tutorials Point" style="position:absolute; top:15px;  left:870px;size:20px"/>
+	<img src="images/upcapacitor.png" alt="Tutorials Point" style="position:absolute; top:-57px;  left:860px;size:20px"/>
+	<img src="images/grnd.png" alt="Tutorials Point" style="position:absolute; top:120px;  left:920px;size:20px"/>
+	<img src="images/RF.png" alt="Tutorials Point" style="position:absolute; top:57px;  left:1050px;size:20px"/>
+	<div class="jtk-demo-canvas canvas-wide animation-demo jtk-surface jtk-surface-nopan" id="canvas"> 
+	
+<div class="bigdot" id="bd1"></br><a href="#" class="cmdLink detach" rel="bd1"style="position:absolute; top:56px;  left:75px;size:20px">1</a> </div>	
+<div class="bigdot" id="bd2"></br><a href="#" class="cmdLink detach" rel="bd2"style="position:absolute; top:56px;  left:75px;size:20px" >2</a></div> 
+<div class="bigdot" id="bd3"></br><a href="#" class="cmdLink detach" rel="bd3" style="position:absolute; top:56px;  left:75px;size:20px">3</a></div> 
+<div class="bigdot" id="bd4"></br><a href="#" class="cmdLink detach" rel="bd4"style="position:absolute; top:56px;  left:75px;size:20px" >4</a></div> 
+<div class="bigdot" id="bd5"></br><a href="#" class="cmdLink detach" rel="bd5"style="position:absolute; top:56px;  left:75px;size:20px" >5</a></div> 
+<div class="bigdot" id="bd6"></br><a href="#" class="cmdLink detach" rel="bd6"style="position:absolute; top:56px;  left:75px;size:20px" >6</a></div> 
+<div class="bigdot" id="bd7"></br><a href="#" class="cmdLink detach" rel="bd7"style="position:absolute; top:56px;  left:75px;size:20px" >7</a></div> 
+<div class="bigdot" id="bd8"></br><a href="#" class="cmdLink detach" rel="bd8"style="position:absolute; top:60px;  left:65px;size:20px" >8</a></div> 
+<div class="bigdot" id="bd9"></br><a href="#" class="cmdLink detach" rel="bd9"style="position:absolute; top:56px;  left:75px;size:20px" >9</a></div> 
+<div class="bigdot" id="bd10"></br><a href="#" class="cmdLink detach" rel="bd10"style="position:absolute; top:56px;  left:75px;size:20px" >10</a></div>
+
+<div class="bigdot" id="bd11"></br><a href="#" class="cmdLink detach" rel="bd11"style="position:absolute; top:85px;  left:75px;size:20px">11</a> </div>	
+<div class="bigdot" id="bd12"></br><a href="#" class="cmdLink detach" rel="bd12"style="position:absolute; top:85px;  left:75px;size:20px" >12</a></div> 
+<div class="bigdot" id="bd13"></br><a href="#" class="cmdLink detach" rel="bd13"style="position:absolute; top:56px;  left:75px;size:20px" >13</a></div> 
+<div class="bigdot" id="bd14"></br><a href="#" class="cmdLink detach" rel="bd14"style="position:absolute; top:56px;  left:75px;size:20px" >14</a></div> 
+<div class="bigdot" id="bd15"></br><a href="#" class="cmdLink detach" rel="bd15"style="position:absolute; top:56px;  left:75px;size:20px" >15</a></div> 
+<div class="bigdot" id="bd16"></br><a href="#" class="cmdLink detach" rel="bd16"style="position:absolute; top:56px;  left:75px;size:20px" >16</a></div> 
+<div class="bigdot" id="bd17"></br><a href="#" class="cmdLink detach" rel="bd17" style="position:absolute; top:56px;  left:75px;size:20px">17</a></div> 
+<div class="bigdot" id="bd18"></br><a href="#" class="cmdLink detach" rel="bd18" style="position:absolute; top:90px;  left:80px;size:20px">18</a></div>  
+
+</div> 
+<script src="jsplumb.js"></script>
+<script src="demo-list.js"></script>	
+<script src="demo.js"> </script>	
+<script src="jsplumb.min.js"> </script>	
+	
+<!......... Dropdown Hover...........!>
+	<div class="dropdown" style="position:relative;top:-110px ">
+  <p style="color:#B3061D"><b>INSTRUCTIONS</b></p>
+  <div class="dropdown-content" style="color:#025167">
+  <ol type="1">
+  <li>Connect the circuit elements as mentioned below</br> 1-2 ,3-4 ,5-6, 6-7, 8-9, 10-11, 10-12, 9-13, 14-17, 17-18, 3-15, 16-17.(ex:-Drag from 1 and click on 2.)</li></br>
+  
+  <li> 3 volt p-p sinusoidal voltage is applied at the input. R1=10KΩ=R2, C1=C2=1000pF, RF=2.7KΩ. Put Ri= 4.7KΩ at first.
+  
+  <li> Obtain the cut off frequency F<sub>o</sub> and the Q-factor for the component values shown in Fig.(Ri=4.7KΩ)by clicking the Calculate button &
+  Verify that the circuit corresponds to a low pass Butter worth filter where the Q-factor =1/√2,Where the input voltage is 3V Sinusoidal.</li><br/>
+  
+<li>Switch on the oscilloscope by clicking "ON" button & click twice the Sine wave button to apply 3V sinusoidal voltage as input & click on the"Output" button to observe the output waveform with amplified output(V0).Channel & Channel2 button shows the input & output signals respectively,Dual, shows both of them. </li><br/> 
+
+
+<li>Change the Frequency of input signal by the Frequency_Changer button for the values F<sub>o</sub>/10, F<sub>o</sub>/2, F<sub>o</sub>, 2F<sub>o</sub>,10F<sub>o</sub> & observe the corresponding output voltage signal.</li><br/>
+
+<li><b>Frequency_Changer :</b>Here the value of F<sub>o</sub>=15.915KHz or 15915Hz(according to the Main circuit).By default the value of frquency will come 1591Hz or 1.591KHz i.eF<sub>o</sub>/10.
+First double click this button exactly to change the frequency value F<sub>o</sub>/2 i.e. 7957Hz,then single click to obtain F<sub>o</sub>.Again click to have
+2F<sub>o</sub>=31830Hz & single click last time to have 10F<sub>o</sub>=159150Hz.</li>
+
+<li>Switch off the oscilloscope</li><br/>
+<li>Click on Table button to see observation Table & Plot button to see the frequency response plot(Gain(dB)vs.Frequency(KHz)).Click on Clear button to clear datas.</li><br/>
+<li>Set the value of Ri=10KΩ,Click on Calculate button to se the change in Q value.Repete the above steps.</li>
+ 
+  </ol>
+  </div>
+  </div>
+  <input type="number" name="Ri" value="4.7" min="4.7" max="10" step="5.3"  id="Ri" style="position:absolute; top:100px;  left:1014px; width:50px"/>
+  <input type="number" name="F<sub>o</sub>" value="0"  id="F" style="position:absolute; top:135px;  left:820px; width:100px" readonly="readonly"/>
+  <input type="number" name="Q" value="0"  id="Q" style="position:absolute; top:165px;  left:820px; width:90px" readonly="readonly"/>
+  <p style="position:absolute; top:125px;  left:750px"><b>F<sub>o</sub>in KHz </b></p>
+  <p style="position:absolute; top:155px;  left:750px"><b>Q-factor</b></p>
+  <p style="position:absolute; top:105px;  left:1014px"><b>Ri in KΩ</b></p>
+  <input type ="button" value="Calculate" onclick="FQcalculate()" style="text-align:center; cursor: pointer; background-color:#EA3753;border-radius:20px; width:90px; height:30px; font-size:15px; position:absolute; top:200px; right:300px;border-shadow:2px">
+  <button id="check-button" style="position:absolute; top:150px; width:100px; right:40px;cursor:pointer; background-color:#EA3753; border-radius: 10px;box-shadow: 0 2px #999; ">Check connections</button>
+  <button  id="delete-connct"  onclick="deleteconnection()"  style="position:absolute; top:150px; width:100px; right:-60px;cursor:pointer; background-color:#EA3753; border-radius: 10px; box-shadow: 0 2px #999; ">Delete connections</button>
+  
+  <input type ="button" value="Table" onclick="showTable()" style="text-align:center; cursor: pointer; background-color:#158FC2;border-radius:20px; width:90px; height:30px; font-size:15px; position:absolute; top:200px; right:50px;border-shadow:2px">
+  <input type ="button" value="Plot" onclick="plot()" style="text-align:center; cursor: pointer; background-color:#15C297;border-radius:20px; width:90px; height:30px; font-size:15px; position:absolute; top:200px; right:-45px;border-shadow:2px">
+  <input type ="button" value="Clear" onclick="vanish1()" style="text-align:center; cursor: pointer; background-color:#8F9292;border-radius:20px; width:90px; height:30px; font-size:15px; position:absolute; top:200px; right:-140px;border-shadow:2px">
+  </div>
+  
+  <!-----Oscilloscope------>
+  <div id="oscilo">
+  
+  <div style="position:absolute; font-size:14px; top:120px;left:0px;  height:50px;background-color:#1F1D1D;  width:200px;font-weight: bold;">
+  <p style="text-align:center;color:white"> <b> OSCILLOSCOPE</b></p>
+  
+  <input type="button" id="sinecrv" value="Sine Wave" onclick="drawsine()"  disabled="true" style="position:absolute;left:200px;top:-4px;cursor:pointer;text-align: center;border-radius: 5px;box-shadow: 0 2px #999;">
+  <!--<input type="button" id="squarecrv" value="Square Wave" onclick="drawsqr()"style="position:absolute;left:200px;top:25px;cursor:pointer;text-align: center;border-radius: 5px;box-shadow: 0 2px #999;">-->
+  <input type="button" id="rectifiedop" value="Output" onclick="drawhlfrectifier()" disabled="true" style="position:absolute;left:330px;top:10px;cursor:pointer;text-align: center;border-radius: 5px;box-shadow: 0 2px #999;">
+ <input type="number" id="opvalue" value="0" readonly="readonly" style="width:50px;position:absolute;left:330px;top:35px;cursor:pointer;text-align: center;border-radius: 5px;box-shadow: 0 2px #999;"><label style="position:absolute;top:35px;left:380px">Output(vo)v</label>
+ </div>
+ <!-- <div class="canvas2d-view" id="canvas2d-view">-->
+ <center> <canvas id="mycanvas" width="430" height="350" style="border:1px solid black;position:absolute;top:121px; left:-30px">
+   </canvas></center>
+   
+   
+   <!--</div>-->
+  
+  <!---lower rectangle after oscilloscope--->
+  <div class="lowerleftsection">
+  <input type="button" id="chhn1" value="Channel 1" onclick="chnlo()" disabled="true" />
+  <input type="button" id="chhn2" value="Channel 2" onclick="chnlt()" disabled="true" />
+  <input type="button" id="dual" value="Dual" onclick="bthd()"  disabled="true"/>
+  <input type="button" id="onff" onclick="mainswt()" value="On" style="position:relative;float:right;right:20px;top:140px;width:60px;text-align: center; border-radius: 10px;box-shadow: 0 2px #999;" />	
+  <input type="button" id="changer" value="Frequency_Changer" onclick="clicked()" style="position:relative;float:right;right:205px;top:145px;width:150px;text-align: center; border-radius: 10px;box-shadow: 0 2px #999;  />
+  
+  
+  <!-------- Function Generator--->
+     <div id= "knob-container-fng">                      <!------frequency-knob-container------------>
+                            <div id="frequency-knob-container-fng">
+                                <input type="number" id="fq-knob-fng"  value="1591" readOnly="false" oninput="freqfng()">
+                                <label>Frequency(Hz)</label>
+                            </div>
+
+                            <!-----------amplitude-knob-container---------------->
+                            <div id="amplitude-knob-container-fng">
+                                <input type="text" id="amp-knob-fng" readOnly="false"  value="1" oninput="ampfng()">
+                                <label>Amplitude(Volt)</label>
+                            </div>
+
+                        </div>  <!--------------- end of .knob-container-fng----------------------->  
+    </div>
+  
+   <div class="middlerightmiddle">
+   <div id="knob-container-amp">
+        <!-----------amplitude-knob-container1(volt/div)---------------->
+                           
+   <div id="amplitude-knob-container1">
+   <input type="text" id="amp-knob1" value="1" readOnly="false" oninput="amp1pdiv()">
+   <label>Volt(V)/div</label><br>
+                 
+   </div>
+                             
+   <!-----------amplitude-knob-container2(volt/div)-------------->
+   <div id="amplitude-knob-container2">
+   <input type="text" id="amp-knob2"  value="1" readOnly="false" oninput="amp2pdiv()" >
+   <label>Volt(V)/div</label>
+   </div>
+   </div><!--------------- end of .knob-container-amp----------------------->
+<input type="range" orient="vertical" id="positiony1" min="-2" max="2" value="0" oninput="posiy1chnge()"  style="cursor:pointer;">  <label id="positnlabely1">Position-Y</label><label id="positnlabelch1"style="position:absolute;top:170px;left:120px">Channel 1</label>
+<input type="range" orient="vertical" id="positiony2" min="-2" max="2"  value="0" oninput="posiy2chnge()" style="cursor:pointer;">  <label id="positnlabely2">Position-Y</label><label id="positnlabelch2" style="position:absolute;top:170px;left:320px">Channel 2</label>
+<div class="middlerightsectiondivide"></div>
+</div><!--End of middle right middle--->
+						
+						
+  <div class="middlerightupper">
+                        <input  type="range"  id="positionx" min="-360" max="360" step="90"  value="0" oninput="posix2chnge()"  style="cursor:pointer;">
+                        <label id="positnlabelx">Position-X</label>
+
+                        <!-- -----knob---------- -->
+                        <div id="knob-container">
+                            <!------frequency-knob-container(time(ms)/div)------------>
+                            <div id="frequency-knob-container">
+                                <input type="text" id="fq-knob"  value="0.1"  readOnly=false oninput="timepdiv()">
+                                <label>Time(ms)/div</label>
+                            </div>
+                        </div><!--------------- end of .knob-container----------------------->
+
+                    </div> <!--------------- end of .middlerightupper--------------------->
+  
+  </div><!------End of Oscilloscope & Function Generator------>
+  
+  <div id="tr1" style="display:none;position:absolute;top:350px;left:960px  ">
+  <p>R<sub>i</sub>= 4.7KΩ ,V<sub>i</sub>= 3v , F<sub>o</sub>= 15.915KHz </p>
+  <table>
+  <tr>
+  <th>Frequency(KHz)</th>
+  <th>Output Voltage(V<sub>o</sub>)</th>
+  <th>V<sub>o</sub>/V<sub>i</sub></th>
+  <th>Gain(20 log V<sub>o</sub>/V<sub>i</sub> )dB</th> 
+  </tr>
+  <tr>
+  <td>1.5915</td>
+  <td>4.72</td>
+  <td>1.6</td>
+  <td>4.082</td>
+  </tr>
+  
+  <tr>
+  <td>7.957</td>
+  <td>4.58</td>
+  <td>1.53</td>
+  <td>3.69</td>
+  </tr>
+  
+  <tr>
+  <td>15.915</td>
+  <td>3.34</td>
+  <td>1.11</td>
+  <td>0.932</td>
+  </tr>
+  
+  <tr>
+  <td>31.830</td>
+  <td>1.145</td>
+  <td>0.382</td>
+  <td>-8.36</td>
+  </tr>
+  
+  <tr>
+  <td>159.15</td>
+  <td>0.047</td>
+  <td>0.016</td>
+  <td>-35.917</td>
+  </tr>
+</table>  
+  
+  </div>
+  
+ <div id="tr2" style="display:none;position:absolute;top:350px;left:960px  ">
+  <p>R<sub>i</sub>= 10KΩ ,V<sub>i</sub>= 3v , F<sub>o</sub>= 15.915KHz </p>
+  <table>
+  <tr>
+  <th>Frequency(KHz)</th>
+  <th>Output Voltage(V<sub>o</sub>)</th>
+  <th>V<sub>o</sub>/V<sub>i</sub></th>
+  <th>Gain(20 log V<sub>o</sub>/V<sub>i</sub> )dB</th> 
+  </tr>
+  <tr>
+  <td>1.5915</td>
+  <td>3.81</td>
+  <td>1.27</td>
+  <td>2.076</td>
+  </tr>
+  
+  <tr>
+  <td>7.957</td>
+  <td>3.7</td>
+  <td>1.23</td>
+  <td>1.79</td>
+  </tr>
+  
+  <tr>
+  <td>15.915</td>
+  <td>2.7</td>
+  <td>0.9</td>
+  <td>-0.915</td>
+  </tr>
+  
+  <tr>
+  <td>31.830</td>
+  <td>0.924</td>
+  <td>0.308</td>
+  <td>-10.23</td>
+  </tr>
+  
+  <tr>
+  <td>159.15</td>
+  <td>0.038</td>
+  <td>0.013</td>
+  <td>-37.72</td>
+  </tr>
+</table>  
+  
+  </div>   
+  
+  
+ <div id="chartContainer" style="display:none;position:absolute;top:700px;left:695px;height: 370px; width: 55%;"></div>
+  
+ <div id="chartContainer2" style="display:none;position:absolute;top:700px;left:695px;height: 370px; width: 55%;"></div> 
+  
+  
+  
+  
+  
+  
+  
+  </div>
+ </form>
+  
+
+
+<script>
+function FQcalculate(){
+document.getElementById('F').value= ((100000)/(2*3.141592654))/1000;
+if(document.getElementById('Ri').value== 4.7){
+
+document.getElementById('Q').value=1/(2-(2.7/4.7));
+alert('This is an Active Low pass 2nd order Butterworth Filter with approximately Q= 0.707')
+}
+else if(document.getElementById('Ri').value== 10){
+document.getElementById('Q').value=1/(2-(2.7/10));
+}
+}
+
+/*  Document Name: hlfwvoscilloscope_axis.js
+ Created on : 14 oct, 2018
+ Author     : sukriti
+ */
+var canvas,ctx;
+var flag;
+var axes = {};
+var vmaxs;  //in volt
+var tmaxs; // in msec  0.001; //in sec
+var voltperdiv,timeperdiv;
+
+//-----------------------------------------------Oscilliscope on-off function----------------------------------------------------------//
+function mainswt() {
+    var bttn = document.getElementById('onff').value;
+	
+	
+    if (bttn == "Off") {
+
+        document.getElementById("onff").value = "On";
+		var canvas = document.getElementById('mycanvas');
+        
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+		document.getElementById("sinecrv").disabled = true;
+        document.getElementById("rectifiedop").disabled = true;
+        document.getElementById("chhn1").disabled = true;
+        document.getElementById("chhn2").disabled = true;
+        document.getElementById("dual").disabled = true;
+        document.getElementById('opvalue').value = '0';		
+        }
+    else {
+        document.getElementById("onff").value = "Off";
+        document.getElementById("sinecrv").disabled = false;
+        document.getElementById("rectifiedop").disabled = true;  
+        document.getElementById("chhn1").disabled = true;
+        document.getElementById("chhn2").disabled = true;
+        document.getElementById("dual").disabled = true;     
+        drawAxis();
+        drawGrid(ctx);
+
+    }
+}
+
+function drawAxis() {
+
+    canvas = document.getElementById("mycanvas");
+    ctx = canvas.getContext("2d");
+
+   voltperdiv1 = document.getElementById("amp-knob1").value;
+   vmaxs1 = parseFloat(voltperdiv1)*4;//volt 
+  voltperdiv2 = document.getElementById("amp-knob2").value;
+  vmaxs2 = parseFloat(voltperdiv2)*4;//volt 
+
+    axes.x0 = 0.5 + 0.0 * canvas.width;//260.5
+    axes.y0 = 0.5 + 0.5 * canvas.height;//175.5
+    // axes.scale = 50;
+    axes.xscale = (canvas.width) / ( tmaxs); 	// x pix per s//260000
+   
+    axes.N = 101;
+     if(flag==1){
+          axes.yscale = (canvas.height) / (2 * vmaxs1);    // y pix per V //87.5
+     }
+     if(flag==2){
+         axes.yscale = (canvas.height) / (2 * vmaxs2);    // y pix per V //87.5
+     }
+    if(flag==3){
+         axes.yscale = (canvas.height) / (2 * vmaxs1);    // y pix per V //87.5
+         axes.yscale = (canvas.height) / (2 * vmaxs2);    // y pix per V //87.5
+     }
+    axes.doNegativeX = true;
+    ctx.lineWidth = 0.5;
+    ctx.lineWidth = ticklinewidth;
+    ctx.strokeStyle = tickcolor;
+
+    drawHorizontalAxis();
+    drawVerticalAxis();
+    drawVerticalAxisTicks();
+    drawHorizontalAxisTicks();
+}
+
+function drawGrid(ctx) {
+
+    var w = ctx.canvas.width;
+    var h = ctx.canvas.height;
+    ctx.beginPath();//added afterwards
+    for (var x = 0; x < w; x += 43.5) {
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, h);
+    }
+
+    for (var y = 0; y < h; y += 44) {
+        ctx.moveTo(0, y);
+        ctx.lineTo(w, y);
+    }
+    ctx.strokeStyle = "Gainsboro";
+    ctx.stroke();
+}
+
+var axismargin = 30,
+        axisorigin = {x: 0, y: 0},
+        axisright = 520,
+        horzntickspcng = 9,
+        vrtcltickspcng = 9,
+        axiswidth = axisright, //520
+        axisheight = axisorigin.y, //350
+        numofvrtcltick = axisheight / vrtcltickspcng, //175
+        numofhorzntick = axiswidth / horzntickspcng, //57.77777777777778
+        tickwidth = 10,
+        ticklinewidth = 0.5,
+        tickcolor = 'black',
+        axislinewidth = 1.0,
+        axiscolor = 'lightgray';
+//alert(numofvrtcltick);
+//------------------------------------------------------Horizontal Axis----------------------------------------------------------------------------------//
+function drawHorizontalAxis() {
+//axes.y0=175.5,w=520
+    var y0 = axes.y0, w = ctx.canvas.width;
+    ctx.beginPath();
+    ctx.strokeStyle = "rgb(128,128,128)";
+    ctx.moveTo(0, y0);
+    ctx.lineTo(w, y0);  // X axis
+    ctx.stroke();
+
+}
+//------------------------------------------------------Vertical Axis------------------------------------------------------------------------------------//          
+function drawVerticalAxis() {
+//axes.x0=260.5,h=350
+    var x0 = axes.x0+218, h = ctx.canvas.height;
+    ctx.beginPath();
+    ctx.strokeStyle = "rgb(128,128,128)";
+    ctx.moveTo(x0, 0);
+    ctx.lineTo(x0, h);  // Y axis
+    ctx.stroke();
+
+}
+//-------------------------------------------------------Vertical Ticks--------------------------------------------------------------------------------//         
+function drawVerticalAxisTicks() {
+    var deltaX;//5
+
+    for (var i = 1; i < 43; ++i) {
+        ctx.beginPath();
+
+        if (i % 5 === 0)
+            deltaX = tickwidth / 3;
+        else
+            deltaX = tickwidth / 3;
+
+        ctx.moveTo(axisorigin.x + 218 - deltaX,
+                axisorigin.y + 1 + i * vrtcltickspcng);
+
+        ctx.lineTo(axisorigin.x + 218 + deltaX,
+                axisorigin.y + 1 + i * vrtcltickspcng);
+        ctx.stroke();
+
+    }
+}
+//-------------------------------------------------------Horizontal Ticks----------------------------------------------------------------------------------//     
+function drawHorizontalAxisTicks() {
+    var deltaY;//5
+
+    for (var i = 1; i < numofhorzntick; ++i) {
+        ctx.beginPath();
+
+        if (i % 5 === 0)
+            deltaY = tickwidth / 3;
+        else
+            deltaY = tickwidth / 3;
+
+        ctx.moveTo(axisorigin.x + i * horzntickspcng,
+                axisorigin.y + 350 - 175 - deltaY);
+
+        ctx.lineTo(axisorigin.x + i * horzntickspcng,
+                axisorigin.y + 350 - 175 + deltaY);
+
+        ctx.stroke();
+    }
+
+}
+//----------------------------------------code for drawing sine wave--------------------------------------------------//
+function drawsine() {
+    canvas = document.getElementById("mycanvas");
+    if (null == canvas || !canvas.getContext)
+        return;
+    ctx = canvas.getContext("2d");
+    // fill canvas
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+     document.getElementById("rectifiedop").disabled = false;
+    drawGrid(ctx);
+    drawAxis();
+    sinwv();
+}
+
+function sinwv() {
+
+    vp = document.getElementById("amp-knob-fng").value;
+    frqfng = document.getElementById("fq-knob-fng").value;//*Math.pow(10,3);//frequency
+    phsl = document.getElementById("positionx").value;
+    posy1 = document.getElementById("positiony1").value;
+   tmaxs= document.getElementById("fq-knob").value*10*Math.pow(10,-3);// in msec  0.001; //in sec
+//---------------------------------------------------------Sine wave-------------------------------------------------------------------------------//
+
+    var x = new Array(), y = new Array();  // x,y plotting variables
+    var dt, tstart, tstop;             // time variables
+    flag = 1;
+    // define plot paramaters
+    tstart = 0; //in sec
+    tstop = tmaxs;
+    dt = (tstop - tstart) / (101 - 1);// time increment over N points
+
+    // create function 
+    for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 3*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+    }
+
+    var i, x0, y0, xscale, yscale, xp, yp;
+
+    x0 = axes.x0;//260.5
+    y0 = axes.y0;//175.5
+    xscale = axes.xscale;//260000
+    yscale = axes.yscale;//87.5
+
+    ctx.beginPath();
+    ctx.lineWidth = 1.5;
+    ctx.strokeStyle = "#0059b3";
+    var p = y0 - parseInt(posy1) * yscale;
+    for (i = 0; i < axes.N; i++) {
+
+        // translate actual x,y to plot xp,yp
+        xp = x0 + x[i] * xscale;
+        yp = y0 - y[i] * yscale + p - 175;
+
+        // draw line to next point
+        if (i == 0)
+            ctx.moveTo(xp, yp);
+        else
+            ctx.lineTo(xp, yp);
+    }
+
+    ctx.stroke();
+
+}
+
+//----------------------------------------code for drawing rectify output--------------------------------------------------//
+function drawhlfrectifier() {
+    canvas = document.getElementById("mycanvas");
+    if (null == canvas || !canvas.getContext)
+        return;
+    ctx = canvas.getContext("2d");
+    // fill canvas
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    document.getElementById("chhn1").disabled = false;
+        document.getElementById("chhn2").disabled = false;
+        document.getElementById("dual").disabled = false;
+        
+    drawGrid(ctx);
+    drawAxis();
+    rectfy();   
+  }
+
+function rectfy() {
+
+    vp = document.getElementById("amp-knob-fng").value;
+	
+    frqfng = document.getElementById("fq-knob-fng").value;//*10*Math.pow(10,3);
+    phsl = document.getElementById("positionx").value;
+    posy2 = document.getElementById("positiony2").value;
+tmaxs= document.getElementById("fq-knob").value*10*Math.pow(10,-3) ;// in msec  0.001; //in sec
+//---------------------------------------------------------Sine wave output-------------------------------------------------------------------------------//
+
+    var x = new Array(), y = new Array();  // x,y plotting variables
+    var dt, tstart, tstop;             // time variables
+    flag = 1;
+    // define plot paramaters
+    tstart = 0; //in sec
+    tstop = tmaxs;
+    dt = (tstop - tstart) / (101 - 1);// time increment over N points
+
+    // create function
+if(document.getElementById('fq-knob-fng').value==1591 && document.getElementById('Ri').value==4.7 ){
+	
+    for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 4.72*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+		}
+		document.getElementById('opvalue').value=4.72;
+		}
+		else if (document.getElementById('fq-knob-fng').value==1591 && document.getElementById('Ri').value==10){
+	
+    for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 3.81*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+		}
+		document.getElementById('opvalue').value=3.81;
+		}		
+		
+		
+	
+	else if(document.getElementById('fq-knob-fng').value==7957 && document.getElementById('Ri').value==4.7 ){
+	
+	for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 4.58*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+	}
+	document.getElementById('opvalue').value=4.58;
+	}
+	else if (document.getElementById('fq-knob-fng').value==7957 && document.getElementById('Ri').value==10){
+	
+    for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 3.7*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+		}
+		document.getElementById('opvalue').value=3.7;
+		}		
+	
+	
+	
+	
+	else if(document.getElementById('fq-knob-fng').value==15915 && document.getElementById('Ri').value==4.7 ){
+	
+	for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 3.34*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+	}
+	document.getElementById('opvalue').value=3.34;
+	}
+	else if (document.getElementById('fq-knob-fng').value==15915 && document.getElementById('Ri').value==10){
+	
+    for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 2.7*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+		}
+		document.getElementById('opvalue').value=2.7;
+		}		
+	
+	
+	
+	
+	else if(document.getElementById('fq-knob-fng').value==31830 && document.getElementById('Ri').value==4.7 ){
+	
+	for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 1.1*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+	}
+	document.getElementById('opvalue').value=1.14;
+	}
+	else if (document.getElementById('fq-knob-fng').value==31830 && document.getElementById('Ri').value==10){
+	
+    for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 0.924*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+		}
+		document.getElementById('opvalue').value=0.924;
+		}		
+		
+	
+	
+	else if(document.getElementById('fq-knob-fng').value==159150 && document.getElementById('Ri').value==4.7 ){
+	
+	for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 0.04*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+	}
+	document.getElementById('opvalue').value=0.047;
+	}
+	else if (document.getElementById('fq-knob-fng').value==159150 && document.getElementById('Ri').value==10){
+	
+    for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 0.038*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+		}
+		document.getElementById('opvalue').value=0.038;
+		}	
+		
+	
+    var i, x0, y0, xscale, yscale, xp, yp;
+
+    x0 = axes.x0;//260.5
+    y0 = axes.y0;//175.5
+    xscale = axes.xscale;//260000
+    yscale = axes.yscale;//87.5
+
+    ctx.beginPath();
+    ctx.lineWidth = 1.5;
+    ctx.strokeStyle = "#C21532";
+    var p = y0 - parseInt(posy2) * yscale;
+    for (i = 0; i < axes.N; i++) {
+
+        // translate actual x,y to plot xp,yp
+        xp = x0 + x[i] * xscale;
+        yp = y0 - y[i] * yscale + p - 175;
+
+        // draw line to next point
+        if (i == 0)
+            ctx.moveTo(xp, yp);
+        else
+            ctx.lineTo(xp, yp);
+    }
+
+    ctx.stroke();
+
+}
+function bthdhlfrc() {
+    canvas = document.getElementById("mycanvas");
+    if (null == canvas || !canvas.getContext)
+        return;
+    ctx = canvas.getContext("2d");
+    // fill canvas
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    drawGrid(ctx);
+    drawAxis();
+    sineoutput();  
+}
+function sineoutput(){
+
+ vp = document.getElementById("amp-knob-fng").value;
+    frqfng = document.getElementById("fq-knob-fng").value;
+    phsl = document.getElementById("positionx").value;
+    posy1 = document.getElementById("positiony1").value;
+   posy2 = document.getElementById("positiony2").value;
+   tmaxs= document.getElementById("fq-knob").value *10*Math.pow(10,-3);// in msec  0.001; //in sec
+//---------------------------------------------------------Sine wave-------------------------------------------------------------------------------//
+
+    var x = new Array(), y = new Array();  // x,y plotting variables
+    var dt, tstart, tstop;             // time variables
+    flag = 1;
+    // define plot paramaters
+    tstart = 0; //in sec
+    tstop = tmaxs;
+    dt = (tstop - tstart) / (101 - 1);// time increment over N points
+
+    // create function 
+    for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 3*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+    }
+
+    var i, x0, y0, xscale, yscale, xp, yp;
+
+    x0 = axes.x0;//260.5
+    y0 = axes.y0;//175.5
+    xscale = axes.xscale;//260000
+    yscale = axes.yscale;//87.5
+
+    ctx.beginPath();
+    ctx.lineWidth = 1.5;
+    ctx.strokeStyle = "#0059b3";
+    var p = y0 - parseInt(posy1) * yscale;
+    for (i = 0; i < axes.N; i++) {
+
+        // translate actual x,y to plot xp,yp
+        xp = x0 + x[i] * xscale;
+        yp = y0 - y[i] * yscale + p - 175;
+
+        // draw line to next point
+        if (i == 0)
+            ctx.moveTo(xp, yp);
+        else
+            ctx.lineTo(xp, yp);
+    }
+
+    ctx.stroke();
+//---------------------------------------------------------Sine wave output-------------------------------------------------------------------------------//
+
+    var x = new Array(), y = new Array();  // x,y plotting variables
+    var dt, tstart, tstop;             // time variables
+    flag = 1;
+    // define plot paramaters
+    tstart = 0; //in sec
+    tstop = tmaxs;
+    dt = (tstop - tstart) / (101 - 1);// time increment over N points
+
+    // create function
+if(document.getElementById('fq-knob-fng').value==1591 && document.getElementById('Ri').value==4.7 ){
+	
+    for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 4.72*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+		}
+		document.getElementById('opvalue').value=4.72;
+		}
+		else if (document.getElementById('fq-knob-fng').value==1591 && document.getElementById('Ri').value==10){
+	
+    for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 3.81*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+		}
+		document.getElementById('opvalue').value=3.81;
+		}
+
+		
+    
+	else if(document.getElementById('fq-knob-fng').value==7957 && document.getElementById('Ri').value==4.7 ){
+	
+	for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 4.58*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+	}
+	document.getElementById('opvalue').value=4.58;
+	}
+	else if (document.getElementById('fq-knob-fng').value==7957 && document.getElementById('Ri').value==10){
+	
+    for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 3.7*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+		}
+		document.getElementById('opvalue').value=3.7;
+		}
+
+
+		
+	else if(document.getElementById('fq-knob-fng').value==15915 && document.getElementById('Ri').value==4.7 ){
+	
+	for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 3.34*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+	}
+	document.getElementById('opvalue').value=3.34;
+	}
+	else if (document.getElementById('fq-knob-fng').value==15915 && document.getElementById('Ri').value==10){
+	
+    for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 2.7*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+		}
+		document.getElementById('opvalue').value=2.7;
+		}
+
+
+		
+	else if(document.getElementById('fq-knob-fng').value==31830 && document.getElementById('Ri').value==4.7 ){
+	
+	for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 1.1*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+	}
+	document.getElementById('opvalue').value=1.14;
+	}
+	else if (document.getElementById('fq-knob-fng').value==31830 && document.getElementById('Ri').value==10){
+	
+    for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 0.924*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+		}
+		document.getElementById('opvalue').value=0.924;
+		}
+
+
+		
+	else if(document.getElementById('fq-knob-fng').value==159150 && document.getElementById('Ri').value==4.7 ){
+	
+	for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 0.04*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+	}
+	document.getElementById('opvalue').value=0.047;
+	}
+	else if (document.getElementById('fq-knob-fng').value==159150 && document.getElementById('Ri').value==10){
+	
+    for (var i = 0; i < axes.N; i++) {
+        x[i] = tstart + i * dt;
+        y[i] = 0.038*(vp/2) * Math.sin(2 * 3.1415 * frqfng * x[i] + phsl * 3.1415 / 180);
+		}
+		document.getElementById('opvalue').value=0.038;
+		}	
+		
+
+    var i, x0, y0, xscale, yscale, xp, yp;
+
+    x0 = axes.x0;//260.5
+    y0 = axes.y0;//175.5
+    xscale = axes.xscale;//260000
+    yscale = axes.yscale;//87.5
+
+    ctx.beginPath();
+    ctx.lineWidth = 1.5;
+    ctx.strokeStyle = "#C21532";
+    var p = y0 - parseInt(posy2) * yscale;
+    for (i = 0; i < axes.N; i++) {
+
+        // translate actual x,y to plot xp,yp
+        xp = x0 + x[i] * xscale;
+        yp = y0 - y[i] * yscale + p - 175;
+
+        // draw line to next point
+        if (i == 0)
+            ctx.moveTo(xp, yp);
+        else
+            ctx.lineTo(xp, yp);
+    }
+
+    ctx.stroke();
+
+}
+
+var flag;
+var vp;
+var posy1;
+var posy2;
+var phsl;
+var frqfng;
+var axes = {};
+var vmaxs;  //in volt
+var tmaxs;// in msec  0.001; //in sec // time/div
+
+//----------------------------------------Channel 1------------------------------------------------------------//
+
+function posiy1chnge() {
+    posy1 = document.getElementById("positiony1").value;
+    if (flag == 1) {
+        drawsine();
+    }
+    
+}
+
+//----------------------------------------Channel 2------------------------------------------------------------//
+
+
+function posiy2chnge() {
+    posy2 = document.getElementById("positiony2").value;
+    
+    if (flag == 2) {
+       drawhlfrectifier();
+    }
+
+   
+}
+
+function posix2chnge() {
+    phsl = document.getElementById("positionx").value;
+    if (flag == 1) {
+        drawsine();
+    }
+    if (flag == 2) {
+          drawhlfrectifier();;
+    }
+ 
+}
+
+function ampfng() {
+    vp = document.getElementById("amp-knob-fng").value;
+    if (flag == 1) {
+        drawsine();
+    }
+    if (flag == 2) {
+          drawhlfrectifier();;
+    }
+if(Flag==3){
+        bthdhlfrc();
+    }
+    
+    
+}
+
+function freqfng() {
+    frqfng = document.getElementById("fq-knob-fng").value;
+    if (flag == 1) {
+        drawsine();
+    }
+    if (flag == 2) {
+          drawhlfrectifier();;
+    }
+
+   if(flag==3){
+        bthdhlfrc();
+    }
+    
+}
+
+
+function chnlo(){
+drawsine();
+}
+
+function chnlt(){
+ drawhlfrectifier();   
+}
+
+function bthd(){
+    bthdhlfrc();
+}
+
+//------------------------------------------------Amp1perdiv(volt/div)--------------------------------------------------------//
+function amp1pdiv()
+{
+     voltperdiv = document.getElementById("amp-knob1").value;
+  vmaxs = parseFloat(voltperdiv)*4;//volt 
+
+    if (flag == 1) {
+        drawsine();
+    }
+     if (flag == 2) {
+        drawhlfrectifier();
+    }
+
+   if(flag==3){
+        bthdhlfrc();
+    }
+    
+}
+//------------------------------------------------timeperdiv(ms/div)--------------------------------------------------------//
+function timepdiv() {
+    timeperdiv = document.getElementById("fq-knob").value ;
+	tmaxs =parseFloat(timeperdiv)*10*Math.pow(10,-3); //1sec
+   if (flag == 1) {
+        drawsine();
+    }
+    if (flag == 2) {
+        drawhlfrectifier();
+    }
+if(flag==3){
+        bthdhlfrc();
+    }
+    
+}
+//
+//alert(tmaxs);
+
+<!----- knob ver2.js -------->
+var vmaxs;  //in volt
+var tmaxs; // in msec  0.001; //in sec
+$(document).ready(function () {
+
+//------------------------------knob of frequency(tmax)time/div(ms/div)----------------------//
+    $("#fq-knob").knob({
+        readOnly: false,
+        fgColor: '#1F1D1D', //'#999999',
+        bgColor: '#bbd0f7', //'#dcdcdc',
+        width: 100,
+        height: 80,
+        //cursor: pointer,
+        min:0.1,
+        max: 10,
+        step:0.1,
+        angleOffset: -125,
+        angleArc: 250,
+        'change': function (v) {
+            if (flag == 1) {
+                drawsine();
+            }
+            if (flag == 2) {
+                 drawhlfrectifier();
+            }
+      if(flag==3){
+        bthdhlfrc();
+    }
+    if(flag==4){
+       grndhlfrc();
+    }
+        }
+    });
+    //-----------------------knob of amplitude1(vmax/div)-------------------------------//
+    $("#amp-knob1").knob({
+        readOnly: false,
+        fgColor: '#1F1D1D', //'#999999',
+        bgColor: '#bbd0f7', //'#dcdcdc',
+        width: 100,
+        height: 80,
+        // cursor: pointer,
+       min: 0.05,
+        max: 10,
+        step: 0.01,
+        angleOffset: -125,
+        angleArc: 250,
+        'change': function (v) {
+            if (flag == 1) {
+                drawsine();
+            }
+            if(flag==3){
+        bthdhlfrc();
+    }
+    if(flag==4){
+       grndhlfrc();
+    }
+        }
+    });
+    //-----------------------knob of amplitude2(vmax/div)-------------------------------//
+    $("#amp-knob2").knob({
+        readOnly: false,
+        fgColor: '#1F1D1D', //'#999999',
+        bgColor: '#bbd0f7', //'#dcdcdc',
+        width: 100,
+        height: 80,
+        // cursor: pointer,
+        min: 0.05,
+        max: 10,
+        step: 0.01,
+        angleOffset: -125,
+        angleArc: 250,
+        'change': function (v) {
+           
+            if (flag == 2) {
+                 drawhlfrectifier();
+            }
+
+           if(flag==3){
+        bthdhlfrc();
+    }
+    if(flag==4){
+       grndhlfrc();
+    }
+        }
+
+    });
+//------------------------------knob of frequency(hz)----------------------//
+    $("#fq-knob-fng").knob({
+        readOnly: false,
+        fgColor: '#1F1D1D', //'#999999',
+        bgColor: '#bbd0f7', //'#dcdcdc',
+        width: 100,
+        height: 80,
+        //cursor: pointer,
+        min: 1500,
+        max: 160000,
+        step1: 91,
+		angleOffset: -125,
+        angleArc: 250,
+        'change': function (v) {
+            if (flag == 1) {
+                drawsine();
+				
+            }
+            if (flag == 2) {
+                  drawhlfrectifier();
+            }
+
+          if(flag==3){
+        bthdhlfrc();
+    }
+    if(flag==4){
+       grndhlfrc();
+    }
+	
+	
+		
+	
+        }
+
+    });
+    //-----------------------knob of amplitude1(volt)-------------------------------//
+    $("#amp-knob-fng").knob({
+        readOnly: false,
+        fgColor: '#1F1D1D', //'#999999',
+        bgColor: '#bbd0f7', //'#dcdcdc',
+        width: 100,
+        height: 80,
+        // cursor: pointer,
+        min: -2,
+        max: 2,
+        step: 0.1,
+        angleOffset: -125,
+        angleArc: 250,
+        'change': function (v) {
+            if (flag == 1) {
+                drawsine();
+            }
+            if (flag == 2) {
+                  drawhlfrectifier();
+            }
+           if(flag==3){
+        bthdhlfrc();
+    }
+    if(flag==4){
+       grndhlfrc();
+    }
+        }
+
+    });
+});
+
+function fchanger1(){
+document.getElementById('fq-knob-fng').value= 7957;
+
+}
+function fchanger2(){
+document.getElementById('fq-knob-fng').value= 15915;
+}
+function fchanger3(){
+document.getElementById('fq-knob-fng').value= 31830;
+}
+function fchanger4(){
+document.getElementById('fq-knob-fng').value= 159150;
+}
+
+var counter = 0;
+function clicked() {
+  if (counter == 1 ) {
+    fchanger1();
+	drawsine();
+   // counter = 0;
+  }
+  else if(counter==2 ){
+  fchanger2();
+  drawsine();
+  }
+  else if(counter==3 ){
+  fchanger3();
+  drawsine();
+  }
+  else if(counter==4 ){
+  fchanger4();
+  drawsine();
+  }
+  else if(counter==5){
+  counter=0;}
+  counter++;
+  
+}
+
+function showTable(){
+
+if(document.getElementById('Ri').value== 4.7){
+document.getElementById('tr1').style.display='block';
+}
+else if(document.getElementById('Ri').value== 10){
+document.getElementById('tr2').style.display='block';
+}}
+
+function plot(){
+if(document.getElementById('Ri').value==4.7){
+plot1();
+}
+else if(document.getElementById('Ri').value==10){
+plot2();
+}
+}
+
+<!-------graph for frequency response Ri=4.7KΩ--->
+function plot1() {
+document.getElementById('chartContainer').style.display="block";
+var chart = new CanvasJS.Chart("chartContainer", {
+	theme: "light1", // "light2", "dark1", "dark2"
+	animationEnabled: false, // change to true		
+	title:{
+		text: "Frequency Response for Ri= 4.7 Kohm,Cut-off Frequency:15.915KHz",
+		fontColor:"#086176",
+		fontSize: 20,
+	},
+  axisY: {
+		title: "Gain(dB)",
+		
+	},
+	axisX: {
+		logarithmic: true, //change it to false
+		title: "Frequency(KHz)",
+		titleFontColor: "black",
+		//lineColor: "#6D78AD",
+		gridColor:"lightblue",
+		gridThickness: 2,
+		lineThickness: 1,
+		maximum:200,
+	},  
+  
+	data: [{
+		type: "line",
+		//xValueFormatString: "####",
+		//showInLegend: true,
+		name: "Log Scale",
+		dataPoints: [
+			{ x: 1.5915, y: 4.082 },
+			{ x: 7.597, y: 3.69 },
+			{ x: 15.915, y: 0.932 },
+			{ x: 31.830, y: -8.36 },
+			{ x: 159.15, y: -35.917 },
+ ]
+	}],
+});
+chart.render();
+
+}
+
+
+function plot2() {
+document.getElementById('chartContainer2').style.display="block";
+var chart = new CanvasJS.Chart("chartContainer2", {
+	theme: "light1", // "light2", "dark1", "dark2"
+	animationEnabled: false, // change to true		
+	title:{
+		text: "Frequency Response for Ri= 10 Kohm,Cut-off Frequency:15.915KHz",
+		fontColor:"#086176",
+		fontSize: 20,
+	},
+  axisY: {
+		title: "Gain(dB)",
+		
+	},
+	axisX: {
+		logarithmic: true, //change it to false
+		title: "Frequency(KHz)",
+		titleFontColor: "black",
+		//lineColor: "#6D78AD",
+		gridColor:"lightblue",
+		gridThickness: 2,
+		lineThickness: 1,
+		maximum:200,
+	},  
+  
+	data: [{
+		type: "line",
+		//xValueFormatString: "####",
+		//showInLegend: true,
+		name: "Log Scale",
+		dataPoints: [
+			{ x: 1.5915, y: 2.076 },
+			{ x: 7.597, y: 1.79 },
+			{ x: 15.915, y: -0.915 },
+			{ x: 31.830, y: -10.23 },
+			{ x: 159.15, y: -37.72 },
+ ]
+	}],
+});
+chart.render();
+
+}
+
+<!---hide plots and tables-->
+function vanish1(){
+document.getElementById('tr1').style.display="none";
+document.getElementById('tr2').style.display="none";
+document.getElementById('chartContainer').style.display="none";
+document.getElementById('chartContainer2').style.display="none";
+document.getElementById('fq-knob-fng').value="1591";
+if(document.getElementById('on-off').value=="off"){
+clicked()
+}
+}
+
+
+</script>
+ 
+  
+ 
+</body>
+</html>

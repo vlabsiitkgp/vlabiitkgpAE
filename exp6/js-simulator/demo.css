@@ -1,0 +1,141 @@
+.demo {
+    /* for IE10+ touch devices */
+    touch-action:none;
+}
+/** JSPLUMB ARTEFACTS **/
+.jtk-overlay {
+    z-index: 51;
+}
+
+.jtk-endpoint {
+    z-index: 50;
+    cursor: move;
+}
+
+.jtk-connector {
+    z-index: 1;
+}
+
+.jtk-demo-canvas {    
+    height:50px;
+	width:50px;
+    /*max-height:6700px;*/
+    border:1px solid black;
+    background-color:yellow;
+   
+    position:absolute ;
+	top:123.5px/*123.5px*/;
+	
+}
+
+
+/** ELEMENTS **/
+.bigdot {
+    cursor: pointer;
+    width: 162px;
+    height: 162px;
+  /* background-image: url(bigdot.png);*/
+    z-index: 5;
+    position: absolute;
+    border-radius: 81px;
+}
+
+.bigdot-hover {
+    border: 2px solid orange;
+}
+
+.dropHover {
+    border: 1px solid orange;
+}
+
+/** ELEMENT POSITIONS **/
+
+#bd1 {
+    top: -192px;
+    left: 36em;
+}
+#bd2 {
+    top: -196px;
+    left: 39em;
+}
+
+
+
+#bd3 {
+    top: -194px;
+    left: 42.2em;
+}
+
+#bd4 {
+    top: -190px;
+    left: 45em;
+}
+
+#bd5 {
+    top: -187px;
+    left: 48.3em;
+}
+
+#bd6 {
+    top: -188px;
+    left: 52.5em;
+}
+#bd7 {
+    top: -194px;
+    left: 60.5em;
+}
+#bd8 {
+    top: -169px;
+    left: 60.5em;
+}
+#bd9{
+    top: -160px;
+    left: 57.5em;
+}
+#bd10 {
+    top: -90px;
+    left: 54.3em;
+}
+#bd11 {
+    top: -116px;
+    left: 52.5em;
+}
+#bd12 {
+    top: -90px;
+    left: 57.5em;
+}
+
+
+
+#bd13 {
+    top: -115px;
+    left: 61em;
+}
+
+#bd14 {
+    top: -115px;
+    left: 66em;
+}
+
+#bd15 {
+    top: -235px;
+    left: 58.5em;
+}
+
+#bd16 {
+    top: -235px;
+    left: 68em;
+}
+#bd17 {
+    top: -187px;
+    left: 68em;
+}
+#bd18 {
+    top: -187px;
+    left: 70em;
+}
+
+
+path, .jtk-endpoint {
+    cursor: pointer;
+}
