@@ -225,21 +225,26 @@ function drawHorizontalAxisTicks() {
 
 
 function chnlo(){
+	
 drawsine();
 }
 
 function chnlt(){
+	
  drawsquarewv();   
 }
 
 function bthd(){
+	
     bthdhlfrc();
 }
   
   function grnds(){
+	  
     grndhlfrc();
 }
 
 function xymode(){
+	
 	scmittxymode();
 }

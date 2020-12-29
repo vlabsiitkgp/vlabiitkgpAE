@@ -9,7 +9,7 @@
 
 /*
  * 
- * Author: P K JANA, Sukriti
+ * Author: P K JANA, Sukriti Dhang
  * IIT Kharagpur
  * 
  */

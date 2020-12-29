@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Analog Electronics </title>
+        <title>Analog Electronics Circuits</title>
         <script type="text/javascript" async
         src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"></script>
     </head>
@@ -22,7 +22,7 @@
                     <!-- Write the name of your lab and link it to the home
           page of your lab (h1 tag is preferred while writing your
           lab name)-->
-                    <a href="../index.html">Analog Electronics </a>
+                    <a href="../index.html">Analog Electronics Circuits</a>
                 </div><!-- Add any additional element you want to add to the lab
         header, For example : Help (Enclosing them with suitable
         div is recommended)-->
@@ -64,13 +64,18 @@
 
                         <div class="content" id="experiment-article-section-3-content">
                             Objective of Experiment
+							<ol>
+							<li>To perform Inverting Schmitt Trigger. </li>
+							<li> Calculate theoretical and practical  (\(V_{UTP}\)) and (\(V_{LTP}\)).</li>
+							<li>To observe and plot the output voltage waveform of Inverting Schmitt Trigger.</li>
+							</ol>
                         </div>
                     </section>
                     <!------------------------------- First section of the article---------------------------------->
 					 <section id="experiment-article-section-1">
                       <div class="icon" id="experiment-article-section-1-icon">
                             <!-- Enclose the icon image of your lab. -->
-                            <img src="../images/quizzes.jpg"></div>
+                            <img src="../images/prequiz.png"></div>
                         <!-- The heading for the section can be enclosed in a div tag. -->
 
                         <div class="heading" id="experiment-article-section-1-heading">
@@ -108,7 +113,49 @@
                         </div>
 
                         <div class="content" id="experiment-article-section-2-content">
-                           
+                           <p style="text-align:justify">In electronics, a Schmitt trigger is a comparator circuit. It adds hysteresis to the input-output transition threshold by applying positive feedback.
+						 Hysteresis  means  providing two different threshold voltage levels for rising and falling edge. 
+						It is used to remove noise from an analog signal while converting it to a digital signal.</p><br>
+						
+						<b>Op Amp based Schmitt Trigger Circuits</b><br><br>
+						<p style="text-align:justify">Schmitt trigger is a circuit which converts irregular shaped waveform into
+square or pulse. This circuit is also called as squaring circuit.  A Schmitt trigger circuit is essentially an amplifier with positive feedback, it is possible to implement this setup using operational amplifiers. Depending on where the input is applied, 
+						the Op-Amp based circuits can be further divided into Inverting and Non-Inverting Schmitt Triggers.</p><br>
+						<b>Inverting Schmitt Trigger Circuit</b><br><br>
+						<p style="text-align:justify">In an Inverting Schmitt Trigger, the input is applied to the inverting terminal of the Op-Amp. In this mode, the output produced is of opposite polarity. This output is applied to non-inverting terminal to ensure positive feedback.</p>
+						
+						
+						 <div align="center">
+                                <p>
+                                    <img src="image/schmitttrg_ckt_thry.png" style ="width:500px;height:300px">
+                                </p><br>
+                                Figure:1
+                            </div><br>
+							From the circuit:<br><br>
+						When \(V_{in}\) is slightly greater than \(V_{ref}\), the output becomes -\(V_{sat}\) and if \(V_{in}\) is slightly less that -\(V_{ref}\) (more negative than -\(V_{ref}\), then output becomes \(V_{sat}\). 
+						Hence, the output voltage \(V_{o}\) is either at \(V_{sat}\) or -\(V_{sat}\) and the input voltage at which these state changes occur can be controlled using \(R_1\) and \(R_2\).
+						<br><br>
+						The values of \(V_{ref}\) and -\(V_{ref}\) can be formulated as follows:<br><br>
+						
+						 &nbsp; \(V_{ref}= \frac{R_1}{(R_1+R_2)} \times (V_{o})\) , 
+						 where, \(V_{o}=V_{sat}\) <br>
+				   &nbsp; -\(V_{ref}= \frac{R_1}{(R_1+R_2)} \times (-V_{o})\) , 
+				   where, \(V_{o}= -V_{sat}\)<br>
+				    &nbsp; \(V_{ref}\) is the upper threshold voltage (\(V_{UTP}\)) and -\(V_{ref}\) is the lower threshold voltage (\(V_{LTP}\))<br><br>
+					
+					<b>Inverting Schmitt Trigger with Hysteresis</b><br><br> 
+					<p style="text-align:justify"> Hysteresis can be defined as when the input is higher than a certain chosen threshold (UTP), the output is low. When the input is below a threshold (LTP), the output is high; when the input is between the two, the output retains its current value. This dual threshold action is called hysteresis. 
+					This can be understood in the usual sense – the x axis is the input and y axis is the output. Tracing a line from x to y, we find that once the lower threshold has been crossed, the hysteresis goes high and vice versa.</p>
+					<br>
+					&nbsp; Hysteresis = (\(V_{UTP}\)) - (\(V_{LTP}\)) <br><br>
+					When two levels are to be compared there may be oscillation (or hunting) at the border. Having hysteresis,  oscillation problem is solved. 
+					The comparator compares always with a fixed reference voltage (single reference) whereas Schmitt trigger compares with two different voltages called UTP and LTP.<br><br>
+					<b>Applications</b><br><br>
+					<ol>
+					<li>Schmitt Trigger is used to convert Sine waves into Square waves.</li>
+					<li>They can be used to eliminate chatter in Comparators (a phenomenon where multiple output transitions are produced due to swinging of input signal through the threshold region).</li>
+					<li>They can also act as simple ON / OFF Controllers (for example, temperature based switches).</li>
+					</ol>
                         </div>
                         
                     </section>
