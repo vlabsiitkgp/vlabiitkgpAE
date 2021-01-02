@@ -103,12 +103,17 @@ function prequizshowResult() {
 	   }
     }*/
     var preresultPercent = (preresultCount / prequestionCount) * 100;
+	var yourname=document.getElementById("yourname").value;
 	// newdtprequiz = new Date();
 	 //timespntprequiz = newdtprequiz.getSeconds();
 //alert(tm);
  //document.getElementById("seconds-spent").innerHTML = tm;
-    document.getElementById("vlab-quiz-result-pre").innerHTML = "<p> You have scored " + preresultCount + " out of " + prequestionCount + ".</p><br><p>Your Grade percentage:"+ (preresultPercent).toPrecision(5) + "</p><br><p> Time Spent :" + cpre + "sec</p>";// + fullresult;
-    dynamicMathConveter()
+    document.getElementById("vlab-quiz-result-pre").innerHTML = "<p> Name: " +yourname+ "</p><br><p> You have scored " + preresultCount + " out of " + prequestionCount + ".</p><br><p>Your Grade percentage: "+ (preresultPercent).toPrecision(5) + "</p><br><p> Time Spent: " + cpre + "sec</p>";// + fullresult;
+	document.getElementById("yourname").style.display = "none";
+	document.getElementById("labelyourname").style.display = "none";
+	
+   dynamicMathConveter()
+	
 }
 function prequiztryAgain() {
     //document.getElementById("vlab-quiz-question-answer-options").style.display = "block";
@@ -122,6 +127,9 @@ function prequiztryAgain() {
 	
 	stopCountpre();
 	startCountpre();
+	document.getElementById("yourname").style.display = "block";
+	document.getElementById('yourname').setAttribute('readonly', true); 
+	document.getElementById("labelyourname").style.display = "block";
 }
 function dynamicMathConveter() {
     MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
