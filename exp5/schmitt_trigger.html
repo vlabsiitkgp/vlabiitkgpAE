@@ -50,7 +50,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <script src="./js/schmtgrnd.js"></script>
 		  <script src="./js/schmtxymode.js"></script>
          
-    </head>
+    <!--/head-->
     
     <link rel="stylesheet" href="./css/cktconnection_schmittrigger.css">
     <!---- library file ----->
@@ -58,7 +58,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <script src="./js/graph_use.ob.js"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
 <!--------------------------> 
+<script>
+    var timer_is_on_simulation = 0;
+    var csim=0;
+    var tsim;
 
+    function startCountsimulation() {
+
+ csim = 0;
+  if (!timer_is_on_simulation) {
+    timer_is_on_simulation = 1;
+    timedCountsimulatio();
+  }  
+}
+function stopCountsimulation() {
+  clearTimeout(tsim);
+  timer_is_on_simulation = 0;
+}
+
+///////calculate timer///////
+function timedCountsimulation() {
+ // document.getElementById("txt").value = c;
+  csim = csim + 1;
+  tsim = setTimeout(timedCountsimulation, 1000);
+}
+</script>
     </head>
     <body bgcolor="#000066";data-demo-id="animation"; style="width=100%">
 	<!-- Google Tag Manager (noscript) -->
@@ -258,7 +282,7 @@ both the waves in negative cycle along y-axis
         <div id="lab-footer" style="height:20px;width:1310px;text-align: center;padding:bottom">
 
             <div style="margin-left:10%; margin-right:10% ">
-                Copyright &copy; 2011 Indian Institute of Technology Kharagpur,<a href="../license/index.html" target="_blank" style="margin:auto"> Licensing Terms </a>
+                Copyright &copy; 2020 Indian Institute of Technology Kharagpur,<a href="../license/index.html" target="_blank" style="margin:auto"> Licensing Terms </a>
             </div>
 
         </div>

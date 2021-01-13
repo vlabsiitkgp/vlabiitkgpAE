@@ -19,6 +19,7 @@ var i = 0;
 var questionCount = 0;
 var resultCount = 0;
  var fullresult = "";
+ var resultPercent;
 // var timespntpostquiz;
  //var newdtpostquiz;
  var cpost=0;
@@ -82,7 +83,8 @@ showResult();
 function showResult() {
     document.getElementById("vlab-quiz-result").style.display = "block";
     document.getElementById("vqt-try-again").style.display = "block";
-	var yourname=document.getElementById("yournames").value;
+    var yourname=document.getElementById("yournames").value;
+	
     /*var fullresult = "";
     for (var i = 0; i < questionCount; i++) {
       //  fullresult = fullresult + "<p><b>" + (i + 1) + ". " + quizJSON.questions[i].q + "</b></p>";
@@ -101,7 +103,7 @@ function showResult() {
 //You have choosen option (" + String.fromCharCode(97 + parseInt(resultArray[i])) + ").       
 	   }
     }*/
-    var resultPercent = (resultCount / questionCount) * 100;
+    resultPercent = (resultCount / questionCount) * 100;
 	// newdtpostquiz = new Date();
 	 //timespntpostquiz = newdtpostquiz.getSeconds();
     document.getElementById("vlab-quiz-result").innerHTML = "<p>Name: " +yourname+ "</p><br><p> You have scored " + resultCount + " out of " + questionCount + ".</p><br><p>Your Grade percentage: "+ (resultPercent).toPrecision(5) + "</p><br><p> Time Spent: " + cpost + "sec</p>";// + fullresult;
@@ -119,9 +121,9 @@ function tryAgain() {
     quizInitializeAllQuestion();
 	stopCountpost();
 	startCountpost();
-	document.getElementById("yourname").style.display = "block";
-	document.getElementById('yourname').setAttribute('readonly', true); 
-	document.getElementById("labelyourname").style.display = "block";
+	document.getElementById("yournames").style.display = "block";
+	document.getElementById('yournames').setAttribute('readonly', true); 
+	document.getElementById("labelyournames").style.display = "block";
 }
 function dynamicMathConveter() {
     MathJax.Hub.Queue(["Typeset", MathJax.Hub]);

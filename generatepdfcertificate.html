@@ -1,0 +1,215 @@
+<!-- Document Name: generatepdfcertificate.html
+    Created on :06 jan, 2021, 11:34:33 
+    Author     : Sukriti Dhang
+-->
+<html>
+    <head>
+	<!-- Google Tag Manager -->
+	<script>
+	window.dataLayer = [{      
+    'labName': 'Analog Electronics Circuits',    
+    'discipline': 'Electronics and Communication Engineering',   
+    'college': 'IITKgp',       
+    'phase': '3',      
+    'expName': 'Scmitt Trigger',     
+    'expShortName': 'schmitt_trigger'}];
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KM82TPW');</script>
+<!-- End Google Tag Manager -->
+        <title>Generate certificate</title>
+        <meta charset="windows-1252">
+       
+		 <meta name="description" content="EMF Generation">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+      
+        <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+        integrity="sha256-c9vxcXyAG4paArQG3xk6DjyW/9aHxai2ef9RpMWO44A=" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script> 
+
+
+    </head>
+
+    <body>
+     
+        <!--div class="container">
+            <img src="https://preview.ibb.co/jkwJgp/exquisite_european_certificate_template_01_vector_0.jpg" alt="certification" border="0">  
+            <div class="centered">
+            <span style="font-weight:bold">Certificate of Completion</span></br></br>
+            <span><i>This is to certify that</i></span>
+            </br></br>
+            <span style="font-weight:bold">Prakash</span></br></br>
+            <span><i>has completed the course</i></span></br></br>
+            <span style="font-weight:bold">Python</span>
+            <p id="cdate"></p>
+            <p> This is to certify 'name' has scored 'marks' in pre quiz and marks in post quiz. He/She has performed the 'experiment name' using virtual laboratories and has successfully completed the task in 'total time spent'.</p>
+
+            </div>
+            </div-->  
+            <center>
+                <style>
+                .signature, .title { 
+                float:left;
+                  border-top: 1px solid #000;
+                  width: 200px; 
+                  text-align: center;
+                }
+                text {
+  fill: #FF9800;
+}
+path {
+  fill: transparent;
+}
+
+.circTxt {
+  /*allows for centering*/
+  display: inline-block;
+  /*adjust as needed*/
+  margin-bottom: 110px;
+  color: black;
+  top:20px;
+  font-size: medium;
+  text-align: center;
+}
+                </style>
+                <div id="content2" style="width:800px; height:600px; padding:20px; text-align:center; border: 10px solid #07223b">
+              
+                         <div style="width:750px; height:550px; padding:20px; text-align:center; border: 5px solid #054d11;"">
+                            <img src="./images/iit-kharagpur-logo.png" style="position:relative; width:80px; height:80px; float:right;" >
+                            <img src="./images/vlabslogo.png" style="position:relative; width:110px; height:90px;float:left;" >                      
+                            <span class="circTxt" id="myElement" style="font-size:25px; font-weight:bold;text-decoration-color: #07223b;"></span><br>
+                            <!--svg viewBox="0 0 425 300">
+                                <path id="curve" d="M6,150C49.63,93,105.79,36.65,156.2,47.55,207.89,58.74,213,131.91,264,150c40.67,14.43,108.57-6.91,229-145" />
+                                <text x="25">
+                                  <textPath xlink:href="#curve">
+                                    Dangerous Curves Ahead
+                                  </textPath>
+                                </text>
+                              </svg-->
+                            <br><br><br><br>
+                           &nbsp; <span style="font-size:30px; font-weight:bold">Certificate of Completion</span>
+                       <br><br><br><br>
+                       <div id="showcertificatecontent"></div>
+                       <!--span style="font-size:20px"><b>This is to certify that </b> <i>+studentname+ </i> <b>has scored</b> <i>$prequiz.getmarks()</i> <b>in pre quiz and</b> </i>$postquiz.getmarks()</i> <b>in post quiz</b>.
+                       <b> He/She has performed the</b> <i>$simualation.getexpname()</i> <b>using virtual laboratories. He/She has successfully completed the task in </b> <i>$course.gettotaltymspnt()</i> <b>with score of</b> <i>$grade.getPoints()%</i>.
+                       </i></span--><br><br>
+                       <!--br><br>
+                       <span style="font-size:20px"><i>$prequiz.getmarks() in pre quiz and $postquiz.getmarks() in post quiz.</i></span><br/><br/>
+                       <span style="font-size:20px"><i>He/She has performed the $simualation.getexpname() using virtual laboratories. </i></span> <br/><br/>
+                       <span style="font-size:20px">He/She has successfully completed the task in  $course.gettotaltymspnt()</span> <br/><br/>
+                       <span style="font-size:20px">with score of <i>$grade.getPoints()%</i></span> <br/><br/><br/><br/-->
+                       <span style="font-size:20px"><i>Completed Date</i></span><br>
+                       <span id="datetoday" style="font-size:20px"><i></i></span><br><br><br>
+                <table style="margin-top:40px;float:left">
+                <tr>
+                <td><span><b>$outrch.getFullName()</b></td>
+                </tr>
+                <tr>
+                <td style="width:200px;float:left;border:0;border-bottom:1px solid #000;"></td>
+                </tr>
+                <tr>
+                <td style="text-align:center"><span><b>Signature of Outreach Coordinator</b></td>
+                </tr>
+                </table>
+                <table style="margin-top:40px;float:right">
+                <tr>
+                <td><span><b>$pi.getFullName()</b></td>
+                </tr>
+                <tr>
+                <td style="width:200px;float:right;border:0;border-bottom:1px solid #000;"></td>
+                </tr>
+                <tr>
+                <td style="text-align:center"><span><b>Signature of PI</b></td>
+                </tr>
+                </table>
+                <div id="ratings" style="width:220px; height:80px;  position: relative;   margin-top: 10px; left:280px;">
+                <img id="3star"  style=" position: absolute;   top:- 20px; left:10px;" />
+                </div>
+                </div>
+               
+                            
+                </div>
+                <button class="btn btn-info" id="downloadPDF">Download PDF</button>
+                </center>
+
+               
+    <!--script>  
+        /* 
+     * jQuery helper plugin for examples and tests 
+     */  
+        (function ($) {  
+            $.fn.html2canvas = function (options) {  
+                var date = new Date(),  
+                $message = null,  
+                timeoutTimer = false,  
+                timer = date.getTime();  
+                html2canvas.logging = options && options.logging;  
+                html2canvas.Preload(this[0], $.extend({  
+                    complete: function (images) {  
+                        var queue = html2canvas.Parse(this[0], images, options),  
+                        $canvas = $(html2canvas.Renderer(queue, options)),  
+                        finishTime = new Date();  
+      
+                        $canvas.css({ position: 'absolute', left: 0, top: 0 }).appendTo(document.body);  
+                        $canvas.siblings().toggle();  
+      
+                        $(window).click(function () {  
+                            if (!$canvas.is(':visible')) {  
+                                $canvas.toggle().siblings().toggle();  
+                                throwMessage("Canvas Render visible");  
+                            } else {  
+                                $canvas.siblings().toggle();  
+                                $canvas.toggle();  
+                                throwMessage("Canvas Render hidden");  
+                            }  
+                        });  
+                        throwMessage('Screenshot created in ' + ((finishTime.getTime() - timer) / 1000) + " seconds<br />", 4000);  
+                    }  
+                }, options));  
+      
+                function throwMessage(msg, duration) {  
+                    window.clearTimeout(timeoutTimer);  
+                    timeoutTimer = window.setTimeout(function () {  
+                        $message.fadeOut(function () {  
+                            $message.remove();  
+                        });  
+                    }, duration || 2000);  
+                    if ($message)  
+                        $message.remove();  
+                    $message = $('<div ></div>').html(msg).css({  
+                        margin: 0,  
+                        padding: 10,  
+                        background: "#000",  
+                        opacity: 0.7,  
+                        position: "fixed",  
+                        top: 10,  
+                        right: 10,  
+                        fontFamily: 'Tahoma',  
+                        color: '#fff',  
+                        fontSize: 12,  
+                        borderRadius: 12,  
+                        width: 'auto',  
+                        height: 'auto',  
+                        textAlign: 'center',  
+                        textDecoration: 'none'  
+                    }).hide().fadeIn().appendTo('body');  
+                }  
+            };  
+        })(jQuery);  
+      
+    </script-->     
+     	<!------------------quiz -------------------------->
+         <script type="text/javascript" src="./js/quiz/vlab-quiz-controller.js"></script>
+         <script type="text/javascript" src="./js/quiz/vlab-prequiz-controller.js"></script>
+       <!-------generate pdf certificate----->
+       <script src="./js/quiz/jsgeneratepdfcertificate.js" type="text/javascript"></script>  
+      
+            </body> 
+    </html>

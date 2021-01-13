@@ -19,9 +19,10 @@
 var prequestionCount = 0;
 var preresultCount = 0;
  var prefullresult = "";
+ var preresultPercent;
  //var timespntprequiz;
  //var newdtprequiz;
- 
+ var yourname;
 var cpre=0;
 var tpre;
 var timer_is_on_pre = 0;
@@ -78,6 +79,7 @@ function prequizSubmit() {
 	//document.getElementById("vlab-quiz-result").innerHTML = "<p> You have scored " + resultCount + " out of " + questionCount + ".</p>";// + fullresult;
     //dynamicMathConveter()
 prequizshowResult();
+//storedatafile();
 }
 
 function prequizshowResult() {
@@ -102,8 +104,8 @@ function prequizshowResult() {
 //You have choosen option (" + String.fromCharCode(97 + parseInt(resultArray[i])) + ").       
 	   }
     }*/
-    var preresultPercent = (preresultCount / prequestionCount) * 100;
-	var yourname=document.getElementById("yourname").value;
+     preresultPercent = (preresultCount / prequestionCount) * 100;
+	  yourname=document.getElementById("yourname").value;
 	// newdtprequiz = new Date();
 	 //timespntprequiz = newdtprequiz.getSeconds();
 //alert(tm);
@@ -140,3 +142,20 @@ function timedCountpre() {
   cpre = cpre + 1;
   tpre = setTimeout(timedCountpre, 1000);
 }
+
+
+/*function storedatafile()
+{
+  global  set fso = CreateObject("Scripting.FileSystemObject");  
+    set s   = fso.CreateTextFile("E:/vlt_iitkgp/analoge_iitkgp/src/lab/storedata/filename.txt", True); 
+ 
+    var firstName = document.getElementById('yourname'); 
+    //var lastName  = document.getElementById('lastName'); 
+ 
+    s.writeline("First Name :" + FirstName); 
+  //  s.writeline("Last Name :" + lastName); 
+ 
+    s.writeline("-----------------------------"); 
+    s.Close(); 
+
+}*/
