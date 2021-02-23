@@ -83,6 +83,13 @@
 
                         <div class="content" id="experiment-article-section-3-content">
                             Objective of Experiment
+                              <ol>
+                                <li>To perform an Astable Multivibrator using 555 Timer</li>
+                                <li>To observe and plot the Output Voltage.</li>
+                                <li>To observe and plot the Capacitance Voltage.</li>
+                                <li>Calculate  the time the output is high, the time the output is low, Total time period,
+                                    frequency and % duty cycle.</li>
+                                </ol>
                         </div>
                     </section>
 					 <!------------------------------- First section of the article---------------------------------->
@@ -121,8 +128,83 @@
 
                         <div class="content" id="experiment-article-section-2-content">
                             <p style="text-align: justify; font-weight: bold">Theory</p>
-                              Theory of Experiment
-                            </p>
+                            One of the most versatile linear ICs is the 555 times. It was first introduced in early 1970 by Signetic Corporation giving the name as SE/NE 555 timer. The 555 is a monolithic timing circuit that can produce highly stable time delays or oscillation. The timer basically operates in one of the two modes either as monostable or as an astable multivibrator. 
+                            <br><br>
+                            A astable multivibrator, often called a free-running multivibrator, is a rectangular-wavegenerating
+                            circuit. Unlike the monostable multivibrator this circuit does not require any external
+                            triggering to change the state of the output, hence the name free-running. However, the time during
+                            which the output is either high or low is determined by the two resistors and a capacitor, which are
+                            externally connected to the 555 timer. <br><br>
+                            <b> 555 pin configuration</b><br><br>
+                            The 555 IC is available as an 8-pin metal can as given below. 
+                            <div align="center">
+                                <p>
+                                    <img src="image/pin-configuration-555-timer-8-pin.png" style ="width:500px;height:300px">
+                                </p>
+                                Figure:1
+                            </div><br>
+                             <b>Pin1 : Grounded Terminal</b> All the voltages are measured w.r.t. this terminal.<br>
+                             <b>Pin2 : Trigger Terminal</b> This pin is an inverting input to a comparator that is reponsible for transition of flip-flop from set to reset. The output of the timer depends on the amplitude of the external tigger pulse applied to this pin.
+                            <br>
+                            <b>Pin3 : Output Terminal</b> Output of the timer is available at this pin. There are two ways in which a load can be connected to the output terminal either between  pin 3 and ground pin or between pin 3 and supply pin. <br>
+                            <b>Pin4 : Reset Terminal</b>To disable or reset the timer a negative pulse is applied to this pin due to which it is referred to as reset terminal. When this pin is not to be used, it should be connected to +\(V_{cc}\) to avaoid any possibility pf false triggering.<br>
+                            <b>Pin5 : Control Voltage Terminal</b> The function of this terminal is to control the threshold and trigger levels. Thus either the external voltage or  apot connected to this pin determines the pulse width of the output waveform. The external voltage applied to this pin can also be used to modulate th eoutput waveform. When this pin is not used, it should be connected to ground through a 0.01uF to avoid any noice problem.<br>
+                            <b>Pin6 : Threshold  Terminal</b> This is the noninverting input terminal of comparator 1,which compares the voltage applied to this terminal with a refernce volatge of +2/3 \(V_{cc}\). The amplitude of the volatge applied to this terminal is responsible for the set state of flip flop.<br>
+                            <b>Pin7 : Discharge Terminal</b> This pin is connected internally to the collector of transistor and mostly a capacitor is discharge terminal because when transistor saturates, capacitor discharges through the transistor. When the transistor is cutoff, the capacitor charges at a rate determined by external resistor and capacitor.<br>
+                            <b>Pin8 : Supply Terminal</b> A supply voltage of +5V to +18V is applied to this terminal w.r.t. to  ground pin.<br><br>
+                            <b>The 555 Timer as an Astable Multivibrator</b><br><br>
+The schematic of a 555 timer in Aonostable mode of operation is shown in figure 2. The ciruit details 
+are given below.
+Pin 1 is grounded; pins 4 and 8 are shorted and then tied to supply +\(V_{cc}\). 
+Output is taken from pin 3; pin2 and pin 6 are shorted and then connected to ground through a capacitor. 
+Pin 7  is connected to ground through a resistor \(R_A\); and between pins 6 and 7 a resistor \(R_B\) is connected.
+At pin 5 either a bypass capacitor of 0.01uF is connected or modulation input is applied.
+<br><br> 
+<div align="center">
+    <p>
+        <img src="image/astable_ckt_th.png" style ="width:500px;height:300px">
+    </p>
+    Figure:2
+</div><br>
+                           
+                            <b>Astable operation:</b><br>
+According to figure 3 initially when output is high, capacitor C starts charging toward Vcc through
+RA and RB. However as soon as voltage across the capacitor equals 2/3 \(V_{cc}\), comparator 1 triggers the
+flip-flop, and the output switches low. Now capacitor C stars discharging through RB and transistor Q1.
+When the voltage across C equals 1/3 \(V_{cc}\), comparator 2’s output triggers the flip-flop, and the output
+goes high. Then the cycle repeats. The output voltage and capacitor voltage are shown in fig (b).
+As shown in this figure, the capacitor is periodically charged and discharged between 2/3 \(V_{cc}\)
+and 1/3 \(V_{cc}\), respectively. The time during which the capacitor charge from 1/3 \(V_{cc}\) to 2/3 \(V_{cc}\) is equal
+to the time the output is high and is given by<br><br>
+\(t_c = 0.69(R_A + R_B) \times C\)<br><br>
+Where RA and RB are in ohms and C is in farads. Similarly, the time during which the capacitor
+discharges from 2/3Vcc to 1/3Vcc is equal to the time the output is low and is given by<br><br>
+\(t_d = 0.69(R_A) \times C\)<br>
+Thus the total period of output waveform is<br><br>
+\(T = t_c + t_d = 0.69(R_A + 2R_B) \times C\)
+
+Frequency of Oscillation is<br><br>
+\(f_o = \frac{1}{T} = \frac{1.45}{(R_A + 2R_B)\times C}\)<br><br>
+
+
+Duty Cycle:- The duty cycle is the ratio of the time tc during which the output is high to the total time
+period T. It is generally expressed as a percentage<br><br>
+% \(duty cycle = \frac{t_c}{T} \times 100\)
+= \(\frac{(R_A + R_B)}{(R_A + 2R_B)} \times 100 \)
+
+<div align="center">
+    <p>
+        <img src="image/outputwavfrm_asta.png" style ="width:500px;height:300px">
+    </p>
+    Figure:3
+</div><br>
+<b>Applications of Astable multivibrator</b><br><br>
+<ol>
+    <li>The Astable multivibrator is used as sqaure wave oscillator.</li>
+      <li>  It is also used as free runnning ramp generator.</li>
+      <li>  It is used as pulse position modulator.</li>
+      <li>  It is also used for Schmitt trigger using 555 timer</li>
+</ol>
                         </div>
                     </section>
                     
@@ -148,7 +230,7 @@
 				<li>Intially  set R <sub>a</sub>=3.3 k&#937;, R <sub>b</sub>=6.8k&#937;, C=0.1&#181;f, V<sub>cc</sub>=5 V. </li>
 				<li> Click on "Calculate" button.</li>
 				<li>Now note the output voltage.  </li>
-                            <li>Click on "Plot" button to plot, Trigger Input Voltage, Output Voltage, Capacitance Voltage</li>
+                            <li>Click on "Plot" button to plot Output Voltage, Capacitance Voltage</li>
 							<li>Click on "Clear" button to clear the data.</li>
 							<li>Repeat the experiment for another set of resistance value. </li>
 							<li>Set the Resistance (R <sub>a</sub>) value (1 k&#937; - 10 k&#937;).</li>
