@@ -17,71 +17,58 @@ var quizJSON = {
     },
     "questions": [
         {// Question 1 - Multiple Choice, Single True Answer
-            "q": "The speed of operation of Schmitt trigger depends on ",
+            "q": "	A ________ filter significantly attenuates all frequencies below fc and passes all frequencies above fc. ",
             "a": [
-                {"option": " op-amp gain ", "correct": false},
-                {"option": "Supply voltage ", "correct": false},
-                {"option": " op-amp configuration ", "correct": false},
-                {"option": " Rate of change of input", "correct": true} // no comma here
+                {"option": "Low Pass", "correct": false},
+                {"option": "High Pass ", "correct": true},              
+                {"option": " Band Stop", "correct": false},
+				{"option": " Band Pass", "correct": false},// no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
         {// Question 2 - Multiple Choice, Multiple True Answers, Select Any
-            "q": "The feedback used in Schmitt trigger is",
+            "q": "2.	The gain of the multiple-feedback band-pass filter above is equal to which of the following? Assume C = C1 = C2 <br/><p style=\"text-align:center\"><img src=\"image/post_quiz1.png \" style=\"width:350px;height:200px\"></p>",
             "a": [
-                {"option": "Degenerative", "correct":false},
-                {"option": " Regenerative", "correct": true},
-                {"option": " Series ", "correct":false},
-                {"option": " Shunt", "correct": false} // no comma here
+                {"option": "	A0 = R1 / R2", "correct":false},
+                {"option": " 	A0 = R2 / 2 R1", "correct": true},
+                {"option": " 	A0 = R2 / R1 ", "correct":false},
+                {"option": " A0 = R1 / 2 R2", "correct": false} // no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
         {// Question 3 - Multiple Choice, Single True Answer
-            "q": "The value of cross over at increasing or decreasing input are called",
+            "q": "	The bandwidth in a ________ filter equals the critical frequency.",
             "a": [
-                {"option": "Cut-off points", "correct": false},
-                {"option": "Saturation points", "correct": false},
-                {"option": " Trip-point", "correct": true},
-                {"option": " Null points", "correct": false} // no comma here
+                {"option": "Low Pass", "correct": true},
+                {"option": "High Pass ", "correct": false},              
+                {"option": " Band Stop", "correct": false},
+				{"option": " Band Pass", "correct": false},// no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
        
         },
 		{// Question 4 - Multiple Choice, Single True Answer
-            "q": " The Schmitt trigger could also be used for",
+            "q": " 	Refer to the given figure. This circuit is known as a ________ filter, and the fc is ________. <br/><p style=\"text-align:center\"><img src=\"image/post_quiz2.png \" style=\"width:350px;height:200px\"></p>",
             "a": [
-                {"option": "Voltage level detection", "correct": false},
-                {"option": "Astable operation ", "correct": false},
-                {"option": "  Monostable operation ", "correct": true},
-                {"option": " Voltage limiting", "correct": false} // no comma here
+                {"option": "high-pass, 1.59 kHz", "correct": false},
+                {"option": "band-pass, 15.9 kHz ", "correct": false},
+                {"option": "low-pass, 15.9 kHz", "correct": false},
+                {"option": "high-pass, 15.9 kHz", "correct": true} // no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
        
         },
 		{// Question 5 - Multiple Choice, Single True Answer
-            "q": "  The Schmitt trigger could be used as",
+            "q": "  Refer to the given figure. The roll-off of this filter is about <br/><p style=\"text-align:center\"><img src=\"image/post_quiz3.png \" style=\"width:350px;height:200px\"></p>",
             "a": [
-                {"option": "Voltage detector", "correct": false},
-                {"option": "Astable multivibrator", "correct": false},
-                {"option": "Monostable multivibrator ", "correct": false},
-                {"option": "All of the above", "correct": true} // no comma here 
-				//equation is in form  Em sin wt. w = 100 ᴨ rad/s. w=2 ᴨ x frequency. so frequency = w/2ᴨ =100ᴨ/2ᴨ=50
-            ],
-            "correct": "",
-            "incorrect": "" // no comma here
-       
-        },
-		{// Question 6 - Multiple Choice, Single True Answer
-            "q": " The switching speed could be improved by using",
-            "a": [
-                {"option": " Zener diode at output", "correct": false},
-                {"option": " Two Zener diode connected back to back at output", "correct": true},
-                {"option": "Feed back resistor", "correct": false},
-                {"option": "Capacitor in feedback", "correct": false} // no comma here 
+                {"option": " 40 dB/decade", "correct": false},
+                {"option": " 60 dB/decade", "correct": false},
+                {"option": " 20 dB/decade", "correct": true},
+				{"option": "  80 dB/decade", "correct": false},// no comma here
 				//equation is in form  Em sin wt. w = 100 ᴨ rad/s. w=2 ᴨ x frequency. so frequency = w/2ᴨ =100ᴨ/2ᴨ=50
             ],
             "correct": "",

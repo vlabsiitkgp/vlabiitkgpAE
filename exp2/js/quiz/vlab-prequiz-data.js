@@ -17,69 +17,57 @@ var prequizJSON = {
     },
     "prequestions": [
         {// Question 1 - Multiple Choice, Single True Answer
-            "preq": " Schmitt trigger is an example of ------ circuit. ",
+            "preq": " 	A ________ filter rejects all frequencies within a specified band and passes all those outside this band. ",
             "prea": [
-			 {"option": "Amplifier", "correct": false},
-                {"option": "Oscillator ", "correct": false},              
-                {"option": "  Power supply", "correct": false},
-				{"option": " Switching", "correct": true},// no comma here
+			 {"option": "Low Pass", "correct": false},
+                {"option": "High Pass ", "correct": false},              
+                {"option": " Band Stop", "correct": true},
+				{"option": " Band Pass", "correct": false},// no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
         {// Question 2 - Multiple Choice, Multiple True Answers, Select Any
-            "preq": " In Schmitt trigger circuit, op-amp switches between",
+            "preq": " 	A low-pass filter has a cutoff frequency of 1.23 kHz. Determine the bandwidth of the filter.",
             "prea": [
-                {"option": "Cut-off and negative saturation ", "correct":false},
-                {"option": " Negative and positive saturation", "correct": true},
-				{"option": "  Slight conduction and cut-off", "correct": false},
-				{"option": "  Cut-off and positive saturation", "correct": false}//no comma here
+                {"option": "2.46 kHz ", "correct":false},
+                {"option": "1.23 kHz", "correct": true},
+				{"option": "  not enough information given ", "correct": false},
+				{"option": "  644 hz", "correct": false}//no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
         {// Question 3 - Multiple Choice, Single True Answer
-            "preq": " If the power supply voltage applied to the op-amp that has a open loop gain of 100db is ±20V, the op-amp saturation voltage is",
+            "preq": " Refer to the given figure. The roll-off of the circuit shown is about <br/><p style=\"text-align:center\"><img src=\"image/pre_quiz1.png \" style=\"width:350px;height:200px\"></p>",
             "prea": [
-                {"option": " 20mV", "correct": false},
-                {"option": " 2mV", "correct": true},
-                {"option": " 20µV", "correct": false},
-				{"option": "  200µV", "correct": false},// no comma here
+                {"option": " 40 dB/decade", "correct": false},
+                {"option": " 60 dB/decade", "correct": false},
+                {"option": " 20 dB/decade", "correct": true},
+				{"option": "  80 dB/decade", "correct": false},// no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
         {// Question 4 - Multiple Choice, Single True Answer
-            "preq": "  The operation of a Schmitt trigger is similar to that of a",
+            "preq": "  Refer to the given figure. The cutoff frequency of this filter is ________, and the circuit is known as a ________. <br/><p style=\"text-align:center\"><img src=\"image/pre_quiz2.png \" style=\"width:350px;height:200px\"></p>",
             "prea": [
-                {"option": "Full wave rectifier", "correct": false},
-                {"option": "Series clipper", "correct": true},
-                {"option": "Polarity detector", "correct": false},
-                {"option": " Clamper", "correct": false} // no comma here
+                {"option": "721 Hz, high-pass filter", "correct": false},
+                {"option": "721 Hz, band-pass filter", "correct": false},
+                {"option": "	721 Hz, low-pass filter	", "correct": true},
+                {"option": " 72 Hz, low-pass filter", "correct": false} // no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
        
         },	
        {// Question 5 - Multiple Choice, Single True Answer
-            "preq": " The main application of Schmitt trigger is in ",
+            "preq": " A ________ filter passes all frequencies within a band between a lower and an upper critical frequency and rejects all others outside this band. ",
             "prea": [
-                {"option": " Amplifiers", "correct": false},
-                {"option": "Oscillators", "correct": false},
-                {"option": " Sine wave to square wave converters", "correct": true},
-                {"option": " Rectifiers", "correct": false} // no comma here
-            ],
-            "correct": "",
-            "incorrect": "" // no comma here
-       
-        }	,
-		{// Question 6 - Multiple Choice, Single True Answer
-            "preq": "  The speed of switching in the Schmitt trigger depends on ",
-            "prea": [
-                {"option": " Open loop gain ", "correct": true},
-                {"option": " Input resistor", "correct": false},
-                {"option": " Hysteresis", "correct": false},
-                {"option": "  Feedback resistor", "correct": false} // no comma here
+                {"option": "Low Pass", "correct": false},
+                {"option": "High Pass ", "correct": false},              
+                {"option": " Band Stop", "correct": false},
+				{"option": " Band Pass", "correct": true},// no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here

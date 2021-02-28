@@ -17,58 +17,58 @@ var quizJSON = {
     },
     "questions": [
         {// Question 1 - Multiple Choice, Single True Answer
-            "q": "What is the Ripple factor of a half wave rectifier? ",
+            "q": "How to calculate duty cycle of an astable multivibrator output? ",
             "a": [
-                {"option": " 0.31", "correct": false},
-                {"option": "0.48", "correct": false},
-                {"option": " 0.707 ", "correct": false},
-                {"option": " 1.21", "correct": true} // no comma here
+                {"option": " Duty cycle =(T<sub>ON</sub>/(1+T<sub>OFF</sub>)) *100", "correct": false},
+                {"option": " Duty cycle = T<sub>ON</sub>/T * 100 ", "correct": false},
+                {"option": " Duty cycle =  (T<sub>OFF</sub>/(T<sub>ON</sub>+T<sub>OFF</sub>)) *100 ", "correct": false},
+                {"option": " Duty cycle =  (T<sub>ON</sub>/(T<sub>ON</sub>+T<sub>OFF</sub>)) *100", "correct": true} // no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
         {// Question 2 - Multiple Choice, Multiple True Answers, Select Any
-            "q": "The peak applied signal voltage is V<sub>m</sub> then for a half wave rectifier circuit the PIV(Peak Inverse Volatge) of the diode should be:  ",
+            "q": "What is the formula to calculate the time period of the astable multivibrator? ",
             "a": [
-                {"option": "> 2V<sub>m</sub> ", "correct":false},
-                {"option": " &#8804; 2V<sub>m</sub>", "correct": false},
-                {"option": " &#8805;V<sub>m</sub> ", "correct":true},
-                {"option": "  < V<sub>m</sub>", "correct": false} // no comma here
+                {"option": " T = 0.69 * (R<sub>A</sub> + 2R<sub>B</sub>) * C ", "correct":true},
+                {"option": " T = 0.69 * R<sub>B</sub> * C", "correct": false},
+                {"option": " T = 0.69 * (R<sub>A</sub> + R<sub>B</sub>) * C ", "correct":false},
+                {"option": " T = 1.1 * R * C", "correct": false} // no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
         {// Question 3 - Multiple Choice, Single True Answer
-            "q": "An ideal Si diode is used in a half wave rectifier circuit with peak input sinusoidal signal amplitude of 5V (V<sub>m</sub> = 5V & V<sub>T</sub> = 0.7V). The average dc voltage is",
+            "q": "Design a 555 timer as an astable multivibrator with an output signal frequency 0f 800 Hz and 60 % duty cycle.",
             "a": [
-                {"option": "<1.27V", "correct": false},
-                {"option": "=1.37V ", "correct": true},
-                {"option": " >1.87V", "correct": false}
-               // {"option": " it is impossible to determine the change in the resistor value", "correct": false} // no comma here
+                {"option": " R<sub>A</sub>=  36 kohm,R<sub>B</sub>= 72 kohm, C=0.01uF", "correct": true},
+                {"option": " R<sub>A</sub>=  100 kohm,R<sub>B</sub>= 36 kohm, C=0.01uF ", "correct": false},
+                {"option": " R<sub>A</sub>=  72 kohm,R<sub>B</sub>= 36 kohm, C=0.01uF", "correct": false},
+                {"option": " R<sub>A</sub>=  72 kohm,R<sub>B</sub>= 100 kohm, C=0.01uF", "correct": false} // no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
        
         },
 		{// Question 4 - Multiple Choice, Single True Answer
-            "q": "DC power output of half wave rectifier is equal to ____________ (Im is the peak current and RL is the load resistance)",
+            "q": "Determine the positive pulse width,negative pulse width and free running frequency for an astable multivibrator using 555 timer. R<sub>A</sub>=4.7 kohm, R<sub>B</sub> = 1 ohm, C=1 uF, C<sub>1</sub> = 0.01 uF. What is the duty cycle of output waveform?",
             "a": [
-                {"option": "((2I<sub>m</sub>^2)/(pi^2))Rl", "correct": false},
-                {"option": "((I<sub>m</sub>^2)/(2*pi^2))Rl ", "correct": false},
-                {"option": " ((I<sub>m</sub>^2)/(pi^2))Rl", "correct": true},
-                {"option": " ((4I<sub>m</sub>^2)/(pi^2))Rl", "correct": false} // no comma here
+                {"option": " Duty cycle = 50 %", "correct": false},
+                {"option": " Duty cycle = 25 %", "correct": false},
+                {"option": " Duty cycle = 85 %", "correct": true},
+                {"option": " Duty cycle = 100 %", "correct": false} // no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
        
         },
 		{// Question 5 - Multiple Choice, Single True Answer
-            "q": " In a half wave rectifier, the input sine wave is 250sin100 ᴨt Volts. The output ripple frequency of rectifier will be __________",
+            "q": "The timer IC555 is used as astable multivibrator. It is desired to have square-wave output with 50% duty cycle of 1 kHz. The timing capacitor is of 0.01uF. Find the values of resistors required and draw the circuit.",
             "a": [
-                {"option": "100 Hz", "correct": false},
-                {"option": "200 Hz", "correct": false},
-                {"option": "50 Hz", "correct": true},
-                {"option": "25 Hz", "correct": false} // no comma here 
+                {"option": " R<sub>A</sub> = R<sub>B</sub>=58 kohm", "correct": false},
+                {"option": " R<sub>A</sub> = R<sub>B</sub>=2 kohm", "correct": false},
+                {"option": " R<sub>A</sub> = R<sub>B</sub>=100 kohm", "correct": false},
+                {"option": " R<sub>A</sub> = R<sub>B</sub>=68 kohm", "correct": true} // no comma here 
 				//equation is in form  Em sin wt. w = 100 ᴨ rad/s. w=2 ᴨ x frequency. so frequency = w/2ᴨ =100ᴨ/2ᴨ=50
             ],
             "correct": "",
