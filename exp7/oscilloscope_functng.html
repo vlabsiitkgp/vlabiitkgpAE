@@ -1,0 +1,340 @@
+<!-- Document Name: oscilloscope_functng.html
+    Created on :24 aug, 2021, 18:04:33 
+    Author     : Sukriti Dhang
+-->
+<html>
+    <head>
+	<!-- Google Tag Manager -->
+	
+        <title>Oscilloscope</title>
+        <meta charset="windows-1252">
+       
+		 <meta name="description" content="EMF Generation">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="./css/oscilloscope.css">      
+     <!---------MathJax new version------------------->
+    <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+		<!--old version -->
+		<!--script type="text/javascript"
+                src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+				
+        </script-->
+        <!------------calculator----------------------------------------->
+        <link rel="stylesheet" type="text/css" href="./css/virtualc.css">
+        <script type="text/javascript" src="./js/virtualc.js"></script>
+        <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script-->
+        <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script-->
+     
+        <script src="./js/lib/jquery.min.js"></script>
+        <script src="./js/lib/jquery.knob.min.js"></script>
+     
+        <script src="./js/oscilloscope_knob.js"></script>
+        <script src="./js/oscilloscope_axis.js"></script>
+<!-----------------------function generator 1------------------------>
+        <script src="./js/oscilloscope_sinewv.js"></script>
+        <script src="./js/oscilloscope_sqrwv.js"></script>
+        <script src="./js/oscilloscope_triangwv.js"></script>
+<!-----------------------function generator 2------------------------>
+        <script src="./js/oscilloscope_sinewv2.js"></script>
+        <script src="./js/oscilloscope_sqrwv2.js"></script>  
+        <script src="./js/oscilloscope_triangwv2.js"></script>
+
+        <script src="./js/oscilloscopegrnd.js"></script>
+
+        <script src="./js/oscilloscopeboth.js"></script>
+        
+	    <!--script src="./js/oscilloscopexymode.js"></script-->
+         
+    <!--/head-->
+    
+    <link rel="stylesheet" href="./css/cktconnection_oscilloscope.css">
+    <!---- library file ----->
+  <script src="./js/graph.ob.js"></script>
+  <script src="./js/graph_use.ob.js"></script>
+  <!--script src="https://d3js.org/d3.v5.min.js"></script-->
+  <script src="./js/lib/d3.v5.min.js"></script>
+<!--------------------------> 
+<script>
+    var timer_is_on_simulation = 0;
+    var csim=0;
+    var tsim;
+
+    function startCountsimulation() {
+
+ csim = 0;
+  if (!timer_is_on_simulation) {
+    timer_is_on_simulation = 1;
+    timedCountsimulatio();
+  }  
+}
+function stopCountsimulation() {
+  clearTimeout(tsim);
+  timer_is_on_simulation = 0;
+}
+
+///////calculate timer///////
+function timedCountsimulation() {
+ // document.getElementById("txt").value = c;
+  csim = csim + 1;
+  tsim = setTimeout(timedCountsimulation, 1000);
+}
+</script>
+    </head>
+    <body bgcolor="#000066";data-demo-id="animation"; style="width:100%;">
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KM82TPW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+        <header class="default" id="experiment-header">
+            <div class="logo" id="experiment-header-logo" style="text-align:center">
+
+                <img src="./image/logo.jpg" style="height:150px;width:1260px;"></div>
+        </header>
+        
+      
+         <div class="wholebody" >
+             <div style="font-size:30px; text-align:center;padding-right:100px; height:60px">  <b>Familiarisation of Oscilloscope and Function Generator</b></div>
+            <div id="description" >
+                <div class="dropdown" style="">
+                    <p style="text-align:center;padding-right:350px;color:white"> INSTRUCTION</p>
+                    <div class="dropdown-content">
+                        <ol type="1">
+						<li>Connect the components as mentioned below:<br>
+                        L1-L5, L3-L6, L4-L7, L2-L7.(For eg. click on 1 and then drag to 5 and so on.)</li>
+							<li> Click on  'Check Connection' button to check the connections.</li>
+							<li> If connected wrong, double click on the wrong connection.   Else click on 'Delete all connection' button to erase all the connections.	</li>	
+                             <li>Connect L1-L5. This will connect the function generator 1 to channel 1 probe of oscilloscope.</li>
+                            <li>Connect L3-L6. This will connect the function generator 2 to channel 2 probe of oscilloscope.</li>
+                            <li> Connect L4-L7, L2-L7. This will connect the ground of function generator 1 and function generator 2 with oscilloscope. </li>
+                            <li>Click on 'ON' button to start the experiment.</li>
+                            <li>Double Click on 'Sine Wave' button to generate input waveform (1 V<sub>p</sub>, 1kHz) from Function Generator 1.</li>
+                            <li>Double Click on 'Sine Wave' button to generate input waveform (1 V<sub>p</sub>, 1kHz) from Function Generator 2.</li>
+                            <li>Vary the Amplitude, Frequency, volt/div  using the controllers.</li> 
+                            <li>Click on "Dual" button to observe both the waveform.</li>
+                            <li>Click on "X-Y" button to observe the  specialized two-channel mode of oscilloscope. The XY time mode converts the oscilloscope from a volts-versus-time display to a volts-versus-volts display using two input channels. Channel 1 is the X-axis input, channel 2 is the Y-axis input.</li>
+							<li>Channel 1 shows the waveform of Function Generator 1, Channel 2 shows the waveform of Function Generator 2. </li>                          
+                            <li>Repeat step 8-12 for 'Square Wave' and 'Triangular Wave'. Double Click on input button to generate input waveform (1 V<sub>p</sub>, 1kHz) from Function Generator 1 and Function Generator 2.</li>
+                            <li>Note :  Sometimes due to page load or cache, the graph may not come exact at one click. So it is better to double click on the channel-1 function/ channel-2 function/ dual function/ground function to get the respective signals. </li>            
+                        </ol> 
+                    </div>
+                </div>
+            </div>
+          
+
+ <div id="grpwrap" >
+                
+                <div style="position:absolute; font-size:16px; top:0px;left:0px;  height:50px;background-color:#3385ff;  width:600px;font-weight: bold;"><p style="text-align:center;padding-right:370px;color:white"> <b> OSCILLOSCOPE</b></p>
+                </div>  
+               
+                    <div class="canvas2d-view" id="canvas2d-view" >
+
+                        <center><canvas id="mycanvas" width="430" height="350" style="border:1px solid black;top:40px;">
+                            </canvas>  </center>
+                    </div>
+                    <!--  <output id="out"></output>-->
+                   
+                         
+                        <input type="button" id="chhn1" value="Channel 1" onclick="chnlo()" disabled="true" />
+                        <input type="button" id="chhn2" value="Channel 2" onclick="chnlt()" disabled="true" />
+                        <input type="button" id="grnd" value="Ground" onclick="grnds()" disabled="true"/>
+                        <input type="button" id="dual" value="Dual" onclick="bthd()"  disabled="true"/>
+						<input type="button" id="xymd" value="X-Y" onclick="oscilloxymode()"  disabled="true"/>
+<button id="check-button" style="position:absolute; top:450px; width:100px; left:15px;cursor:pointer; border-radius: 10px;
+    box-shadow: 0 2px #999; ">Check connection</button>
+<button  id="delete-connct"  onclick="deleteconnection()"  style="position:absolute; top:450px; width:100px; left:130px;cursor:pointer;border-radius: 10px;
+    box-shadow: 0 2px #999; ">Delete all connection</button>
+   <input type="button" id="onff" onclick="mainswt()" value="On"  disabled="true" style="position:relative;float:right;right:100px;top:50px;width:60px;cursor:pointer; text-align: center;border-radius: 10px; box-shadow: 0 2px #999;z-index:1;" />
+      
+    </div><!--------------- end of .graphSection----------------------->
+            
+              <div class="circuitsection">
+					 <div class="lowerleftsection">
+					 <div class="jtk-demo-canvas canvas-wide animation-demo jtk-surface jtk-surface-nopan" id="canvas">
+                <div class="littledot" id="ld1"></br><a href="#" class="cmdLink detach" rel="ld1">1</a></div>			
+                <div class="littledot" id="ld2"></br><a href="#" class="cmdLink detach" rel="ld2">2</a></div>	
+				<div class="littledot" id="ld3"></br><a href="#" class="cmdLink detach" rel="ld3">3</a></div>			
+                <div class="littledot" id="ld4"></br><a href="#" class="cmdLink detach" rel="ld4">4</a></div>
+				<div class="littledot" id="ld5"></br><a href="#" class="cmdLink detach" rel="ld5">5</a></div>
+				<div class="littledot" id="ld6"></br><a href="#" class="cmdLink detach" rel="ld6">6</a></div>
+				<div class="littledot" id="ld7"></br><a href="#" class="cmdLink detach" rel="ld7">7</a></div>				
+</div>
+<script src="./js/jsplumb1.js"></script>
+					 <label> Function Generator 1</label>
+					 <div id="knob-container-fng">
+                            <!------frequency-knob-container------------>
+                            <div id="frequency-knob-container-fng">
+                                <input type="text" id="fq-knob-fng1"  value="1000" readOnly=false oninput="freqfng1()">
+                                <label>Frequency(Hz)</label>
+                            </div>
+
+                            <!-----------amplitude-knob-container---------------->
+                            <div id="amplitude-knob-container-fng">
+                                <input type="text" id="amp-knob-fng1" readOnly=false  value="1" oninput="ampfng1()">
+                                <label>Amplitude(Volt)</label>
+                            </div>
+
+                        </div>  <!--------------- end of .knob-container-fng----------------------->
+						<input type="button" id="sinecrv" value="Sine Wave" onclick="drawsine1()"  disabled="true" style="position:absolute;left:390px;top:20px;cursor:pointer;text-align: center;border-radius: 5px;box-shadow: 0 2px #999;">
+                        <input type="button" id="squarewave" value="Square Wave" onclick="drawsquarewv1()" disabled="true" style="position:absolute;left:390px;top:60px;cursor:pointer;text-align: center;border-radius: 5px;box-shadow: 0 2px #999;">
+                        <input type="button" id="triagwave" value="Triangular Wave" onclick="drawtraingwv1()" disabled="true" style="position:absolute;left:390px;top:100px;cursor:pointer;text-align: center;border-radius: 5px;box-shadow: 0 2px #999;">
+                       
+                    </div><!--------------- end of .lowerleftsection----------------------->
+					<div class="rightsection">
+					
+                
+					<label> Function Generator 2</label>
+                        <div id="knob-container-fng">
+                            <!------frequency-knob-container------------>
+                            <div id="frequency-knob-container-fng2">
+                                <input type="text" id="fq-knob-fng2"  value="1000" readOnly=false oninput="freqfng2()">
+                                <label>Frequency(Hz)</label>
+                            </div>
+
+                            <!-----------amplitude-knob-container---------------->
+                            <div id="amplitude-knob-container-fng2">
+                                <input type="text" id="amp-knob-fng2" readOnly=false  value="1" oninput="ampfng2()">
+                                <label>Amplitude(Volt)</label>
+                            </div>
+
+                        </div>  <!--------------- end of .knob-container-fng2----------------------->
+						 <input type="button" id="sinecrv2" value="Sine Wave" onclick="drawsine2()"  disabled="true" style="position:absolute;left:390px;top:20px;cursor:pointer;text-align: center;border-radius: 5px;box-shadow: 0 2px #999;">
+                        <input type="button" id="squarewave2" value="Square Wave" onclick="drawsquarewv2()" disabled="true" style="position:absolute;left:390px;top:60px;cursor:pointer;text-align: center;border-radius: 5px;box-shadow: 0 2px #999;">
+                        <input type="button" id="triagwave2" value="Triangular Wave" onclick="drawtraingwv2()" disabled="true" style="position:absolute;left:390px;top:100px;cursor:pointer;text-align: center;border-radius: 5px;box-shadow: 0 2px #999;">
+                       </div><!------------ end of . rightsection----------------->
+                    </div> <!--------------- end of .circuitSection----------------------->
+					
+ <div id="controller" >
+      <div id="cntrlr" style="position:absolute; background-color:#3385ff;   height:50px; top:0px; right:0px; width:530px;font-size: 16px;font-weight: bold;"><p style="text-align:center;padding-right:370px;color:white"><b>CONTROLS</b></p></div>
+               
+                    <div class="middlerightmiddle">
+                        <div id="knob-container-amp">
+                            <!-----------amplitude-knob-container1(volt/div)---------------->
+                           
+                            <div id="amplitude-knob-container1">
+                                <input type="text" id="amp-knob1" value="1" readOnly=false oninput="amp1pdiv()">
+                                <label>Volt(V)/div</label><br>
+                                
+                            </div>
+                             
+                            <!-----------amplitude-knob-container2(volt/div)-------------->
+                            <div id="amplitude-knob-container2">
+                                <input type="text" id="amp-knob2"  value="1" readOnly=false oninput="amp2pdiv()" >
+                                <label>Volt(V)/div</label>
+                            </div>
+                        </div><!--------------- end of .knob-container-amp----------------------->
+
+                        <input type="range" orient="vertical" id="positiony1" min="-2" max="2" value="0" oninput="posiy1chnge()"  style="cursor:pointer;">  <label id="positnlabely1">Position-Y</label><label id="positnlabelch1">Channel 1</label>
+                        <input type="range" orient="vertical" id="positiony2" min="-2" max="2"  value="0" oninput="posiy2chnge()" style="cursor:pointer;">  <label id="positnlabely2">Position-Y</label><label id="positnlabelch2">Channel 2</label>
+                        <div class="middlerightsectiondivide"></div>
+
+                    </div> <!--------------- end of .middlerightmiddle----------------------->
+                   <div class="middlerightupper">
+                        <input  type="range"  id="positionx" min="-360" max="360" step="90"  value="0" oninput="posix2chnge()"  style="cursor:pointer;">
+                        <label id="positnlabelx">Position-X</label>
+
+                        <!-- -----knob---------- -->
+                        <div id="knob-container">
+                            <!------frequency-knob-container(time(ms)/div)------------>
+                            <div id="frequency-knob-container">
+                                <input type="text" id="fq-knob"  value="0.1"  readOnly=false oninput="timepdiv()">
+                                <label>Time(ms)/div</label>
+                            </div>
+                        </div><!--------------- end of .knob-container----------------------->
+						
+
+                    </div> <!--------------- end of .middlerightupper--------------------->
+                </div>  <!--------------- end of .controllSection----------------------->
+            <div id="calcln" >
+                <div style="position:absolute; background-color:#3385ff;   height:50px; top:0px; right:0px; width:600px;font-size: 16px;font-weight: bold;">
+                    <p style="text-align:center;padding-right:360px;color:white"> <b> CALCULATION</b></p>
+                    <div class="tooltip" ><button id="calci"  onclick="calcul()" style="position:absolute;padding-right:40px; cursor:pointer;top:11px;right:20px;width:20px;height:20px;border:none; background-color:#3385ff;">
+                            <img src="./image/Calculator.png" alt="Save icon" style="width:20px;height:20px;top:11px;"/></button> 
+                        <span class="tooltiptext">Calculator</span></div></div>
+                <div style=" position:absolute;  top:50px;  left:0px; height:280px; width:520px;">
+              
+				  
+					 <p><b>Practical  Calculation</b></p>
+					  &nbsp;  \(V_{m}\)= Divisions covered by the intersection  along y-axis
+(vertically) x Multiplying factor,<br><br>
+				  &nbsp;  \(T_{m}\)= Divisions covered by the intersection  along x-axis
+(vertically) x Multiplying factor<br>
+                </div>
+            </div>    <!--------------- end of .calcln----------------------->
+        </div><!--------------- end of .wholebody----------------------->
+       
+       <script>
+           $('canvas').data('readonly', false);
+            </script>
+        
+        <div id="lab-footer" style="height:20px;width:1310px;text-align: center;padding:bottom">
+
+            <div style="margin-left:10%; margin-right:10% ">
+                Copyright &copy; 2020 Indian Institute of Technology Kharagpur,<a href="../license/index.html" target="_blank" style="margin:auto"> Licensing Terms </a>
+            </div>
+
+        </div>
+       
+        
+         <!--------------------------------- calculator --------------------------------------------->
+        <div id="calculator" >
+            <div class="bttncls" id="close" >
+                <button type="button"  onclick="ok()" style="width:20px;right:-50px;top:25px;height:25px;border:none;background-color:white;cursor:pointer">
+                    <img src="./image/Close Window.png" alt="Save icon" style="width:30px;height:30px"/>
+                </button></div>
+
+            <div class="box" id="hide">
+                <div class="display"><input type="text" readonly size="17" id="d"></div>
+                <div class="keys">
+                    <p>
+
+
+                        <input type="button" class="button pink"  value="&#8730;" onclick="Root('sq')">
+                        <input type="button" class="button pink"  value="&#8731;" onclick="Root('cu')">
+                        <!--  <input type="button" class="button pink"  value="n&#8730;" onclick="Root('n')">-->
+                        <input type="button" class="button pink"  value="x2" onclick="Power('sq')">
+                        <input type="button" class="button pink"  value="x3" onclick="Power('cu')">
+                        <!--  <input type="button" class="button pink"  value="\(x^n\)" onclick="Power('n')">-->
+
+                    </p>
+                    <p>
+                        <input type="button" class="button pink"  value="sinr" onclick="TrigFunc('sin')">  
+                        <input type="button" class="button pink"  value="cosr" onclick="TrigFunc('cos')">  
+                        <input type="button" class="button pink"  value="tanr" onclick="TrigFunc('tan')">  
+                        <input type="button" class="button pink"  value="/" onclick='v("/")'>  
+
+                    </p>
+                    <p><input type="button" class="button black" value="7" onclick='v("7")'>
+                        <input type="button"  class="button black" value="8" onclick='v("8")'>
+                        <input type="button" class="button black" value="9" onclick='v("9")'>
+                        <input type="button" class="button pink" value="*" onclick='v("*")'>
+                    </p>
+
+                    <p><input type="button" class="button black" value="4" onclick='v("4")'>
+                        <input type="button" class="button black" value="5" onclick='v("5")'>
+                        <input type="button" class="button black" value="6"  onclick='v("6")'>
+                        <input type="button"  class="button pink" value="-" onclick='v("-")'>
+                    </p>
+
+                    <p><input type="button" class="button black"  value="1" onclick='v("1")'>
+                        <input type="button" class="button black" value="2" onclick='v("2")'>
+                        <input type="button" class="button black" value="3" onclick='v("3")'>
+                        <input type="button" class="button pink" value="+" onclick='v("+")'>
+                    </p>
+
+                    <p><input type="button" class="button black"  value="0" onclick='v("0")'>
+                        <input type="button" class="button black" value="." onclick='v(".")'>
+                        <input type="button" class="button black" value="C" onclick='del("")'>
+                        <input type="button"  class="button orange" value="=" onclick='eqls()'>
+                    </p>
+                </div>
+            </div>
+        </div>     
+ <script src="./js/cktconnection_oscilloscope.js"></script>		
+    </body>
+</html>
