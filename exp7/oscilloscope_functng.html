@@ -49,7 +49,7 @@
 
         <script src="./js/oscilloscopeboth.js"></script>
         
-	    <!--script src="./js/oscilloscopexymode.js"></script-->
+	    <script src="./js/oscilloscopexymode.js"></script>
          
     <!--/head-->
     
@@ -260,10 +260,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               
 				  
 					 <p><b>Practical  Calculation</b></p>
-					  &nbsp;  \(V_{m}\)= Divisions covered by the intersection  along y-axis
-(vertically) x Multiplying factor,<br><br>
-				  &nbsp;  \(T_{m}\)= Divisions covered by the intersection  along x-axis
-(vertically) x Multiplying factor<br>
+					  &nbsp;  \(V_{m}\)= ( No. of Minor division) x (per scale division) x Multiplying factor, or<br>
+                      &nbsp;  \(V_{m}\)= ( No. of Major division) x  Multiplying factor<br><br>
+				  &nbsp;  \(T_{m}\)= ( No. of Minor division) x (per scale division) x Multiplying factor, or<br>
+                  &nbsp;  \(T_{m}\)= ( No. of Major division) x Multiplying factor<br><br>
+                  where, Multiplying factor is the volt/div or time/div,<br>
+                  If volt/div= 1 volt;
+                  1 Major div is 1v and each minor div is 0.2v.<br>
+                  If time/div= 0.1 ms;
+                  1 Major div is 0.1ms and each minor div is 0.02 ms.
+                 
+        
+
                 </div>
             </div>    <!--------------- end of .calcln----------------------->
         </div><!--------------- end of .wholebody----------------------->

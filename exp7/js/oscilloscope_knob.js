@@ -48,6 +48,15 @@ $(document).ready(function () {
             if (flag == 12){
                 bothwvtri();
             }
+            if (flag == 13){
+                xywvsin();
+            }
+            if (flag == 14){
+                xywvsq();   
+            }
+            if (flag == 15){
+                xywvtri();
+            }
      
         }
     });
@@ -82,6 +91,15 @@ $(document).ready(function () {
             }
             if (flag == 12){
                 bothwvtri();
+            }
+            if (flag == 13){
+                xywvsin();
+            }
+            if (flag == 14){
+                xywvsq();   
+            }
+            if (flag == 15){
+                xywvtri();
             }
             
         }
@@ -119,6 +137,15 @@ $(document).ready(function () {
             if (flag == 12){
                 bothwvtri();
             }
+            if (flag == 13){
+                xywvsin();
+            }
+            if (flag == 14){
+                xywvsq();   
+            }
+            if (flag == 15){
+                xywvtri();
+            }
         }
 
     });
@@ -155,6 +182,15 @@ $(document).ready(function () {
             if (flag == 12){
                 bothwvtri();
             }
+            if (flag == 13){
+                xywvsin();
+            }
+            if (flag == 14){
+                xywvsq();   
+            }
+            if (flag == 15){
+                xywvtri();
+            }
             
         }
 
@@ -190,6 +226,15 @@ $(document).ready(function () {
             }
             if (flag == 12){
                 bothwvtri();
+            }
+            if (flag == 13){
+                xywvsin();
+            }
+            if (flag == 14){
+                xywvsq();   
+            }
+            if (flag == 15){
+                xywvtri();
             }
             
         }
@@ -229,6 +274,15 @@ $(document).ready(function () {
             if (flag == 12){
                 bothwvtri();
             }
+            if (flag == 13){
+                xywvsin();
+            }
+            if (flag == 14){
+                xywvsq();   
+            }
+            if (flag == 15){
+                xywvtri();
+            }
         }
 
     });
@@ -264,6 +318,15 @@ $(document).ready(function () {
             }
             if (flag == 12){
                 bothwvtri();
+            }
+            if (flag == 13){
+                xywvsin();
+            }
+            if (flag == 14){
+                xywvsq();   
+            }
+            if (flag == 15){
+                xywvtri();
             }
         }
 

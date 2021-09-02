@@ -147,6 +147,19 @@ function drawAxis() {
         axes.yscale1 = (canvas.height) / (2 * vmaxs1);    // y pix per V //87.5
         axes.yscale2 = (canvas.height) / (2 * vmaxs2);    // y pix per V //87.5
     }
+    // xy mode waveform display//
+    if(flag==13){
+        axes.yscale1 = (canvas.height) / (2 * vmaxs1);    // y pix per V //87.5
+        axes.yscale2 = (canvas.height) / (2 * vmaxs2);    // y pix per V //87.5
+    }
+    if(flag==14){
+       axes.yscale1 = (canvas.height) / (2 * vmaxs1);    // y pix per V //87.5
+       axes.yscale2 = (canvas.height) / (2 * vmaxs2);    // y pix per V //87.5
+   }
+   if(flag==15){
+       axes.yscale1 = (canvas.height) / (2 * vmaxs1);    // y pix per V //87.5
+       axes.yscale2 = (canvas.height) / (2 * vmaxs2);    // y pix per V //87.5
+   }
 
     axes.doNegativeX = true;
     ctx.lineWidth = 0.5;
@@ -261,34 +274,55 @@ function drawHorizontalAxisTicks() {
 
 function chnlo(){
 	
-    //drawsine1();
+    drawsine1();
   // drawsquarewv1();
-   drawtraingwv1();
+   //drawtraingwv1();
 }
 
 function chnlt(){
 	
-    //drawsine2();
+    drawsine2();
   //drawsquarewv2();
-   drawtraingwv2();
+  // drawtraingwv2();
       
 }
 
 function bthd(){
 	
-    //bothwvsin();
+    bothwvsin();
   //  bothwvsq();
-    bothwvtri();
+  //  bothwvtri();
 
 }
   
   function grnds(){
-      //grndwvsin();
+      grndwvsin();
     //grndwvsq();
-    grndwvtri();
+   // grndwvtri();
 }
 
-function xymode(){
+function oscilloxymode(){
 	
-	//scmittxymode();
+    xywvsin();
+  //xywvsq(); 
+   // xywvtri();
 }
+
+/************************************* flag details ***************************************/
+//  flag=1;     sine wave 1
+//  flag=2;     square wave 1
+//  flag=3;     triangular wave 1
+//  flag=4;     ground sine wave (1 and 2)
+//  flag=5;     both sine wave
+//  flag=6;     sine wave 2
+//  flag=7;     square wave 2
+//  flag=8;     triangular wave 1
+//  flag=9;     ground square wave (1 and 2)
+//  flag=10;    gorund triangular wave (1 and 2)
+//  flag=11;    both square wave
+//  flag=12;    both triangular wave
+//  flag=13;    xy sine wave
+//  flag=14;    xy square wave
+//  flag=15;    xy triangular wave
+/******************************** flag details ends here **********************************/
+
