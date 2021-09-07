@@ -2,9 +2,10 @@
  Created on : 02 Sept, 2021
  Author     : Sukriti Dhang
  */
-//----------------------------XY MODE--------------------------------------------//
-//-------------------channel l ---> along horizontal axis (X - axis)------------//
-//-------------------channel 2 ---> along Vertical axis (Y - axis)-------------//
+//-----------------------------------XY MODE--------------------------------------------//
+//-------------------channel l ---> along horizontal axis (X - axis) X-input------------//
+//-------------------channel 2 ---> along Vertical axis (Y - axis) Y-input--------------//
+//-------------------display volts-versus-volts display using two input channels--------//
 
 
 
@@ -343,7 +344,7 @@
  // create function 
  for (var i = 0; i < axes.N; i++) {
      x[i] = tstart + i * dt;
-     y[i] = vp1 * Math.sin(2 * 3.1415 * frqfng1 * x[i] + phsl * 3.1415 / 180);
+     y[i] = (vp1/2) * Math.sin(2 * 3.1415 * frqfng1 * x[i] + phsl * 3.1415 / 180);
  }
  
  var i, x0, y0, xscale, yscales1, xp, yp;
@@ -385,7 +386,7 @@
      // create function 
      for (var j = 0; j < axes.N; j++) {
          x1[j] = tstart1 + j * dt1;
-         y1[j] = vp2 * Math.sin(2 * 3.1415 * frqfng2 * x1[j] + phsl * 3.1415 / 180);
+         y1[j] = (vp2/2) * Math.sin(2 * 3.1415 * frqfng2 * x1[j] + phsl * 3.1415 / 180);
      }
  
      var j, x0, y0, xscale, yscale, xp1, yp1;
@@ -457,7 +458,7 @@
  for (var i = 0; i < axes.N; i++) {
      x[i] = tstart + i * dt;
      y[i] = vp1 * Math.sin(2 * 3.1415 * frqfng1 * x[i] + phsl * 3.1415 / 180);
-     ys[i] = vp1 * Math.sign(y[i]);
+     ys[i] = (vp1/2) * Math.sign(y[i]);
  }
  
  var i, x0, y0, xscale, yscales1, xp, yp;
@@ -500,7 +501,7 @@
      for (var j = 0; j < axes.N; j++) {
          x1[j] = tstart + j * dt;
          y1[j] = vp2 * Math.sin(2 * 3.1415 * frqfng2 * x1[j] + phsl * 3.1415 / 180);
-         ys1[j] = vp2 * Math.sign(y1[j]);
+         ys1[j] = (vp2/2) * Math.sign(y1[j]);
      }
  
      var j, x0, y0, xscale, yscale, xp1, yp1;

@@ -132,7 +132,7 @@ function sinwv2() {
     // create function 
     for (var i = 0; i < axes.N; i++) {
         x[i] = tstart + i * dt;
-        y[i] = vp2 * Math.sin(2 * 3.1415 * frqfng2 * x[i] + phsl * 3.1415 / 180);
+        y[i] = (vp2/2) * Math.sin(2 * 3.1415 * frqfng2 * x[i] + phsl * 3.1415 / 180);
     }
 
     var i, x0, y0, xscale, yscale, xp, yp;

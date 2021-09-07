@@ -6,7 +6,7 @@
     <head>
 	<!-- Google Tag Manager -->
 	
-        <title>Oscilloscope</title>
+        <title> Oscilloscope and Function Generator</title>
         <meta charset="windows-1252">
        
 		 <meta name="description" content="EMF Generation">
@@ -113,13 +113,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <li>Connect L3-L6. This will connect the function generator 2 to channel 2 probe of oscilloscope.</li>
                             <li> Connect L4-L7, L2-L7. This will connect the ground of function generator 1 and function generator 2 with oscilloscope. </li>
                             <li>Click on 'ON' button to start the experiment.</li>
-                            <li>Double Click on 'Sine Wave' button to generate input waveform (1 V<sub>p</sub>, 1kHz) from Function Generator 1.</li>
-                            <li>Double Click on 'Sine Wave' button to generate input waveform (1 V<sub>p</sub>, 1kHz) from Function Generator 2.</li>
+                            <li>Double Click on 'Sine Wave' button to generate input waveform (2 V<sub>p-p</sub>, 1kHz) from Function Generator 1.</li>
+                            <li>Double Click on 'Sine Wave' button to generate input waveform (2 V<sub>p-p</sub>, 1kHz) from Function Generator 2.</li>
                             <li>Vary the Amplitude, Frequency, volt/div  using the controllers.</li> 
                             <li>Click on "Dual" button to observe both the waveform.</li>
                             <li>Click on "X-Y" button to observe the  specialized two-channel mode of oscilloscope. The XY time mode converts the oscilloscope from a volts-versus-time display to a volts-versus-volts display using two input channels. Channel 1 is the X-axis input, channel 2 is the Y-axis input.</li>
 							<li>Channel 1 shows the waveform of Function Generator 1, Channel 2 shows the waveform of Function Generator 2. </li>                          
-                            <li>Repeat step 8-12 for 'Square Wave' and 'Triangular Wave'. Double Click on input button to generate input waveform (1 V<sub>p</sub>, 1kHz) from Function Generator 1 and Function Generator 2.</li>
+                            <li>Repeat step 8-12 for 'Square Wave' and 'Triangular Wave'. Double Click on input button to generate input waveform (2 V<sub>p-p</sub>, 1kHz) from Function Generator 1 and Function Generator 2.</li>
                             <li>Note :  Sometimes due to page load or cache, the graph may not come exact at one click. So it is better to double click on the channel-1 function/ channel-2 function/ dual function/ground function to get the respective signals. </li>            
                         </ol> 
                     </div>
@@ -175,8 +175,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             <!-----------amplitude-knob-container---------------->
                             <div id="amplitude-knob-container-fng">
-                                <input type="text" id="amp-knob-fng1" readOnly=false  value="1" oninput="ampfng1()">
-                                <label>Amplitude(Volt)</label>
+                                <input type="text" id="amp-knob-fng1" readOnly=false  value="2" oninput="ampfng1()">
+                                <label>Amplitude(Volt)(V<sub>p-p</sub>)</label>
                             </div>
 
                         </div>  <!--------------- end of .knob-container-fng----------------------->
@@ -198,8 +198,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             <!-----------amplitude-knob-container---------------->
                             <div id="amplitude-knob-container-fng2">
-                                <input type="text" id="amp-knob-fng2" readOnly=false  value="1" oninput="ampfng2()">
-                                <label>Amplitude(Volt)</label>
+                                <input type="text" id="amp-knob-fng2" readOnly=false  value="2" oninput="ampfng2()">
+                                <label>Amplitude(Volt)(V<sub>p-p</sub>)</label>
                             </div>
 
                         </div>  <!--------------- end of .knob-container-fng2----------------------->

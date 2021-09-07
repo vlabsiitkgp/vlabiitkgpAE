@@ -65,9 +65,11 @@
                         <div class="content" id="experiment-article-section-3-content">
                             Objective of Experiment
 							<ol>
-							<li> </li>
-							<li> </li>
-							<li></li>
+                            <li>Familiarisation of Function Generator</li>
+							<li>To undertand  Oscilloscope using the Sine, Square, and Triangle waveforms.  </li>
+							<li>Checking the  frequencies of the Sine, Square, and Triangle waves on the waveform generator</li>
+                            <li>This experiment will help the students to learn  measuring voltages, time, frequency.</li>
+							<li>This experiment will help the students to learn  about lissajous figures </li>
 							</ol>
                         </div>
                     </section>
@@ -115,14 +117,139 @@
                         </div>
 
                         <div class="content" id="experiment-article-section-2-content">
-                           
+                            <b>CATHODE RAY OSCILLOSCOPE (CRO)</b><br><br>
+                            The cathode-ray oscilloscope (CRO) is a common laboratory instrument that provides 
+                            time and amplitude measurements of voltage signals over a wide range of frequencies. 
+                             The  CRO is a cathode-ray tube shown schematically in Figure 1.
 						 <div align="center">
                                 <p>
-                                    <img src="image/schmitttrg_ckt_thry.png" style ="width:500px;height:300px">
+                                    <img src="image/cro_schematic.png" style ="width:500px;height:300px">
                                 </p><br>
                                 Figure:1
                             </div><br>
-							
+							The cathode ray is a beam of electrons which are emitted by the heated cathode (negative
+electrode) and accelerated toward the fluorescent screen. The assembly of the cathode, intensity
+grid, focus grid, and accelerating anode (positive electrode) is called an electron gun. Its purpose
+is to generate the electron beam and control its intensity and focus. Between the electron gun and
+the fluorescent screen are two pair of metal plates - one oriented to provide horizontal deflection
+of the beam and one pair oriented ot give vertical deflection to the beam. These plates are thus
+referred to as the horizontal and vertical deflection plates. The combination of these two
+deflections allows the beam to reach any portion of the fluorescent screen. Wherever the electron
+beam hits the screen, the phosphor is excited and light is emitted from that point. This conversion
+of electron energy into light allows us to write with points or lines of light on an otherwise
+darkened screen.
+In the most common use of the oscilloscope the signal to be studied is first amplified and then
+applied to the vertical (deflection) plates to deflect the beam vertically and at the same time a voltage that increases linearly with time is applied to the horizontal (deflection) plates thus
+causing the beam to be deflected horizontally at a uniform (constant> rate. The signal applied to
+the vertical plates is thus displayed on the screen as a function of time. The horizontal axis serves
+as a uniform time scale.<br><br>
+
+A dual trace oscilloscope can display two traces on the screen, allowing us to easily compare the input and output waveforms. In this experiment, channel 1 is connected to function generator 1 and channel 2 is connected to function generator 2.<br><br>
+<b>Obtaining a clear and stable trace</b><br><br>
+Once if we connect the oscilloscope to the circuit, it is necessary to adjust the controls to obtain a clear and stable trace on the screen in order to test it.
+In this experment, the input is given through two function generator.
+<ul>
+    <li>The Y AMPLIFIER (VOLTS/CM) control determines the height of the trace. Choose a setting so the trace occupies at least half the screen height, but does not disappear off the screen.</li>
+    <li>The TIMEBASE (TIME/CM) control determines the rate at which the dot sweeps across the screen. Choose a setting so the trace shows at least one cycle of the signal across the screen. Note that a steady DC input signal gives a horizontal line trace for which the time base setting is not critical.</li>
+    <li>The TRIGGER control is usually best left set to AUTO.</li>
+</ul><br><br>
+<b>Measuring voltage and time period</b><br><br>
+The trace on an oscilloscope screen is a graph of voltage against time. The wavegorm of this graph is determined by the nature of the input signal. In addition to the properties labeled on the graph, there is frequency which is the number of cycles per second. 
+The diagram shows a sine wave but these properties apply to any signal with a constant shape.
+<div align="center">
+    <p>
+        <img src="image/propertiesofwave.png" style ="width:500px;height:300px">
+    </p><br>
+    Figure:2
+</div><br>
+<ul>
+<li> Amplitude is the maximum voltage reached by the signal. It is measured in volts.</li>
+<li> Peak voltage is another name for amplitude.</li>
+<li> Peak-peak voltage is twice the peak voltage (amplitude). When reading an oscilloscope trace it is usual to measure peak-peak voltage.</li>
+<li> Time period is the time taken for the signal to complete one cycle.
+It is measured in seconds (s), but time periods tend to be short so milliseconds (ms) and microseconds (μs) are often used. 1ms = 0.001s and 1μs = 0.000001s.</li>
+<li> Frequency is the number of cycles per second. It is measured in hertz (Hz), but frequencies tend to be high so kilohertz (kHz) and megahertz (MHz) are often used.
+ 1kHz = 1000Hz and 1MHz = 1000000Hz.</li>
+</ul>
+\(Frequency = \frac{1}{ Time period} \)<br>
+\(Time period = \frac{1}{Frequency}\)<br>
+<b>Voltage:</b> Voltage is shown on the vertical y-axis and the scale is determined by the Y AMPLIFIER (VOLTS/Div) control. Usually peak-peak voltage is measured because it can be read correctly even if the position of 0V is not known. The amplitude is half the peak-peak voltage.<br>
+\(Voltage = distance in Div \times volts/Div \)<br>
+<b> Time period:</b> Time is shown on the horizontal x-axis and the scale is determined by the TIMEBASE (TIME/Div) control. The time period (often just called period) is the time for one cycle of the signal. The frequency is the number of cycles per second, frequency = 1/time period.<br>
+\(Time = distance in Div \times time/Div\)<br><br>
+
+<b>Lissajous Figure</b><br><br>
+The oscilloscope  used to display the time-varying input signal to channel 1 or channel 2. The oscilloscope displayed the information so that the value of the signal voltage was
+ traced along the vertical while the oscilloscope traced a uniform time axis along the horizontal. 
+ However,  it is useful to control the horizontal signal with an external source using the oscilloscope in 
+ the xy mode. This mode is  generates Lissajous figures –
+  these are figures created by connecting channel 1 to a function generator outputting a sine wave and
+   channel 2 to a different sinusoid - hence the need for sharing functions generators. By letting
+  channel 1 drive the horizontal and channel 2 the vertical, a shape will be traced out on the scope’s display.<br>
+  The following figure shows  some of the possible curves that can be drawn by varying the frequency
+and phase of the sinusoidal functions. 
+However, the phase of the signal generator outputs is fixed, though it often drifts slowly with time.
+<div align="center">
+    <p>
+        <img src="image/lissajous.png" style ="width:400px;height:150px">
+    </p><br>
+    Figure:3
+</div><br>
+<b>Function Generator</b><br><br>
+A function generator is a device that can produce various patterns of voltage at a variety of
+frequencies and amplitudes. It is used to test the response of circuits to common input signals.
+The electrical leads from the device are attached to the ground and signal input terminals of the
+device under test.<br><br>
+<b>Features and controls</b>
+
+<ol>
+<li>  Most function generators allow the user to choose the shape of the output from a small
+number of options.
+<ul>
+<li>Square wave - The signal goes directly from high to low voltage.</li>
+<div align="center">
+    <p>
+        <img src="image/sqrwave.png" style ="width:500px;height:200px">
+    </p><br>
+    Figure:4
+</div><br>
+<li>Sine wave - The signal curves like a sinusoid from high to low voltage.</li><div align="center">
+    <p>
+        <img src="image/sinewave.png" style ="width:500px;height:200px">
+    </p><br>
+    Figure:5
+</div><br>
+<li>Triangle wave - The signal goes from high to low voltage at a fixed rate</li>
+<div align="center">
+    <p>
+        <img src="image/triwave.png" style ="width:500px;height:200px">
+    </p><br>
+    Figure:6
+</div><br>
+</ul>
+<li> The amplitude control on a function generator varies the voltage difference between the
+high and low voltage of the output signal.</li>
+<li> The direct current (DC) offset control on a function generator varies the average voltage
+of a signal relative to the ground.</li>
+<li> The frequency control of a function generator controls the rate at which output signal
+oscillates. On some function generators, the frequency control is a combination of
+different controls.</li>
+<li> One set of controls chooses the broad frequency range (order of magnitude) and the other
+selects the precise frequency. This allows the function generator to handle the enormous
+variation in frequency scale needed for signals.</li>
+</ol><br><br>
+
+<b>How to use a function generator?</b><br><br>
+<ul>
+<li> After powering on the function generator, the output signal needs to be configured to
+the desired shape. Typically, this means connecting the signal and ground leads to an
+oscilloscope to check the controls.</li>
+<li> Adjust the function generator until the output signal is correct, then attach the signal and
+ground leads from the function generator to the input and ground of the device under
+test.</li>
+<li> For some applications, the negative lead of the function generator should attach to a
+negative input of the device, but usually attaching to ground is sufficient.</li>
+</ul>
                         </div>
                         
                     </section>
@@ -148,25 +275,26 @@
                                     <li>Connect L3-L6. This will connect the function generator 2 to channel 2 probe of oscilloscope.</li>
                                     <li> Connect L4-L7, L2-L7. This will connect the ground of function generator 1 and function generator 2 with oscilloscope. </li>
                                     <li>Click on 'ON' button to start the experiment.</li>
-                                    <li>Double Click on 'Sine Wave' button to generate input waveform (1 V<sub>p</sub>, 1kHz) from Function Generator 1.</li>
-                                    <li>Double Click on 'Sine Wave' button to generate input waveform (1 V<sub>p</sub>, 1kHz) from Function Generator 2.</li>
+                                    <li>Double Click on 'Sine Wave' button to generate input waveform (2 V<sub>p-p</sub>, 1kHz) from Function Generator 1.</li>
+                                    <li>Double Click on 'Sine Wave' button to generate input waveform (2 V<sub>p-p</sub>, 1kHz) from Function Generator 2.</li>
                                     <li>Vary the Amplitude, Frequency, volt/div  using the controllers.</li> 
                                     <li>Double Click on "Dual" button to observe both the waveform.</li>
                                     <li>Click on "X-Y" button to observe the  specialized two-channel mode of oscilloscope. The XY time mode converts the oscilloscope from a volts-versus-time display to a volts-versus-volts display using two input channels. Channel 1 is the X-axis input, channel 2 is the Y-axis input.</li>
                                     <li>Channel 1 shows the waveform of Function Generator 1, Channel 2 shows the waveform of Function Generator 2. </li>                          
-                                    <li>Repeat step 8-12 for 'Square Wave' and 'Triangular Wave'. Double Click on input button to generate input waveform (1 V<sub>p</sub>, 1kHz) from Function Generator 1 and Function Generator 2.</li>
+                                    <li>Repeat step 8-12 for 'Square Wave' and 'Triangular Wave'. Double Click on input button to generate input waveform (2 V<sub>p-p</sub>, 1kHz) from Function Generator 1 and Function Generator 2.</li>
                                     <li>Note :  Sometimes due to page load or cache, the graph may not come exact at one click. So it is better to double click on the channel-1 function/ channel-2 function/ dual function/ground function to get the respective signals. </li>            
+                                    <li> Oscilloscope and function generator is described more elaborately in the Oscilloscope Tutorial section.</li>
                                 </ol>  <br>
 						
 						 <div align="center">
                                 <p>
-                                    <img src="image/schmitttrg_prc.png" style ="width:500px;height:300px">
+                                    <img src="image/sine_dual_prc.png" style ="width:500px;height:300px">
                                 </p><br>
                                 Figure:1
                             </div><br>
 							Note: 
 							<ol type="1">
-							<li>The input sine wave is 1 V<sub>p</sub>, 1kHz</li>
+							<li>The input sine wave is 2 V<sub>p-p</sub>, 1kHz</li>
 							<li>As, volt/div is set to 1 volt/div. 
 			 Which implies each mazor division is 1 volt where as each minor division is 0.2 volt.</li>
 							 <li>Click on Sine Wave from function generator 2.</li>
@@ -220,10 +348,10 @@ volts/div- This control lets you change how many volts are represented by each v
 time/div- This control lets you change how much time is represented by each horizontal increment of the grid overlay on the screen. It allows you to zoom in and out along the x axis.
 <br><br>
 If volt/div is set to 1 volt which implies each mazor vertical division is 1 volt where as each minor vertical  division is 0.2 volt. 
-And time/div is set to 0.1ms/div which implies each maor horiontal division is 0.1ms.
+And time/div is set to 0.1 ms/div which implies each maor horiontal division is 0.1 ms.
 Voltage on the vertical scale is 1 volt/div multiply by (number of division).
-Time on the horizontalscale is 0.1msec  multiply by (number of division). 
-In the figure 2, 1 volt/div and amplitude of the input signal is 1 volt. Here 0.1mses/div, the frequency is 1 kHz and its period is 1 complete cycle in 1m sec. 
+Time on the horizontalscale is 0.1 ms  multiply by (number of division). 
+In the figure 2, 1 volt/div and amplitude of the input signal is 1 volt. Here 0.1 ms/div, the frequency is 1 kHz and its period is 1 complete cycle in 1 ms. 
 
 <div align="center">
                                     <p>
@@ -231,7 +359,7 @@ In the figure 2, 1 volt/div and amplitude of the input signal is 1 volt. Here 0.
                                     </p><br>
                                     Figure:2
                                 </div><br><br>
-In the figure 3, if volt/div is set to 2volt/div, which implies each mazor division is 2 volt where as each minor division is 0.5volt. 
+In the figure 3, if volt/div is set to 2 volt/div, which implies each mazor division is 2 volt where as each minor division is 0.5 volt. 
 <div align="center">
                                     <p>
                                         <img src="image/oscilloscope_2vd.png" style="width:350px;height:300px">
@@ -240,13 +368,14 @@ In the figure 3, if volt/div is set to 2volt/div, which implies each mazor divis
                                 </div><br><br>
 Note: If you set the Volts/Div too low, you’ll clip the signal. Similarly, setting it too high, and you’ll won’t find the signal, i.e. the signal will b flat.
 ncreasing the Timebase will display more cycles of a periodic signal. Conversely, reducing the Timebase, fewer cycles will be displayed. 
-
+<br><br> 
+ Oscilloscope and function generator is described more elaborately in the attached file. Download the file.<br><br>
                                     <!--object width="900" height="500" data="./content/C006/T003/viewer.swf" type="application/x-shockwave-flash">
                                         <param name="src" value="./content/C006/T003/viewer.swf"/>
                                     </object-->
                                         <p>
 									Virtual Oscilloscope Tutorial : 
-									<a href="content/Oscilloscope Tutorial_schmitt.pdf" target="_blank"> Oscilloscope Tutorial</a>
+									<a href="content/Oscilloscope and Function Generator Details.pdf" target="_blank"> Oscilloscope Tutorial</a>
 </p>								                     
                             </div>
                         </section>   
@@ -269,7 +398,7 @@ ncreasing the Timebase will display more cycles of a periodic signal. Conversely
                             </p-->
 							<!--h2><marquee style="color:green;font-size:25pt;">Astable multivibrator using IC 555</marquee></h2-->   
 
-                            <input type="button" onclick="window.open('./oscilloscope_functng.html', '_blank');" value="Schmitt Trigger" style="position:absolute; top:70px;  right:110px;"/><!--opens in new tab-->
+                            <input type="button" onclick="window.open('./oscilloscope_functng.html', '_blank');" value="Oscilloscope and Function Generator" style="position:absolute; top:70px;  right:110px;"/><!--opens in new tab-->
 							
                         </div>
                     </section>

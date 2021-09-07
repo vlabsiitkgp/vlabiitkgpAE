@@ -115,7 +115,7 @@
      for (var i = 0; i < axes.N; i++) {
          x[i] = tstart + i * dt;
          y[i] = vp * Math.sin(2 * 3.1415 * frqfng * x[i] + phslsq2 * 3.1415 / 180);
-         ys[i] = vp * Math.sign(y[i]);
+         ys[i] =(vp/2) * Math.sign(y[i]);
      }
  
      var i, x0, y0, xscale, yscale, xp, yp;
