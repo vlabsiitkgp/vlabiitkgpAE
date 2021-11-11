@@ -17,55 +17,72 @@ var quizJSON = {
     },
     "questions": [
         {// Question 1 - Multiple Choice, Single True Answer
-            "q": "	A DAC converts an  digital input signal to a analog output.",
+            "q": "The speed of operation of Schmitt trigger depends on ",
             "a": [
-                {"option": "True", "correct": true},
-				{"option": " False", "correct": false}// no comma here
+                {"option": " op-amp gain ", "correct": false},
+                {"option": "Supply voltage ", "correct": false},
+                {"option": " op-amp configuration ", "correct": false},
+                {"option": " Rate of change of input", "correct": true} // no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
         {// Question 2 - Multiple Choice, Multiple True Answers, Select Any
-            "q": "	The equivalent weight of LSB in a four-bit variable resistive divider D/A converter is",
+            "q": "The feedback used in Schmitt trigger is",
             "a": [
-                {"option": "1/16", "correct":false},
-                {"option": " 1/15", "correct": true},
-                {"option": " 1/8 ", "correct":false},
-                {"option": " 8/15", "correct": false} // no comma here
+                {"option": "Degenerative", "correct":false},
+                {"option": " Regenerative", "correct": true},
+                {"option": " Series ", "correct":false},
+                {"option": " Shunt", "correct": false} // no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
         {// Question 3 - Multiple Choice, Single True Answer
-            "q": "What is used to represent the signed magnitude?",
+            "q": "The value of cross over at increasing or decreasing input are called",
             "a": [
-                {"option": "MSB", "correct": true},
-                {"option": "LSB", "correct": false},
-                {"option": "	None of the above", "correct": false} // no comma here
+                {"option": "Cut-off points", "correct": false},
+                {"option": "Saturation points", "correct": false},
+                {"option": " Trip-point", "correct": true},
+                {"option": " Null points", "correct": false} // no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
        
         },
-        {// Question 4 - Multiple Choice, Single True Answer
-            "q": " Determine the resolution and full scale output of 4-bit weighted resistor DAC with a reference of 10 volts. ",
+		{// Question 4 - Multiple Choice, Single True Answer
+            "q": " The Schmitt trigger could also be used for",
             "a": [
-                {"option": " Resolution=1.25 V, Full scale voltage=18.75 V", "correct": true},
-                {"option": " Resolution=2.5 V, Full scale voltage=18.75 V", "correct": false},
-                {"option": " Resolution=5 V, Full scale voltage=18.25 V", "correct": false},
-				{"option": " Resolution=2.5, Full scale voltage=18.75 V", "correct": false},// no comma here
+                {"option": "Voltage level detection", "correct": false},
+                {"option": "Astable operation ", "correct": false},
+                {"option": "  Monostable operation ", "correct": true},
+                {"option": " Voltage limiting", "correct": false} // no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
        
         },
 		{// Question 5 - Multiple Choice, Single True Answer
-            "q": " A 4-bit R/2R digital-to-analog (DAC) converter has a reference of 5 volts. What is the analog output for the input code (B3, B2, B1, B0) = 0010.",
+            "q": "  The Schmitt trigger could be used as",
             "a": [
-                {"option": "	0.625", "correct": true},
-                {"option": " 0.765", "correct": false},
-                {"option": " 0.938", "correct": false},
-				{"option": "  -0.938", "correct": false},// no comma here
+                {"option": "Voltage detector", "correct": false},
+                {"option": "Astable multivibrator", "correct": false},
+                {"option": "Monostable multivibrator ", "correct": false},
+                {"option": "All of the above", "correct": true} // no comma here 
+				//equation is in form  Em sin wt. w = 100 ᴨ rad/s. w=2 ᴨ x frequency. so frequency = w/2ᴨ =100ᴨ/2ᴨ=50
+            ],
+            "correct": "",
+            "incorrect": "" // no comma here
+       
+        },
+		{// Question 6 - Multiple Choice, Single True Answer
+            "q": " The switching speed could be improved by using",
+            "a": [
+                {"option": " Zener diode at output", "correct": false},
+                {"option": " Two Zener diode connected back to back at output", "correct": true},
+                {"option": "Feed back resistor", "correct": false},
+                {"option": "Capacitor in feedback", "correct": false} // no comma here 
+				//equation is in form  Em sin wt. w = 100 ᴨ rad/s. w=2 ᴨ x frequency. so frequency = w/2ᴨ =100ᴨ/2ᴨ=50
             ],
             "correct": "",
             "incorrect": "" // no comma here

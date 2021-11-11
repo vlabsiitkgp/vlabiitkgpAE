@@ -17,56 +17,73 @@ var prequizJSON = {
     },
     "prequestions": [
         {// Question 1 - Multiple Choice, Single True Answer
-            "preq": " 	Analog signals have continuous electrical signals. ",
+            "preq": " Schmitt trigger is an example of ------ circuit. ",
             "prea": [
-			 {"option": "False", "correct": false},
-				{"option": " True", "correct": true}// no comma here
+			 {"option": "Amplifier", "correct": false},
+                {"option": "Oscillator ", "correct": false},              
+                {"option": "  Power supply", "correct": false},
+				{"option": " Switching", "correct": true},// no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
         {// Question 2 - Multiple Choice, Multiple True Answers, Select Any
-            "preq": "Analog signal is represented by ___________",
+            "preq": " In Schmitt trigger circuit, op-amp switches between",
             "prea": [
-                {"option": "Square Wave ", "correct":false},
-                {"option": " Triangle Wave", "correct": false },
-				{"option": "  Sine Wave", "correct": true}//no comma here
+                {"option": "Cut-off and negative saturation ", "correct":false},
+                {"option": " Negative and positive saturation", "correct": true},
+				{"option": "  Slight conduction and cut-off", "correct": false},
+				{"option": "  Cut-off and positive saturation", "correct": false}//no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
         {// Question 3 - Multiple Choice, Single True Answer
-            "preq": " 	A 4-bit R/2R digital-to-analog (DAC) converter has a reference of 5 volts. What is the analog output for the input code (B3, B2, B1, B0) = 0011.",
+            "preq": " If the power supply voltage applied to the op-amp that has a open loop gain of 100db is ±20V, the op-amp saturation voltage is",
             "prea": [
-                {"option": "	9.125", "correct": false},
-                {"option": " 0.765", "correct": false},
-                {"option": " 0.938", "correct": true},
-				{"option": "  -0.938", "correct": false},// no comma here
+                {"option": " 20mV", "correct": false},
+                {"option": " 2mV", "correct": true},
+                {"option": " 20µV", "correct": false},
+				{"option": "  200µV", "correct": false},// no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
-         {// Question 4 - Multiple Choice, Single True Answer
-            "preq": " Determine the resolution and full scale output of 4-bit weighted resistor DAC with a reference of 10 volts. ",
+        {// Question 4 - Multiple Choice, Single True Answer
+            "preq": "  The operation of a Schmitt trigger is similar to that of a",
             "prea": [
-                {"option": " Resolution=1.25 V, Full scale voltage=18.75 V", "correct": true},
-                {"option": " Resolution=2.5 V, Full scale voltage=18.75 V", "correct": false},
-                {"option": " Resolution=5 V, Full scale voltage=18.25 V", "correct": false},
-				{"option": " Resolution=2.5, Full scale voltage=18.75 V", "correct": false},// no comma here
+                {"option": "Full wave rectifier", "correct": false},
+                {"option": "Series clipper", "correct": true},
+                {"option": "Polarity detector", "correct": false},
+                {"option": " Clamper", "correct": false} // no comma here
             ],
             "correct": "",
-            "incorrect": "" // no comma here      
-        },
-         {// Question 4 - Multiple Choice, Single True Answer
-            "preq": " The two ways of representing the 0 with signed magnitude representation is",
+            "incorrect": "" // no comma here
+       
+        },	
+       {// Question 5 - Multiple Choice, Single True Answer
+            "preq": " The main application of Schmitt trigger is in ",
             "prea": [
-                {"option": " 	+0 and +0", "correct": false},
-                {"option": " -0 and +0 ", "correct": true},
-                {"option": "-0 and -0", "correct": false},
-				{"option": " None of the above", "correct": false},// no comma here
+                {"option": " Amplifiers", "correct": false},
+                {"option": "Oscillators", "correct": false},
+                {"option": " Sine wave to square wave converters", "correct": true},
+                {"option": " Rectifiers", "correct": false} // no comma here
             ],
             "correct": "",
-            "incorrect": "" // no comma here      
-        }
+            "incorrect": "" // no comma here
+       
+        }	,
+		{// Question 6 - Multiple Choice, Single True Answer
+            "preq": "  The speed of switching in the Schmitt trigger depends on ",
+            "prea": [
+                {"option": " Open loop gain ", "correct": true},
+                {"option": " Input resistor", "correct": false},
+                {"option": " Hysteresis", "correct": false},
+                {"option": "  Feedback resistor", "correct": false} // no comma here
+            ],
+            "correct": "",
+            "incorrect": "" // no comma here
+       
+        }	
     ]
 };
