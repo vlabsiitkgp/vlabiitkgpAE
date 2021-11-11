@@ -9,10 +9,10 @@
                   var ttymspent=cpre+ cpost;
                   var tpercentage = ((preresultPercent+resultPercent)/2).toPrecision(4);
 
-                  var studentname='xyv';//document.getElementById("yourname").value;
+                  var studentname=document.getElementById("yourname").value;//'xyv';//
                   var prequizresult_student=preresultCount;
                   var postquizresult_student=resultCount;
-                  var expname='xy';//document.getElementById("exp5");
+                  var expname=document.getElementById("exp5");//'xy';//
                   var totaltymspent=ttymspent;
                   var gradepercentage= tpercentage;
 

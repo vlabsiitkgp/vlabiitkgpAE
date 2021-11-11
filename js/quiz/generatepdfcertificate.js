@@ -101,7 +101,7 @@ var tpercentage = ((preresultPercent+resultPercent)/2).toPrecision(4);
                   var studentname=document.getElementById("yourname").value;//'xyz abc';//
                   var prequizresult_student=preresultCount;//'a';//
                   var postquizresult_student=resultCount;//'b';//
-                  var expname=document.getElementById("exp5");//'Experiment Name';//
+                  var expname=document.getElementById("exp5").value;//'Experiment Name';//
                   var totaltymspent=ttymspent;//'tt';
                   var gradepercentage= tpercentage;
                   
