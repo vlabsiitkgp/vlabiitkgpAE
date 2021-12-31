@@ -24,6 +24,18 @@ function mainswt() {
         document.getElementById("grnd").disabled = true;
         document.getElementById("xymd").disabled = true;
 
+        document.getElementById("chhn1sq").disabled = true;
+        document.getElementById("chhn2sq").disabled = true;
+        document.getElementById("dualsq").disabled = true;
+        document.getElementById("grndsq").disabled = true;
+        document.getElementById("xymdsq").disabled = true;
+
+        document.getElementById("chhn1tr").disabled = true;
+        document.getElementById("chhn2tr").disabled = true;
+        document.getElementById("dualtr").disabled = true;
+        document.getElementById("grndtr").disabled = true;
+        document.getElementById("xymdtr").disabled = true;
+
        // document.getElementById("resistor").disabled=false;
        // document.getElementById("resistor").value='0';
         // document.getElementById("restr").value='0';
@@ -47,11 +59,7 @@ function mainswt() {
         document.getElementById("triagwave2").disabled = false;
        
        // document.getElementById("resistor").disabled=true;
-        document.getElementById("chhn1").disabled = false;
-        document.getElementById("chhn2").disabled = false;
-        document.getElementById("dual").disabled = false;
-        document.getElementById("grnd").disabled = false;
-        document.getElementById("xymd").disabled = false;
+        
 
 
         drawAxis();
@@ -271,7 +279,7 @@ function drawHorizontalAxisTicks() {
 
 }
 
-
+//------------------sine wave  channel button ------------------------------//
 function chnlo(){
 	
     drawsine1();
@@ -306,6 +314,63 @@ function oscilloxymode(){
     xywvsin();
   //xywvsq(); 
    // xywvtri();
+}
+//------------------square wave  channel button ------------------------------//
+function chnlosq(){
+	
+    drawsquarewv1();
+   
+}
+
+function chnltsq(){
+	
+   drawsquarewv2();
+  
+      
+}
+
+function bthdsq(){
+	
+    bothwvsq();
+
+}
+  
+  function grndssq(){
+      grndwvsq();
+   
+}
+
+function oscilloxymodesq(){
+	
+    xywvsq(); 
+  
+}
+
+//------------------triangle  wave  channel button ------------------------------//
+function chnlotr(){
+	
+    drawtraingwv1();
+}
+
+function chnlttr(){
+	
+    drawtraingwv2();
+      
+}
+
+function bthdtr(){
+	
+    bothwvtri();
+
+}
+  
+  function grndstr(){
+      grndwvtri();
+}
+
+function oscilloxymodetr(){
+	
+     xywvtri();
 }
 
 /************************************* flag details ***************************************/

@@ -186,15 +186,63 @@ The oscilloscope  used to display the time-varying input signal to channel 1 or 
   these are figures created by connecting channel 1 to a function generator outputting a sine wave and
    channel 2 to a different sinusoid - hence the need for sharing functions generators. By letting
   channel 1 drive the horizontal and channel 2 the vertical, a shape will be traced out on the scope’s display.<br>
-  The following figure shows  some of the possible curves that can be drawn by varying the frequency
-and phase of the sinusoidal functions. 
+ 
 However, the phase of the signal generator outputs is fixed, though it often drifts slowly with time.
+On an oscilloscope, suppose x is channel 1 and y is channel 2, A is the amplitude of  channel 1 and B is the amplitude of channel 2, a is the frequency of channel 1 and b is the frequency of channel 2, so 
+\(\frac{a}{b}\)
+ is the ratio of frequencies of the two channels, and \(&delta;\) is the phase shift of CH1.
+ <br>
+  The following figure shows  some of the possible curves that can be drawn by varying the frequency
+and phase of the sinusoidal functions. <br>
+<!--div align="center">
+    <p>
+        <img src="image/lissajous1.png" style ="width:200px;height:150px">
+    </p><br>
+     \(&delta; = \frac{&pi;}{2}\), a = 1 and b = 2, (1:2)
+	 <p>
+        <img src="image/lissajous2.png" style ="width:200px;height:150px">
+    </p><br>
+     \(&delta; = \frac{&pi;}{2}\), a = 3 and b = 2, (3:2)
+	  <p>
+        <img src="image/lissajous3.png" style ="width:200px;height:150px">
+    </p><br>
+     \(&delta; = \frac{&pi;}{2}\), a = 3 and b = 4, (3:4)
+	 
+	  <p>
+        <img src="image/lissajous4.png" style ="width:200px;height:150px">
+    </p><br>
+     \(&delta; = \frac{&pi;}{2}\), a = 5 and b = 4, (5:4)
+	 
+</div><br-->
+<div class="row" style="clear: both;display: table;">
+  <div class="column" style=" float: left;  width: 40.33%; padding: 5px;" >
+    <img src="image/lissajous1.png" style ="width:200px;height:150px;float:right"><br>
+	(a)&nbsp; \(&delta; = \frac{&pi;}{2}\), a = 1 and b = 2, (1:2)
+  </div>
+  <div class="column" style=" float: left; width: 40.33%; padding: 5px;">
+     <img src="image/lissajous2.png" style ="width:200px;height:150px;float:right"><br>
+	(b)&nbsp;  \(&delta; = \frac{&pi;}{2}\), a = 3 and b = 2, (3:2)
+  </div>
+   <div class="column" style=" float: left; width: 40.33%; padding: 5px">
+     <img src="image/lissajous3.png" style ="width:200px;height:150px;float:right"><br>
+	(c)&nbsp; \(&delta; = \frac{&pi;}{2}\), a = 3 and b = 4, (3:4)
+  </div>
+   <div class="column" style=" float: left; width: 40.33%; padding: 5px;">
+     <img src="image/lissajous4.png" style ="width:200px;height:150px;float:right"><br>
+	(d)&nbsp; \(&delta; = \frac{&pi;}{2}\), a = 5 and b = 4, (5:4)
+  </div>
+</div><br>
+<b>Practical application</b>
+Lissajous curves can also be generated using an oscilloscope. An octopus circuit can be used to demonstrate the waveform images on an oscilloscope. Two phase-shifted sinusoid inputs are applied to the oscilloscope 
+in X-Y mode and the phase relationship between the signals is presented as a Lissajous figure.<br><br>
+
 <div align="center">
     <p>
-        <img src="image/lissajous.png" style ="width:400px;height:150px">
+        <img src="image/lissajous_relaciones.png" style ="width:220px;height:350px">
     </p><br>
-    Figure:3
-</div><br>
+     Lissajous figures: various frequency relations (b/a) and phase differences (\(&delta;\))
+	 </div><br>
+
 <b>Function Generator</b><br><br>
 A function generator is a device that can produce various patterns of voltage at a variety of
 frequencies and amplitudes. It is used to test the response of circuits to common input signals.
@@ -281,7 +329,7 @@ negative input of the device, but usually attaching to ground is sufficient.</li
                                     <li>Double Click on "Dual" button to observe both the waveform.</li>
                                     <li>Click on "X-Y" button to observe the  specialized two-channel mode of oscilloscope. The XY time mode converts the oscilloscope from a volts-versus-time display to a volts-versus-volts display using two input channels. Channel 1 is the X-axis input, channel 2 is the Y-axis input.</li>
                                     <li>Channel 1 shows the waveform of Function Generator 1, Channel 2 shows the waveform of Function Generator 2. </li>                          
-                                    <li>Repeat step 8-12 for 'Square Wave' and 'Triangular Wave'. Double Click on input button to generate input waveform (2 V<sub>p-p</sub>, 1kHz) from Function Generator 1 and Function Generator 2.</li>
+                                    <li>Repeat step 10-12 for 'Square Wave' and 'Triangular Wave'. Double Click on input button to generate input waveform (2 V<sub>p-p</sub>, 1kHz) from Function Generator 1 and Function Generator 2.</li>
                                     <li>Note :  Sometimes due to page load or cache, the graph may not come exact at one click. So it is better to double click on the channel-1 function/ channel-2 function/ dual function/ground function to get the respective signals. </li>            
                                     <li> Oscilloscope and function generator is described more elaborately in the Oscilloscope Tutorial section.</li>
                                 </ol>  <br>
@@ -301,6 +349,9 @@ negative input of the device, but usually attaching to ground is sufficient.</li
 							 <li>As, volt/div is set to 1 volt/div.  Which implies each mazor division is 1 volt where as each minor division is 0.2 volt.</li>
 							 <li> Click on "Channel 1" or "Channel 2" button to observe  input waveform.</li>
 							 <li>Double Click on "Dual"  button to observe both the waveform</li>
+                             <li>The ground setting disconnects the input signal from the vertical system, which lets you see where zero volts is located on the screen.
+                                With grounded input coupling and auto trigger mode, you see a horizontal line on the screen that represents zero volts. Switching 
+                                from DC to ground and back again is a handy way of measuring signal voltage levels with respect to ground.</li>
 							 <li>Click on "X-Y" button to observe the  specialized two-channel mode of oscilloscope. (X-Y mode is a specialized two-channel mode of oscilloscopes when the signal of channel 1 is used for 
 							 the deviation along the horizontal axis (X) and the signal of channel 2 – along the vertical axis (Y).)</li>
 							 
@@ -373,11 +424,12 @@ ncreasing the Timebase will display more cycles of a periodic signal. Conversely
                                     <!--object width="900" height="500" data="./content/C006/T003/viewer.swf" type="application/x-shockwave-flash">
                                         <param name="src" value="./content/C006/T003/viewer.swf"/>
                                     </object-->
-                                        <p>
+                                                         
+                            </div>
+							<p >
 									Virtual Oscilloscope Tutorial : 
 									<a href="content/Oscilloscope and Function Generator Details.pdf" target="_blank"> Oscilloscope Tutorial</a>
-</p>								                     
-                            </div>
+</p>								    
                         </section>   
 
                     <!-------------------------- Fifth section of the article---------------------------------------->
@@ -442,20 +494,14 @@ ncreasing the Timebase will display more cycles of a periodic signal. Conversely
                         <div class="content" id="experiment-article-section-7-content">
                             <strong>Books </strong>
                             <ol>
-                              <li></li>
-                              <li></li>
+                              <li>Boylestad / Nashelsky, Electronic Devices and Circuit Theory , Pearson Education India; 11 edition (2015)</li>
+ <li> Adel S. Sedra , Kenneth C. Smith , Arun N. Chandorkar , Microelectronic Circuits: Theory And Applications,Oxford University Press ,Seventh Edition, (1 June 2017)</li>
+<li>Donald Neamen, Electronic Circuits: Analysis and Design, McGraw Hill Education; 3 edition (25 August 2006)</li>
+<li>Jacob Millman , Christos Halkias , Chetan Parikh , Millman's Integrated Electronics, McGraw Hill Education; 2 edition (1 July 2017)</li>
+<li>B.G. Streetman and S. Banerjee, Solid State Electronic Devices, Prentice Hall.</li>
+                             
                             </ol>
-                            <strong>Papers</strong>
-                            <ol>
-                              <li></li>
-                              <li></li>
-                            </ol>
-
-                            <strong>NPTEL</strong>
-                            <ol>
-                              <li></li>
-                              <li></li>
-                            </ol>
+                            
                           </div>
                     </section>
                   <!-------------------------- nineth section of the article---------------------------------------->

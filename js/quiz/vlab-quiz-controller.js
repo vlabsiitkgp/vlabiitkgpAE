@@ -39,7 +39,7 @@ function quizInitializeAllQuestion() {
         }
         questionOptions = questionOptions + "</ul></li>";
     }
-    questionOptions = questionOptions + "</ul><button class=\"submit\" onclick=\"return quizSubmit();\" type=\"submit\">Submit</button></form>";
+    questionOptions = questionOptions + "</ul><button class=\"submit\" id=\"submitpostans\" onclick=\"return quizSubmit();\" type=\"submit\">Submit</button></form>";
     document.getElementById("vlab-quiz-question-answer-options").innerHTML = questionOptions;
     dynamicMathConveter();
 	startCountpost();
@@ -78,6 +78,7 @@ function quizSubmit() {
 	//document.getElementById("vlab-quiz-result").innerHTML = "<p> You have scored " + resultCount + " out of " + questionCount + ".</p>";// + fullresult;
     //dynamicMathConveter()
 showResult();
+document.getElementById("submitpostans").style.display="none";
 }
 
 function showResult() {

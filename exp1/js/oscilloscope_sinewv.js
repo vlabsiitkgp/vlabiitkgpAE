@@ -101,6 +101,30 @@ function freqfng1() {
 
 //----------------------------------------code for drawing sine wave--------------------------------------------------//
 function drawsine1() {
+
+    document.getElementById("chhn1").disabled = false;
+    document.getElementById("chhn2").disabled = false;
+    document.getElementById("dual").disabled = false;
+    document.getElementById("grnd").disabled = false;
+    document.getElementById("xymd").disabled = false;
+    document.getElementById("chhn1").style.display = "block";
+    document.getElementById("chhn2").style.display = "block";
+    document.getElementById("dual").style.display = "block";
+    document.getElementById("grnd").style.display = "block";
+    document.getElementById("xymd").style.display = "block";
+
+    document.getElementById("chhn1sq").style.display = "none";
+    document.getElementById("chhn2sq").style.display = "none";
+    document.getElementById("dualsq").style.display = "none";
+    document.getElementById("grndsq").style.display = "none";
+    document.getElementById("xymdsq").style.display = "none";
+
+    document.getElementById("chhn1tr").style.display = "none";
+    document.getElementById("chhn2tr").style.display = "none";
+    document.getElementById("dualtr").style.display = "none";
+    document.getElementById("grndtr").style.display = "none";
+    document.getElementById("xymdtr").style.display = "none";
+    
     canvas = document.getElementById("mycanvas");
     if (null == canvas || !canvas.getContext)
         return;
@@ -108,6 +132,8 @@ function drawsine1() {
     // fill canvas
     ctx.fillStyle = "white";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    
     
     drawGrid(ctx);
     drawAxis();

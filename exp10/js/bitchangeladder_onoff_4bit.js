@@ -1,9 +1,6 @@
-//for 3 bit input
-//7 possible inputs
-//vr is the reference voltage (it is negative voltage)
-//according to circuit if input is zero the switch is connected to ground and if input is one then switch is connected to reference voltage 
-//https://www.tutorialspoint.com/linear_integrated_circuits_applications/linear_integrated_circuits_applications_digital_to_analog_converters.htm
-
+/*  Document Name:bitchangeladder_onoff_4bit.js
+ Author     : Sukriti Dhang
+ */
 
 var image3,image2,image1,image0;
 var b3_3,b2_2,b1_1,b0_0;
@@ -29,8 +26,8 @@ function sliderChange() {
 					  b2_2=0;
 					  b1_1=0;
 					  b0_0=0;
-					vo=(rf/r1)*((sliderVal*b3_3/1)+(sliderVal*b2_2/2)+(sliderVal*b1_1/4)+(sliderVal*b0_0/8));
-					resln=(rf/r1)*(sliderVal*b0_0/8);//weighting of LSB  
+					vo=(rf/r1)*(sliderVal/16)*((b0_0*1)+(b1_1*2)+(b2_2*4)+(b3_3*8));
+					resln=(sliderVal/16);//weighting of LSB  
 
      document.getElementById("voutput").value = vo.toPrecision(3);//volt 
 	 document.getElementById("resolution").value = resln.toPrecision(3);
@@ -116,8 +113,8 @@ function switchchange(){
 	
 if(image3.src.match("off") &&  image2.src.match("off") && image1.src.match("off") && image0.src.match("off"))
 { //0
-		vo=(rf/r1)*((vref*b3_3/1)+(vref*b2_2/2)+(vref*b1_1/4)+(vref*b0_0/8));
-		resln=(rf/r1)*(vref*b0_0/8);//weighting of LSB  
+		vo=(rf/r1)*(vref/16)*((b0_0*1)+(b1_1*2)+(b2_2*4)+(b3_3*8));
+		resln=(vref/16);//weighting of LSB  
 
     document.getElementById("voutput").value = vo.toPrecision(3);//volt 
 	 document.getElementById("resolution").value = resln.toPrecision(3);//volt 
@@ -126,8 +123,8 @@ if(image3.src.match("off") &&  image2.src.match("off") && image1.src.match("off"
 }
 if(image3.src.match("off") &&  image2.src.match("off") && image1.src.match("off") && image0.src.match("on"))
 {//1
-		vo=(rf/r1)*((vref*b3_3/1)+(vref*b2_2/2)+(vref*b1_1/4)+(vref*b0_0/8));
-		resln=(rf/r1)*(vref*b0_0/8);//weighting of LSB   
+		vo=(rf/r1)*(vref/16)*((b0_0*1)+(b1_1*2)+(b2_2*4)+(b3_3*8));
+		resln=(vref/16);//weighting of LSB   
 		
     document.getElementById("voutput").value = vo.toPrecision(3);//volt 
 	 document.getElementById("resolution").value = resln.toPrecision(3);
@@ -136,8 +133,8 @@ if(image3.src.match("off") &&  image2.src.match("off") && image1.src.match("off"
 }
 if(image3.src.match("off") &&  image2.src.match("off") && image1.src.match("on") && image0.src.match("off"))
 {//2
-	vo=(rf/r1)*((vref*b3_3/1)+(vref*b2_2/2)+(vref*b1_1/4)+(vref*b0_0/8));
-		resln=(rf/r1)*(vref*b0_0/8);//weighting of LSB     
+	vo=(rf/r1)*(vref/16)*((b0_0*1)+(b1_1*2)+(b2_2*4)+(b3_3*8));
+		resln=(vref/16);//weighting of LSB     
 
     document.getElementById("voutput").value = vo.toPrecision(3);//volt 
 	 document.getElementById("resolution").value = resln.toPrecision(3);
@@ -146,8 +143,8 @@ if(image3.src.match("off") &&  image2.src.match("off") && image1.src.match("on")
 }
 if(image3.src.match("off") &&  image2.src.match("off") && image1.src.match("on") && image0.src.match("on"))
 {//3
-		vo=(rf/r1)*((vref*b3_3/1)+(vref*b2_2/2)+(vref*b1_1/4)+(vref*b0_0/8));
-		resln=(rf/r1)*(vref*b0_0/8);//weighting of LSB   
+		vo=(rf/r1)*(vref/16)*((b0_0*1)+(b1_1*2)+(b2_2*4)+(b3_3*8));
+		resln=(vref/16);//weighting of LSB 
 
     document.getElementById("voutput").value = vo.toPrecision(3);//volt 
 	 document.getElementById("resolution").value = resln.toPrecision(3);
@@ -156,8 +153,8 @@ document.getElementById("binaryinp").value = '0011';	//3
 }
 if(image3.src.match("off") &&  image2.src.match("on") && image1.src.match("off") && image0.src.match("off"))
 {//4
-		vo=(rf/r1)*((vref*b3_3/1)+(vref*b2_2/2)+(vref*b1_1/4)+(vref*b0_0/8));
-		resln=(rf/r1)*(vref*b0_0/8);//weighting of LSB     
+		vo=(rf/r1)*(vref/16)*((b0_0*1)+(b1_1*2)+(b2_2*4)+(b3_3*8));
+		resln=(vref/16);//weighting of LSB   
 
     document.getElementById("voutput").value = vo.toPrecision(3);//volt 
 	 document.getElementById("resolution").value = resln.toPrecision(3);
@@ -167,8 +164,8 @@ if(image3.src.match("off") &&  image2.src.match("on") && image1.src.match("off")
 
 if(image3.src.match("off") &&  image2.src.match("on") && image1.src.match("off") && image0.src.match("on"))
 {//5
-		vo=(rf/r1)*((vref*b3_3/1)+(vref*b2_2/2)+(vref*b1_1/4)+(vref*b0_0/8));
-		resln=(rf/r1)*(vref*b0_0/8);//weighting of LSB    
+		vo=(rf/r1)*(vref/16)*((b0_0*1)+(b1_1*2)+(b2_2*4)+(b3_3*8));
+		resln=(vref/16);//weighting of LSB   
 		
     document.getElementById("voutput").value = vo.toPrecision(3);//volt 
 	 document.getElementById("resolution").value = resln.toPrecision(3);
@@ -177,8 +174,8 @@ if(image3.src.match("off") &&  image2.src.match("on") && image1.src.match("off")
 }
 if(image3.src.match("off") &&  image2.src.match("on") && image1.src.match("on") && image0.src.match("off"))
 {//6
-		vo=(rf/r1)*((vref*b3_3/1)+(vref*b2_2/2)+(vref*b1_1/4)+(vref*b0_0/8));
-		resln=(rf/r1)*(vref*b0_0/8);//weighting of LSB  
+		vo=(rf/r1)*(vref/16)*((b0_0*1)+(b1_1*2)+(b2_2*4)+(b3_3*8));
+		resln=(vref/16);//weighting of LSB 
 		
     document.getElementById("voutput").value = vo.toPrecision(3);//volt 
 	 document.getElementById("resolution").value = resln.toPrecision(3);
@@ -188,8 +185,8 @@ document.getElementById("binaryinp").value = '0110';	 //6
 if(image3.src.match("off") &&  image2.src.match("on") && image1.src.match("on") && image0.src.match("on"))
 {//7
 	//alert(b0_0);
-		vo=(rf/r1)*((vref*b3_3/1)+(vref*b2_2/2)+(vref*b1_1/4)+(vref*b0_0/8));
-		resln=(rf/r1)*(vref*b0_0/8);//weighting of LSB  
+		vo=(rf/r1)*(vref/16)*((b0_0*1)+(b1_1*2)+(b2_2*4)+(b3_3*8));
+		resln=(vref/16);//weighting of LSB 
 		
 	document.getElementById("voutput").value = vo.toPrecision(3);//volt 
 	 document.getElementById("resolution").value = resln.toPrecision(3);
@@ -199,8 +196,8 @@ document.getElementById("binaryinp").value = '0111';	 //7
 if(image3.src.match("on") &&  image2.src.match("off") && image1.src.match("off") && image0.src.match("off"))
 {//8
 	//alert(b0_0);
-		vo=(rf/r1)*((vref*b3_3/1)+(vref*b2_2/2)+(vref*b1_1/4)+(vref*b0_0/8));
-		resln=(rf/r1)*(vref*b0_0/8);//weighting of LSB  
+		vo=(rf/r1)*(vref/16)*((b0_0*1)+(b1_1*2)+(b2_2*4)+(b3_3*8));
+		resln=(vref/16);//weighting of LSB 
 		
 	document.getElementById("voutput").value = vo.toPrecision(3);//volt 
 	 document.getElementById("resolution").value = resln.toPrecision(3);
@@ -210,8 +207,8 @@ if(image3.src.match("on") &&  image2.src.match("off") && image1.src.match("off")
 if(image3.src.match("on") &&  image2.src.match("off") && image1.src.match("off") && image0.src.match("on"))
 {//9
 	//alert(b0_0);
-		vo=(rf/r1)*((vref*b3_3/1)+(vref*b2_2/2)+(vref*b1_1/4)+(vref*b0_0/8));
-		resln=(rf/r1)*(vref*b0_0/8);//weighting of LSB      
+		vo=(rf/r1)*(vref/16)*((b0_0*1)+(b1_1*2)+(b2_2*4)+(b3_3*8));
+		resln=(vref/16);//weighting of LSB      
 		
 	document.getElementById("voutput").value = vo.toPrecision(3);//volt 
 	 document.getElementById("resolution").value = resln.toPrecision(3);
@@ -222,8 +219,8 @@ document.getElementById("binaryinp").value = '1001';	//9
 if(image3.src.match("on") &&  image2.src.match("off") && image1.src.match("on") && image0.src.match("off"))
 {//10
 	//alert(b0_0);
-		vo=(rf/r1)*((vref*b3_3/1)+(vref*b2_2/2)+(vref*b1_1/4)+(vref*b0_0/8));
-		resln=(rf/r1)*(vref*b0_0/8);//weighting of LSB     
+	vo=(rf/r1)*(vref/16)*((b0_0*1)+(b1_1*2)+(b2_2*4)+(b3_3*8));
+		resln=(vref/16);//weighting of LSB     
 		
 	document.getElementById("voutput").value = vo.toPrecision(3);//volt 
 	 document.getElementById("resolution").value = resln.toPrecision(3);
@@ -234,8 +231,8 @@ document.getElementById("binaryinp").value = '1010';	//10
 if(image3.src.match("on") &&  image2.src.match("off") && image1.src.match("on") && image0.src.match("on"))
 {//11
 	//alert(b0_0);
-		vo=(rf/r1)*((vref*b3_3/1)+(vref*b2_2/2)+(vref*b1_1/4)+(vref*b0_0/8));
-		resln=(rf/r1)*(vref*b0_0/8);//weighting of LSB   
+		vo=(rf/r1)*(vref/16)*((b0_0*1)+(b1_1*2)+(b2_2*4)+(b3_3*8));
+		resln=(vref/16);//weighting of LSB 
 		
 	document.getElementById("voutput").value = vo.toPrecision(3);//volt 
 	 document.getElementById("resolution").value = resln.toPrecision(3);
@@ -246,8 +243,8 @@ if(image3.src.match("on") &&  image2.src.match("off") && image1.src.match("on") 
 if(image3.src.match("on") &&  image2.src.match("on") && image1.src.match("off") && image0.src.match("off"))
 {//12
 	//alert(b0_0);
-		vo=(rf/r1)*((vref*b3_3/1)+(vref*b2_2/2)+(vref*b1_1/4)+(vref*b0_0/8));
-		resln=(rf/r1)*(vref*b0_0/8);//weighting of LSB   
+		vo=(rf/r1)*(vref/16)*((b0_0*1)+(b1_1*2)+(b2_2*4)+(b3_3*8));
+		resln=(vref/16);//weighting of LSB 
 		
 	document.getElementById("voutput").value = vo.toPrecision(3);//volt 
 	 document.getElementById("resolution").value = resln.toPrecision(3);
@@ -258,8 +255,8 @@ if(image3.src.match("on") &&  image2.src.match("on") && image1.src.match("off") 
 if(image3.src.match("on") &&  image2.src.match("off") && image1.src.match("on") && image0.src.match("on"))
 {//13
 	//alert(b0_0);
-		vo=(rf/r1)*((vref*b3_3/1)+(vref*b2_2/2)+(vref*b1_1/4)+(vref*b0_0/8));
-		resln=(rf/r1)*(vref*b0_0/8);//weighting of LSB    
+		vo=(rf/r1)*(vref/16)*((b0_0*1)+(b1_1*2)+(b2_2*4)+(b3_3*8));
+		resln=(vref/16);//weighting of LSB   
 		
 	document.getElementById("voutput").value = vo.toPrecision(3);//volt 
 	 document.getElementById("resolution").value = resln.toPrecision(3);
@@ -270,8 +267,8 @@ if(image3.src.match("on") &&  image2.src.match("off") && image1.src.match("on") 
 if(image3.src.match("on") &&  image2.src.match("on") && image1.src.match("on") && image0.src.match("off"))
 {//14
 	//alert(b0_0);
-		vo=(rf/r1)*((vref*b3_3/1)+(vref*b2_2/2)+(vref*b1_1/4)+(vref*b0_0/8));
-		resln=(rf/r1)*(vref*b0_0/8);//weighting of LSB    
+		vo=(rf/r1)*(vref/16)*((b0_0*1)+(b1_1*2)+(b2_2*4)+(b3_3*8));
+		resln=(vref/16);//weighting of LSB     
 		
 	document.getElementById("voutput").value = vo.toPrecision(3);//volt 
 	 document.getElementById("resolution").value = resln.toPrecision(3);
@@ -281,8 +278,8 @@ if(image3.src.match("on") &&  image2.src.match("on") && image1.src.match("on") &
 if(image3.src.match("on") &&  image2.src.match("on") && image1.src.match("on") && image0.src.match("on"))
 {//15
 	//alert(b0_0);
-		vo=(rf/r1)*((vref*b3_3/1)+(vref*b2_2/2)+(vref*b1_1/4)+(vref*b0_0/8));
-		resln=(rf/r1)*(vref*b0_0/8);//weighting of LSB      
+		vo=(rf/r1)*(vref/16)*((b0_0*1)+(b1_1*2)+(b2_2*4)+(b3_3*8));
+		resln=(vref/16);//weighting of LSB      
 		
 	document.getElementById("voutput").value = vo.toPrecision(3);//volt 
 	 document.getElementById("resolution").value = resln.toPrecision(3);

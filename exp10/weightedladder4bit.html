@@ -1,10 +1,58 @@
 
 <!--DOCTYPE html>
-<!--Document Name:ohmslaw1.html
+<!--Document Name:Binary Ladder4bit.html
     Author:Sukriti--->
 <html>
     <head>
-        <title>Wighted Resistors</title>
+	<!-- Google Tag Manager -->
+	<!--script>
+	window.dataLayer = [{      
+    'labName': 'Analog Electronics Circuits',    
+    'discipline': 'Electronics and Communication Engineering',   
+    'college': 'IITKgp',       
+    'phase': '3',      
+    'expName': 'Digital to Analog converter',     
+    'expShortName': 'dtoaconv'}];
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KM82TPW');</script-->
+<!-- End Google Tag Manager -->
+<script>
+window.dataLayer = [{      
+    'labName': 'Analog Electronics Circuits',    
+    'discipline': 'Electronics and Communication Engineering',   
+    'college': 'IITKgp',       
+    'phase': '3',      
+    'expName': 'Digital to Analog converter',     
+    'expShortName': 'Binary Ladder'}];
+(function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script','dataLayer', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'UA-71919978-33', 'auto');
+ga('send', 'pageview');
+ga('send', 'users');
+// Feature detects Navigation Timing API support.
+if (window.performance) {
+  // Gets the number of milliseconds since page load
+  // (and rounds the result since the value must be an integer).
+  var timeSincePageLoad = Math.round(performance.now());
+
+  // Sends the timing hit to Google Analytics.
+  ga('send', 'timing', 'JS Dependencies', 'load', timeSincePageLoad);
+}
+</script>
+        <title>Binary Ladder</title>
         <meta charset="UTF-8">
   <meta name="description" content="EMF Generation">
   <meta name="keywords" content="HTML,CSS,XML,JavaScript">
@@ -17,22 +65,25 @@
         <script class="include" type="text/javascript" src="./js/jquery_files/jquery.min.js"></script>
         <script class="include" type="text/javascript" src="./js/jquery_files/jquery.jqplot.min.js"></script>
        
-        <script class="include" type="text/javascript" src="./js/jquery_files/jqplot.meterGaugeRenderer.min.js"></script>
-		
 		<script src="./js/graph.ob.js"></script>
 		<script src="./js/graph_use.ob.js"></script>
+		<script src="https://d3js.org/d3.v5.min.js"></script>
 <!--------------------------> 
         
-		<script src="./js/bitchange_onoff_4bit.js"></script>
+		<script src="./js/bitchangeladder_onoff_4bit.js"></script>
 		
-        <link rel="stylesheet" type="text/css" href="./css/opampcss.css">
+        <link rel="stylesheet" type="text/css" href="./css/dtoacss.css">
          
-       <link rel="stylesheet" href="./css/weightedladder3bit_cktconnection.css">
+       <link rel="stylesheet" href="./css/weightedladder4bit_cktconnection.css">
    
   
 
     </head>
     <body bgcolor="#000066";data-demo-id="animation"; style="width=100%"> 
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KM82TPW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
         <header class="default" id="experiment-header">
             <div class="logo" id="experiment-header-logo" style="text-align:center">
 
@@ -51,11 +102,11 @@
             <!-- demo -->
             
         <div id="whole_body" style=" background-color:white;position:relative; margin-left:auto; margin-right:auto; top:0px;height:930px; width:1075px;">
-            <div style="font-size:30px; text-align:center;padding-right:50px; height:60px"> <b> 4 bit Binary Wighted Resistors </b></div>
+            <div style="font-size:30px; text-align:center;padding-right:50px; height:60px"> <b> 4 bit Binary Ladder </b></div>
 			
             <div id="ckt_values1" style="left: 350px; position: relative; top: 20px;">
                 <p>
-                    <img src="image/weightd4bit_1.png" width=350px; height=350px;/>
+                    <img src="image/weightdladder4bit_1.png" style="width:390px; height:350px;position:absolute;left:-30px;"/>
 
 <div id="switch" >
 				<!--label for="b7" style="position : absolute; top:375px ; left : 120px;">B7</label>
@@ -66,14 +117,14 @@
 				<img id="b5_5" onclick="changeImageb5_5()" src="./image/off.png" style="position : absolute;top:485px ; left : 150px;"/>
 				<label for="B4" style="position : absolute; top:565px ; left : 120px;">B4</label>
 				<img id="b4_4" onclick="changeImageb4_4()" src="./image/off.png" style="position : absolute;top:550px ; left : 150px;"/-->
-				<label for="B3" style="position : absolute; top:290px ; left : 40px;">B3</label>
-				<img id="b3_3" onclick="changeImageb3_3()" src="./image/off.png" style="position : absolute;top:265px ; left : 0px;cursor:pointer;"/>
-				<label for="B2" style="position : absolute; top:290px ; left : 130px;">B2</label>
-				<img id="b2_2" onclick="changeImageb2_2()" src="./image/off.png" style="position : absolute;top:265px ; left : 85px;cursor:pointer;"/>
-				<label for="B1" style="position : absolute; top:290px ; left : 220px;">B1</label>
-				<img id="b1_1" onclick="changeImageb1_1()" src="./image/off.png" style="position : absolute;top:265px ; left :180px;cursor:pointer;"/>
-				<label for="B0" style="position : absolute; top:290px ; left : 290px;">B0</label>
-				<img id="b0_0" onclick="changeImageb0_0()" src="./image/off.png" style="position : absolute;top:265px ; left : 250px;cursor:pointer;"/>
+				<label for="B3" style="position : absolute; top:290px ; left : 80px;">B3</label>
+				<img id="b3_3" onclick="changeImageb3_3()" src="./image/off.png" style="position : absolute;top:265px ; left : 40px;cursor:pointer;"/>
+				<label for="B2" style="position : absolute; top:290px ; left : 170px;">B2</label>
+				<img id="b2_2" onclick="changeImageb2_2()" src="./image/off.png" style="position : absolute;top:265px ; left : 125px;cursor:pointer;"/>
+				<label for="B1" style="position : absolute; top:290px ; left : 240px;">B1</label>
+				<img id="b1_1" onclick="changeImageb1_1()" src="./image/off.png" style="position : absolute;top:265px ; left :200px;cursor:pointer;"/>
+				<label for="B0" style="position : absolute; top:290px ; left : 310px;">B0</label>
+				<img id="b0_0" onclick="changeImageb0_0()" src="./image/off.png" style="position : absolute;top:265px ; left : 270px;cursor:pointer;"/>
 				</div>
 <div class="jtk-demo-canvas canvas-wide animation-demo jtk-surface jtk-surface-nopan" id="canvas">
                 <div class="littledot" id="ld1"></br><a href="#" class="cmdLink detach" rel="ld1">1</a>
@@ -83,9 +134,9 @@
                 <div class="littledot" id="ld5"></br><a href="#" class="cmdLink detach" rel="ld5">5</a></div>
                 <div class="littledot" id="ld6"></br><a href="#" class="cmdLink detach" rel="ld6">6</a></div>
                 <!--div class="littledot" id="ld7"></br><a href="#" class="cmdLink detach" rel="ld7">7</a></div>
-                <div class="littledot" id="ld8"></br><a href="#" class="cmdLink detach" rel="ld8">8</a></div>
+                <div class="littledot" id="ld8"></br><a href="#" class="cmdLink detach" rel="ld8">8</a></div-->
                 <div class="littledot" id="ld9"></br><a href="#" class="cmdLink detach" rel="ld9">9</a></div>              
-                <div class="littledot" id="ld12"></br><a href="#" class="cmdLink detach" rel="ld12">12</a></div-->
+                <div class="littledot" id="ld12"></br><a href="#" class="cmdLink detach" rel="ld12">12</a></div>
 		
 </div>
 <script src="./js/jsplumb1.js"></script>
@@ -114,7 +165,7 @@
 
                     &nbsp&nbsp Resistance (R) : <input type="range" name="resis" id="res1" min="1" max="10" step="1" value="1" oninput="textChange()" style="width:150px;cursor:pointer;">  Kohms<br>
                     &nbsp&nbsp Resistance (R<sub>f</sub>): <input type="range" name="resis" id="res1rf" min="1" max="10" step="1" value="1" oninput="textChangerf()" style="width:150px;cursor:pointer;">  Kohms<br>
-                   &nbsp&nbsp Input volt : &nbsp&nbsp&nbsp <input type="range" name="inpdc" id="vdc" min="-15" max="15" step="1" value="0"  oninput="sliderChange()" style="width:150px;cursor:pointer;"> &nbsp; Volt<br>	
+                   &nbsp&nbsp Reference voltage (V<sub>ref</sub>) : &nbsp&nbsp&nbsp <input type="range" name="inpdc" id="vdc" min="-15" max="15" step="1" value="0"  oninput="sliderChange()" style="width:120px;cursor:pointer;"> &nbsp; V<br>	
                     
                     <br>	
                     <input type="button" id="add" value="Add to Table" onclick="tabled()" disabled="true" style="position:absolute; top:130px; width:100px;  right:250px;cursor:pointer; "/>  
@@ -141,13 +192,14 @@
                     <div class="dropdown-content">
                         <ol type="1">
 						<li>Connect the components as mentioned below:<br>
-                        L1-L5, L4-L6, L3-L5.(For eg. click on 1 and then drag to 5 and so on.)</li>
+                        L1-L5, L4-L6, L3-L5, L9-L12.(For eg. click on 1 and then drag to 5 and so on.)</li>
 				<li> Click on  'Check Connection' button to check the connections.</li>
 				<li> If connected wrong click on  'Delete all connection' button to erase all the connections.	</li>	
 				<li>Set the Resistance (R) value (1 Kohm - 10 Kohm).</li>
 				<li>Set the Feedback Resistance (R<sub>f</sub>) value same as the Resistance (R) .</li>
                             <li>Set input voltage (Vin).</li> 
-							<li>Intially  B<sub>3</sub>B<sub>2</sub>B<sub>1</sub>B<sub>0</sub>are set to 0000.(B<sub>3</sub>B<sub>2</sub>B<sub>1</sub>B<sub>0</sub> are 3 bit input)</li>
+							<li> The IC is given proper bias of +12V and -12V to V<sub>CC</sub> and V<sub>EE</sub> respectively.
+							<li>Intially  B<sub>3</sub>B<sub>2</sub>B<sub>1</sub>B<sub>0</sub>are set to 0000.(B<sub>3</sub>B<sub>2</sub>B<sub>1</sub>B<sub>0</sub> are 4 bit input)</li>
                             <li>Now note the output voltage and click on 'Add to table' button.  </li>
                             <!--li>Increase the input voltage by a factor of 2</li-->
 							<li>Change the B<sub>3</sub>B<sub>2</sub>B<sub>1</sub>B<sub>0</sub> and note the output voltage and click on 'Add to table' button.</li>
@@ -159,19 +211,20 @@
                     </div>
                 </div>
             </div>
-            <div id="tblwrap" style="position:absolute;border: 2px solid #3385ff; top:100px;width:305px;height:290px;left:10px">
+            <div id="tblwrap" style="position:absolute;border: 2px solid #3385ff; top:100px;width:305px;height:350px;left:10px">
                 <div style="position:absolute; font-size:16px;background-color: #3385ff;  top:0px;left:0px; width:305px; height:50px;font-weight: bold;"><p style="text-align:center;padding-right:80px;color:white"> <b> EXPERIMENTAL TABLE</b></p>
                 </div>
                 <p style="position:absolute; font-size:20px;top:40px;left:10px;">Resistance:&nbsp;<input type="text" id="rs" value="" size="4" readonly />K&#937;</p><br><br>
 
-                <div id="table" style="background-color:#e6f5ff;position:absolute;top:100px;width:305px;height:190px; left:0px;overflow-y: auto;">
+                <div id="table" style="background-color:#e6f5ff;position:absolute;top:100px;width:305px;height:250px; left:0px;overflow-y: auto;">
 
                     <table id="mytable" border="1" >                    
                         <tr>
-                            <th>Binary Input</th>
-                            <th> Input Voltage <br>V</th>
-                            <th>Output Voltage<br>V</th>                         
-                            <th>Resolution</th>
+						<th width="50">Decimal Number</th>
+                            <th width="150">Binary Input</th>
+                            <th width="150"> Input Voltage <br>V</th>
+                            <th width="150">Output Voltage<br>V</th>                         
+                            <th width="150">Resolution</th>
                         </tr>                   
 
                     </table>
@@ -202,7 +255,7 @@
         </div>
 <script src="./js/weightedladder4bit.js"></script>
   
- <script src="./js/weightedladder3_4bit_cktconnection.js"></script>
+ <script src="./js/weightedladder4bit_cktconnection.js"></script>
 
     </body>
 	

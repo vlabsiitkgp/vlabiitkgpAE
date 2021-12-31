@@ -1,4 +1,7 @@
-
+/*  Document Name:weightedresistor3bit.js
+ Author     : Sukriti Dhang
+ */
+ 
 /*function sliderChange() {
   var  sliderVal = document.getElementById("vdc").value;
     document.getElementById("dc").value = sliderVal;
@@ -68,7 +71,7 @@ function tabled() {
         
          alert("Change binary input");
     }
-   
+	
     else if (table.rows.length <= 15) {
         document.getElementById("dc").style.borderColor = "";
         document.getElementById("res").style.borderColor = "";
@@ -84,13 +87,16 @@ function tabled() {
             cell.innerHTML = arr[q];
 
         }
-
+			sortTable();
+			deleterow();
+			
     }
 
 //    columns = table.rows[1].cells[3];
 //    rest = columns.innerHTML;
-    clmns = table.rows[tabrowindex].cells[1];
+    clmns = table.rows[tabrowindex].cells[0];
     vlt = clmns.innerHTML;
+	
 
     if (document.getElementById("res").value != document.getElementById("resrf").value) {
         //  document.getElementById("add").style.display = "none";
@@ -103,11 +109,128 @@ function tabled() {
         document.getElementById("dc").style.borderColor = "red";
         document.getElementById("demo").innerHTML = "Enter the Reference Voltage";
     }
+	
+	
 
 }
 
+//-------------------------------------------sort table---------------------------------------------------------------//
+function sortTable() {
+     
+      table = document.getElementById("mytable");
+      swap = true;
+      /*Make a loop that will continue until
+      no swaping has been done:*/
+      while (swap) {
+        //start by saying: no swap is done:
+        swap = false;
+        rows = table.rows;
+        /*Loop through all table rows (except the
+        first, which contains table headers):*/
+        for (i = 1; i < (rows.length - 1); i++) {
+          //start by saying there should be no swap:
+          shouldswap = false;
+          /*Get the two elements you want to compare,
+          one from current row and one from the next:*/
+          x = rows[i].getElementsByTagName("td")[0];
+          y = rows[i + 1].getElementsByTagName("td")[0];
+          //check if the two rows should swap place:
+          if (Number(x.innerHTML) > Number(y.innerHTML)) {
+            //if so, mark as a swap and break the loop:
+            shouldswap = true;
+            break;
+          }
 
+         
 
+        }
+        if (shouldswap) {
+          /*If a swap has been marked, make the swap
+          and mark that a switch has been done:*/
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          swap = true;
+          
+
+        }
+       
+       
+      }
+    }
+	
+//------------------------------------------ delete row from table-------------------------------------------------------//
+
+function deleterow()
+{
+  table = document.getElementById("mytable");
+  var rowCount = table.rows.length;
+  swap = true;
+  /*Make a loop that will continue until
+  no swaping has been done:*/
+  while (swap) {
+    //start by saying: no swap is done:
+    swap = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i =1; i < (rows.length - 1); i++) {
+      //start by saying there should be no swap:
+      shouldswap = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+	  x = rows[i].getElementsByTagName("td")[0];
+      y = rows[i + 1].getElementsByTagName("td")[0];
+     
+      r2x = rows[i].getElementsByTagName("td")[2];
+      r2y = rows[i + 1].getElementsByTagName("td")[2];
+    
+      //check if the two rows should swap place:
+     if( (Number(x.innerHTML) == Number(y.innerHTML)) && (Number(r2x.innerHTML) == Number(r2y.innerHTML)) )  {
+        //if so, mark as a swap and break the loop:
+        shouldswap = true;
+        alert("Already Inserted");
+        break;
+      }
+    else if((Number(x.innerHTML) == Number(y.innerHTML)) &&(Number(r2x.innerHTML) != Number(r2y.innerHTML)) )  {
+        //if so, mark as a swap and break the loop:
+       // shouldswap = false;
+        alert("Keep the  Reference Voltage Constant");
+		document.getElementById("demo").innerHTML = "Keep the  Reference Voltage Constant";
+		document.getElementById("dc").style.borderColor = "red";
+		rows[i+1].remove(rows[i+1]);
+		rowCount--;
+        i--;
+        tabrowindex--;
+      }
+     
+   
+    }
+	
+    if (shouldswap) {
+      /*If a swap has been marked, make the swap
+      and mark that a switch has been done:*/
+      rows[i].remove(rows[i + 1]);
+      rowCount--;
+      i--;
+      tabrowindex--;
+      swap = true;
+    
+      
+
+    }
+    else{
+      rows[i].insertRow(rows[i + 1]);
+      rowCount++;
+      i++;
+      tabrowindex++;
+      swap = true;
+    }
+   
+   
+  }
+  }
+
+ 
+  
 //--------------------------------------------------------- print-------------------------------------------------------//
 function printf() {
     document.getElementById("demo").innerHTML = "";

@@ -13,7 +13,8 @@
   <meta name="keywords" content="HTML,CSS,XML,JavaScript">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-        <link rel="stylesheet" type="text/css" href="./css/oscilloscope.css">      
+        <link rel="stylesheet" type="text/css" href="./css/oscilloscope.css"> 
+            
      <!---------MathJax new version------------------->
     <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
@@ -31,8 +32,11 @@
         <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script-->
         <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script-->
      
+        
+
         <script src="./js/lib/jquery.min.js"></script>
         <script src="./js/lib/jquery.knob.min.js"></script>
+
      
         <script src="./js/oscilloscope_knob.js"></script>
         <script src="./js/oscilloscope_axis.js"></script>
@@ -59,6 +63,7 @@
   <script src="./js/graph_use.ob.js"></script>
   <!--script src="https://d3js.org/d3.v5.min.js"></script-->
   <script src="./js/lib/d3.v5.min.js"></script>
+  
 <!--------------------------> 
 <script>
     var timer_is_on_simulation = 0;
@@ -85,6 +90,13 @@ function timedCountsimulation() {
   tsim = setTimeout(timedCountsimulation, 1000);
 }
 </script>
+<!-------------------draggable------------------->
+<!--script>
+
+$( function(){
+    $("#draggable").draggable();
+});
+</script-->
     </head>
     <body bgcolor="#000066";data-demo-id="animation"; style="width:100%;">
 	<!-- Google Tag Manager (noscript) -->
@@ -101,7 +113,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
          <div class="wholebody" >
              <div style="font-size:30px; text-align:center;padding-right:100px; height:60px">  <b>Familiarisation of Oscilloscope and Function Generator</b></div>
             <div id="description" >
-                <div class="dropdown" style="">
+                <div class="dropdown">
                     <p style="text-align:center;padding-right:350px;color:white"> INSTRUCTION</p>
                     <div class="dropdown-content">
                         <ol type="1">
@@ -116,10 +128,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <li>Double Click on 'Sine Wave' button to generate input waveform (2 V<sub>p-p</sub>, 1kHz) from Function Generator 1.</li>
                             <li>Double Click on 'Sine Wave' button to generate input waveform (2 V<sub>p-p</sub>, 1kHz) from Function Generator 2.</li>
                             <li>Vary the Amplitude, Frequency, volt/div  using the controllers.</li> 
-                            <li>Click on "Dual" button to observe both the waveform.</li>
+                            <li>Double Click on "Dual" button to observe both the waveform.</li>
                             <li>Click on "X-Y" button to observe the  specialized two-channel mode of oscilloscope. The XY time mode converts the oscilloscope from a volts-versus-time display to a volts-versus-volts display using two input channels. Channel 1 is the X-axis input, channel 2 is the Y-axis input.</li>
 							<li>Channel 1 shows the waveform of Function Generator 1, Channel 2 shows the waveform of Function Generator 2. </li>                          
-                            <li>Repeat step 8-12 for 'Square Wave' and 'Triangular Wave'. Double Click on input button to generate input waveform (2 V<sub>p-p</sub>, 1kHz) from Function Generator 1 and Function Generator 2.</li>
+                            <li>Repeat step 10-12 for 'Square Wave' and 'Triangular Wave'. Double Click on input button to generate input waveform (2 V<sub>p-p</sub>, 1kHz) from Function Generator 1 and Function Generator 2.</li>
                             <li>Note :  Sometimes due to page load or cache, the graph may not come exact at one click. So it is better to double click on the channel-1 function/ channel-2 function/ dual function/ground function to get the respective signals. </li>            
                         </ol> 
                     </div>
@@ -139,12 +151,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     <!--  <output id="out"></output>-->
                    
-                         
+                     <!--------------------------------channel button for sine wave ------------------------------>    
                         <input type="button" id="chhn1" value="Channel 1" onclick="chnlo()" disabled="true" />
                         <input type="button" id="chhn2" value="Channel 2" onclick="chnlt()" disabled="true" />
                         <input type="button" id="grnd" value="Ground" onclick="grnds()" disabled="true"/>
                         <input type="button" id="dual" value="Dual" onclick="bthd()"  disabled="true"/>
 						<input type="button" id="xymd" value="X-Y" onclick="oscilloxymode()"  disabled="true"/>
+
+                    <!--------------------------------channel button for square wave ------------------------------>    
+                        <input type="button" id="chhn1sq" value="Channel 1" onclick="chnlosq()" disabled="true" />
+                        <input type="button" id="chhn2sq" value="Channel 2" onclick="chnltsq()" disabled="true" />
+                        <input type="button" id="grndsq" value="Ground" onclick="grndssq()" disabled="true"/>
+                        <input type="button" id="dualsq" value="Dual" onclick="bthdsq()"  disabled="true"/>
+						<input type="button" id="xymdsq" value="X-Y" onclick="oscilloxymodesq()"  disabled="true"/>
+
+                    <!--------------------------------channel button for triangle wave ------------------------------>
+
+                   <input type="button" id="chhn1tr" value="Channel 1" onclick="chnlotr()" disabled="true" />
+                    <input type="button" id="chhn2tr" value="Channel 2" onclick="chnlttr()" disabled="true" />
+                    <input type="button" id="grndtr" value="Ground" onclick="grndstr()" disabled="true"/>
+                    <input type="button" id="dualtr" value="Dual" onclick="bthdtr()"  disabled="true"/>
+                    <input type="button" id="xymdtr" value="X-Y" onclick="oscilloxymodetr()"  disabled="true"/>
+
 <button id="check-button" style="position:absolute; top:450px; width:100px; left:15px;cursor:pointer; border-radius: 10px;
     box-shadow: 0 2px #999; ">Check connection</button>
 <button  id="delete-connct"  onclick="deleteconnection()"  style="position:absolute; top:450px; width:100px; left:130px;cursor:pointer;border-radius: 10px;
@@ -161,8 +189,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="littledot" id="ld3"></br><a href="#" class="cmdLink detach" rel="ld3">3</a></div>			
                 <div class="littledot" id="ld4"></br><a href="#" class="cmdLink detach" rel="ld4">4</a></div>
 				<div class="littledot" id="ld5"></br><a href="#" class="cmdLink detach" rel="ld5">5</a></div>
-				<div class="littledot" id="ld6"></br><a href="#" class="cmdLink detach" rel="ld6">6</a></div>
-				<div class="littledot" id="ld7"></br><a href="#" class="cmdLink detach" rel="ld7">7</a></div>				
+				<label id="ch1">Ch-1</label>
+                <div class="littledot" id="ld6"></br><a href="#" class="cmdLink detach" rel="ld6">6</a></div>
+				<label id="ch2">Ch-2</label>
+                <div class="littledot" id="ld7"></br><a href="#" class="cmdLink detach" rel="ld7">7</a></div>	
+                <label id="gnd">Gnd</label>			
 </div>
 <script src="./js/jsplumb1.js"></script>
 					 <label> Function Generator 1</label>
@@ -290,13 +321,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        
         
          <!--------------------------------- calculator --------------------------------------------->
-        <div id="calculator" >
+       
+         <div id="calculator" >
             <div class="bttncls" id="close" >
                 <button type="button"  onclick="ok()" style="width:20px;right:-50px;top:25px;height:25px;border:none;background-color:white;cursor:pointer">
                     <img src="./image/Close Window.png" alt="Save icon" style="width:30px;height:30px"/>
                 </button></div>
 
-            <div class="box" id="hide">
+            <div class="box" id="hide" >
                 <div class="display"><input type="text" readonly size="17" id="d"></div>
                 <div class="keys">
                     <p>
@@ -342,7 +374,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </p>
                 </div>
             </div>
-        </div>     
+        </div>  <!---- end of calculator div----->  
+   
  <script src="./js/cktconnection_oscilloscope.js"></script>		
     </body>
 </html>

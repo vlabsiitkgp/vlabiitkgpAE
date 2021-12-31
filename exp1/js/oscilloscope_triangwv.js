@@ -84,6 +84,30 @@ function freqfng1() {
 
 //----------------------------------------code for drawing trianle output--------------------------------------------------//
 function drawtraingwv1() {
+
+    document.getElementById("chhn1").style.display = "none";
+    document.getElementById("chhn2").style.display = "none";
+    document.getElementById("dual").style.display = "none";
+    document.getElementById("grnd").style.display = "none";
+    document.getElementById("xymd").style.display = "none";
+
+    document.getElementById("chhn1sq").style.display = "none";
+    document.getElementById("chhn2sq").style.display = "none";
+    document.getElementById("dualsq").style.display = "none";
+    document.getElementById("grndsq").style.display = "none";
+    document.getElementById("xymdsq").style.display = "none";
+
+    document.getElementById("chhn1tr").disabled = false;
+    document.getElementById("chhn2tr").disabled = false;
+    document.getElementById("dualtr").disabled = false;
+    document.getElementById("grndtr").disabled = false;
+    document.getElementById("xymdtr").disabled = false;
+    document.getElementById("chhn1tr").style.display = "block";
+    document.getElementById("chhn2tr").style.display = "block";
+    document.getElementById("dualtr").style.display = "block";
+    document.getElementById("grndtr").style.display = "block";
+    document.getElementById("xymdtr").style.display = "block";
+
     canvas = document.getElementById("mycanvas");
     if (null == canvas || !canvas.getContext)
         return;

@@ -40,7 +40,7 @@ function prequizInitializeAllQuestion() {
         }
         prequestionOptions = prequestionOptions + "</ul></li>";
     }
-    prequestionOptions = prequestionOptions + "</ul><button class=\"submit\" onclick=\"return prequizSubmit();\" type=\"submit\">Submit</button> </form>";
+    prequestionOptions = prequestionOptions + "</ul><button class=\"submit\" id=\"submitpreans\" onclick=\"return prequizSubmit();\" type=\"submit\">Submit</button> </form>";
 	//Seconds spent on page:&nbsp;<input id=\"seconds-spent\" size=\"6\" readonly=\"\" />
     document.getElementById("vlab-quiz-question-answer-options-pre").innerHTML = prequestionOptions;
     dynamicMathConveter();
@@ -80,6 +80,7 @@ function prequizSubmit() {
     //dynamicMathConveter()
 prequizshowResult();
 //storedatafile();
+document.getElementById("submitpreans").style.display="none";
 }
 
 function prequizshowResult() {

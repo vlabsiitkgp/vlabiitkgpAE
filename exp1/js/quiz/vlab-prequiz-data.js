@@ -17,69 +17,57 @@ var prequizJSON = {
     },
     "prequestions": [
         {// Question 1 - Multiple Choice, Single True Answer
-            "preq": " Schmitt trigger is an example of ------ circuit. ",
+            "preq": " CRO stands for __________. ",
             "prea": [
-			 {"option": "Amplifier", "correct": false},
-                {"option": "Oscillator ", "correct": false},              
-                {"option": "  Power supply", "correct": false},
-				{"option": " Switching", "correct": true},// no comma here
+			 {"option": " Current Resistance Oscillator", "correct": false},
+                {"option": " Capacitance Resistance Oscilloscope ", "correct": false},              
+                {"option": " Central Resistance Oscillator", "correct": false},
+				{"option": " Cathode Ray Oscilloscope", "correct": true},// no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
         {// Question 2 - Multiple Choice, Multiple True Answers, Select Any
-            "preq": " In Schmitt trigger circuit, op-amp switches between",
+            "preq": " A function generator  is a multipurpose signal source, it can generate:",
             "prea": [
-                {"option": "Cut-off and negative saturation ", "correct":false},
-                {"option": " Negative and positive saturation", "correct": true},
-				{"option": "  Slight conduction and cut-off", "correct": false},
-				{"option": "  Cut-off and positive saturation", "correct": false}//no comma here
+                {"option": " Square Wave", "correct":false},             
+				{"option": " Triangle Wave", "correct": false},
+				{"option": " Sine Wave", "correct": false},
+				{"option": " All of above", "correct": true}//no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
         {// Question 3 - Multiple Choice, Single True Answer
-            "preq": " If the power supply voltage applied to the op-amp that has a open loop gain of 100db is ±20V, the op-amp saturation voltage is",
+            "preq": " An advantage of  Oscilloscope over multimeter is that",
             "prea": [
-                {"option": " 20mV", "correct": false},
-                {"option": " 2mV", "correct": true},
-                {"option": " 20µV", "correct": false},
-				{"option": "  200µV", "correct": false},// no comma here
+                {"option": " We can measure accurate value of voltage", "correct": false},
+                {"option": " We can see the wave shape of  voltage", "correct": true},
+                {"option": " We can measure accurate value of current", "correct": false},
+				{"option": " We can measure accurate resistance", "correct": false},// no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
         {// Question 4 - Multiple Choice, Single True Answer
-            "preq": "  The operation of a Schmitt trigger is similar to that of a",
+            "preq": "  The graticule of an oscilloscope, which has a grid pattern graduated in",
             "prea": [
-                {"option": "Full wave rectifier", "correct": false},
-                {"option": "Series clipper", "correct": true},
-                {"option": "Polarity detector", "correct": false},
-                {"option": " Clamper", "correct": false} // no comma here
+                {"option": " Square centimeters", "correct": false},
+                {"option": " Millimeters", "correct": false},
+                {"option": " Centimeters", "correct": true},
+                {"option": " None of these", "correct": false} // no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
        
         },	
        {// Question 5 - Multiple Choice, Single True Answer
-            "preq": " The main application of Schmitt trigger is in ",
+            "preq": " If the vertical sensitivity is set to 0.5 volt per division and occupies 4 divisions, then peak-to-peak voltage is ",
             "prea": [
-                {"option": " Amplifiers", "correct": false},
-                {"option": "Oscillators", "correct": false},
-                {"option": " Sine wave to square wave converters", "correct": true},
-                {"option": " Rectifiers", "correct": false} // no comma here
-            ],
-            "correct": "",
-            "incorrect": "" // no comma here
-       
-        }	,
-		{// Question 6 - Multiple Choice, Single True Answer
-            "preq": "  The speed of switching in the Schmitt trigger depends on ",
-            "prea": [
-                {"option": " Open loop gain ", "correct": true},
-                {"option": " Input resistor", "correct": false},
-                {"option": " Hysteresis", "correct": false},
-                {"option": "  Feedback resistor", "correct": false} // no comma here
+                {"option": " 4 volt", "correct": false},
+                {"option": " 5 volt", "correct": false},
+                {"option": " 2 volt", "correct": true},
+                {"option": " 20 volt", "correct": false} // no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here

@@ -80,6 +80,32 @@
  
  //----------------------------------------code for drawing square wave--------------------------------------------------//
  function drawsquarewv1() {
+
+    document.getElementById("chhn1").style.display = "none";
+    document.getElementById("chhn2").style.display = "none";
+    document.getElementById("dual").style.display = "none";
+    document.getElementById("grnd").style.display = "none";
+    document.getElementById("xymd").style.display = "none";
+
+    document.getElementById("chhn1sq").disabled = false;
+    document.getElementById("chhn2sq").disabled = false;
+    document.getElementById("dualsq").disabled = false;
+    document.getElementById("grndsq").disabled = false;
+    document.getElementById("xymdsq").disabled = false;
+    document.getElementById("chhn1sq").style.display = "block";
+    document.getElementById("chhn2sq").style.display = "block";
+    document.getElementById("dualsq").style.display = "block";
+    document.getElementById("grndsq").style.display = "block";
+    document.getElementById("xymdsq").style.display = "block";
+
+
+    document.getElementById("chhn1tr").style.display = "none";
+    document.getElementById("chhn2tr").style.display = "none";
+    document.getElementById("dualtr").style.display = "none";
+    document.getElementById("grndtr").style.display = "none";
+    document.getElementById("xymdtr").style.display = "none";
+
+  
      canvas = document.getElementById("mycanvas");
      if (null == canvas || !canvas.getContext)
          return;
@@ -87,6 +113,8 @@
      // fill canvas
      ctx.fillStyle = "white";
      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    
       
      drawGrid(ctx);
      drawAxis();
