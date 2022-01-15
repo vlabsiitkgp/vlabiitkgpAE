@@ -22,40 +22,40 @@ var cc1, cc2;//external capacitors
 var cs;
 var w, f;
 
-function srcresChange() {
+function srcresChange() { //resistance ri
     rs1 = document.getElementById("srcres").value;
     document.getElementById("srcrest").value = rs1;
 }
 
-function drainresChange() {
+function drainresChange() { //drain resistance
     rd = document.getElementById("drainres").value;
     document.getElementById("drainrest").value = rd;
 }
-function srcsresChange() {
+function srcsresChange() { //source resistance
     rs = document.getElementById("srcsres").value;
     document.getElementById("srcsrest").value = rs;
 }
-function ldresChange() {
+function ldresChange() { //load resistance
     rl = document.getElementById("ldres").value;
     document.getElementById("ldrest").value = rl;
 }
-function gtres1Change() {
+function gtres1Change() { //gate resistance 1
     rg1 = document.getElementById("gtres1").value;
     document.getElementById("gtres1t").value = rg1;
 }
-function gtres2Change() {
+function gtres2Change() { //gate resistance 1
     rg2 = document.getElementById("gtres2").value;
     document.getElementById("gtres2t").value = rg2;
 }
-function cplcp1Change() {
+function cplcp1Change() { //coupling capacitor 1
     cc1 = document.getElementById("cplcp1").value;
     document.getElementById("cplcp1t").value = cc1;
 }
-function cplcp2Change() {
+function cplcp2Change() { //coupling capacitor 1
     cc2 = document.getElementById("cplcp2").value;
     document.getElementById("cplcp2t").value = cc2;
 }
-function bypscpaChange() {
+function bypscpaChange() { //bypass capacitor
     cs = document.getElementById("bypscap").value;
     document.getElementById("bypscapt").value = cs;
 }
@@ -152,15 +152,15 @@ function tabled() {
 
     dt += w + "<br>";
     fr += f + "<br>";
-
+ var rG=5*Math.pow(10,6);
 //-----------------------------------------------------------------------------------------------//        
 
-    var num = math.complex({re: (parseFloat(rg) * parseFloat(gm) * parseFloat(rl)), im: 0});
+    var num = math.complex({re: (parseFloat(rG) * parseFloat(gm) *  Math.pow(10,-3)* parseFloat(rl)) * Math.pow(10,3), im: 0});
     // alert("num"+num.re);
     // alert("numim"+num.im);
     h1 += num + "<br>";
 
-    var den = math.complex({re:rg+rs1-(rg_ri*rg*rl*c1*c2*w)-(rg*rl*rs1*c1*c2*w) , im:(w*rl*c2*rg)+(w*rg*c1*rg)+(w*rl*c2*rs1)+(w*rg*rs1*c1)});
+    var den = math.complex({re:rG+rs1-(rG*rg_ri*rl* Math.pow(10,3)*c1*c2*w)-(rg_ri*rl* Math.pow(10,3)*rs1*c1*c2*w) , im:(w*rl* Math.pow(10,3)*c2*rG)+(w*rg_ri*c1*rG)+(w*rl* Math.pow(10,3)*c2*rs1)+(w*rg_ri*rs1*c1)});
     h2 += den + "<br>";
 //--------------------------------------------------------------complex division-----------------------------------------------//
     var real = ((num.re * den.re + num.im * den.im) / (Math.pow(den.re, 2) + Math.pow(den.im, 2))).toPrecision(5);
@@ -316,12 +316,13 @@ function cleard() {
     document.getElementById("bypscapt").value = "";
     document.getElementById("cplcp2t").value = "";
     document.getElementById("cplcp1t").value = "";
-    document.getElementById("bsres2t").value = "";
-    document.getElementById("bsres1t").value = "";
     document.getElementById("ldrest").value = "";
-    document.getElementById("emtrest").value = "";
-    document.getElementById("cllcrest").value = "";
+    document.getElementById("gtres1t").value = "";
+    document.getElementById("gtres2t").value = "";
     document.getElementById("srcrest").value = "";
+    document.getElementById("drainrest").value = "";
+    document.getElementById("srcsrest").value = "";
+   
     document.getElementById("lowfq").value = "";
     document.getElementById("highfq").value = "";
     document.getElementById("midbnd").value = "";

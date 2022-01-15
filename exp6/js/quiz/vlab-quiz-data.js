@@ -17,71 +17,58 @@ var quizJSON = {
     },
     "questions": [
         {// Question 1 - Multiple Choice, Single True Answer
-            "q": "The speed of operation of Schmitt trigger depends on ",
+            "q": "Which of the following statement is true about FET common source amplifier compared to BJT amplifier? ",
             "a": [
-                {"option": " op-amp gain ", "correct": false},
-                {"option": "Supply voltage ", "correct": false},
-                {"option": " op-amp configuration ", "correct": false},
-                {"option": " Rate of change of input", "correct": true} // no comma here
+                {"option": " it has high input impedance ", "correct": true},
+                {"option": "it has low input impedance ", "correct": false},
+                {"option": " no input voltage is needed ", "correct": false},
+                {"option": " input voltage is needed", "correct": false} // no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
         {// Question 2 - Multiple Choice, Multiple True Answers, Select Any
-            "q": "The feedback used in Schmitt trigger is",
+            "q": "An amplifier is designed using fixed bias configuration, what is its input impedance?",
             "a": [
-                {"option": "Degenerative", "correct":false},
-                {"option": " Regenerative", "correct": true},
-                {"option": " Series ", "correct":false},
-                {"option": " Shunt", "correct": false} // no comma here
+                {"option": "RD||rd", "correct":false},
+                {"option": " RD+rd", "correct": false},
+                {"option": " 0 ", "correct":false},
+                {"option": " RG", "correct": true} // no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
         {// Question 3 - Multiple Choice, Single True Answer
-            "q": "The value of cross over at increasing or decreasing input are called",
+            "q": "	What is the reason for connecting a capacitor in parallel with Rs",
             "a": [
-                {"option": "Cut-off points", "correct": false},
-                {"option": "Saturation points", "correct": false},
-                {"option": " Trip-point", "correct": true},
-                {"option": " Null points", "correct": false} // no comma here
+                {"option": "It blocks the noise", "correct": false},
+                {"option": "For ac signal it acts a short circuit resulting in grounding source terminal", "correct": false},
+                {"option": " It blocks the noise and for ac signal it acts a short circuit resulting in grounding source terminal", "correct": true},
+                {"option": " To increase impedance", "correct": false} // no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
        
         },
 		{// Question 4 - Multiple Choice, Single True Answer
-            "q": " The Schmitt trigger could also be used for",
+            "q": " The output voltage at fcl = 12 mV. What is the output voltage at the midpoint frequency?",
             "a": [
-                {"option": "Voltage level detection", "correct": false},
-                {"option": "Astable operation ", "correct": false},
-                {"option": "  Monostable operation ", "correct": true},
-                {"option": " Voltage limiting", "correct": false} // no comma here
+                {"option": "12 mV", "correct": false},
+                {"option": "8.48 mV", "correct": false},
+                {"option": "  10 mV", "correct": false},
+                {"option": " 16.97 mV", "correct": true} // no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
        
         },
 		{// Question 5 - Multiple Choice, Single True Answer
-            "q": "  The Schmitt trigger could be used as",
+            "q": "   A sinusoidal signal has 1.5v at t=2S, if this signal is given to common source amplifier with Av=5 v what will be its output at t=2S?",
             "a": [
-                {"option": "Voltage detector", "correct": false},
-                {"option": "Astable multivibrator", "correct": false},
-                {"option": "Monostable multivibrator ", "correct": false},
-                {"option": "All of the above", "correct": true} // no comma here 
-				//equation is in form  Em sin wt. w = 100 ᴨ rad/s. w=2 ᴨ x frequency. so frequency = w/2ᴨ =100ᴨ/2ᴨ=50
-            ],
-            "correct": "",
-            "incorrect": "" // no comma here
-       
-        },
-		{// Question 6 - Multiple Choice, Single True Answer
-            "q": " The switching speed could be improved by using",
-            "a": [
-                {"option": " Zener diode at output", "correct": false},
-                {"option": " Two Zener diode connected back to back at output", "correct": true},
-                {"option": "Feed back resistor", "correct": false},
-                {"option": "Capacitor in feedback", "correct": false} // no comma here 
+                {"option": "7.5", "correct": false},
+                {"option": "-7.5", "correct": true},
+                {"option": "15 ", "correct": false},
+                {"option": "0", "correct": false} // no comma here 
 				//equation is in form  Em sin wt. w = 100 ᴨ rad/s. w=2 ᴨ x frequency. so frequency = w/2ᴨ =100ᴨ/2ᴨ=50
             ],
             "correct": "",

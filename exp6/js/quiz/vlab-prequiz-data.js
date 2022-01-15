@@ -17,69 +17,57 @@ var prequizJSON = {
     },
     "prequestions": [
         {// Question 1 - Multiple Choice, Single True Answer
-            "preq": " Schmitt trigger is an example of ------ circuit. ",
+            "preq": " 	A common source amplifier has. ",
             "prea": [
-			 {"option": "Amplifier", "correct": false},
-                {"option": "Oscillator ", "correct": false},              
-                {"option": "  Power supply", "correct": false},
-				{"option": " Switching", "correct": true},// no comma here
+			 {"option": "Low Input Impedance", "correct": false},
+                {"option": "No Gate resistance ", "correct": false},              
+                {"option": "  No Drain resistance", "correct": false},
+				{"option": " No source resistance", "correct": true},// no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
         {// Question 2 - Multiple Choice, Multiple True Answers, Select Any
-            "preq": " In Schmitt trigger circuit, op-amp switches between",
+            "preq": " 	An amplifier is designed using fixed bias configuration, what is its output impedance?",
             "prea": [
-                {"option": "Cut-off and negative saturation ", "correct":false},
-                {"option": " Negative and positive saturation", "correct": true},
-				{"option": "  Slight conduction and cut-off", "correct": false},
-				{"option": "  Cut-off and positive saturation", "correct": false}//no comma here
+                {"option": "RD + rd ", "correct":false},
+                {"option": " RD || rd", "correct": true},
+				{"option": "  RG", "correct": false},
+				{"option": "  0", "correct": false}//no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
         {// Question 3 - Multiple Choice, Single True Answer
-            "preq": " If the power supply voltage applied to the op-amp that has a open loop gain of 100db is ±20V, the op-amp saturation voltage is",
+            "preq": "	Which of the following is true about the common source amplifier?",
             "prea": [
-                {"option": " 20mV", "correct": false},
-                {"option": " 2mV", "correct": true},
-                {"option": " 20µV", "correct": false},
-				{"option": "  200µV", "correct": false},// no comma here
+                {"option": " It has low input impedance", "correct": false},
+                {"option": " Phase reversal voltage output", "correct": true},
+                {"option": " Infinite gain", "correct": false},
+				{"option": "  It has high output impedance ", "correct": false},// no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
         },
         {// Question 4 - Multiple Choice, Single True Answer
-            "preq": "  The operation of a Schmitt trigger is similar to that of a",
+            "preq": "  	What are the small signal FET parameter?",
             "prea": [
-                {"option": "Full wave rectifier", "correct": false},
-                {"option": "Series clipper", "correct": true},
-                {"option": "Polarity detector", "correct": false},
-                {"option": " Clamper", "correct": false} // no comma here
+                {"option": "gm and rds", "correct": true},
+                {"option": "gm and vgs", "correct": false},
+                {"option": "vds and rds", "correct": false},
+                {"option": " gm", "correct": false} // no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here
        
         },	
        {// Question 5 - Multiple Choice, Single True Answer
-            "preq": " The main application of Schmitt trigger is in ",
+            "preq": " Given for an FET, gm = - 9 .5 m A /volt, total capacitance = 500 pF. For a voltage gain of -30, the bandwidth will be",
             "prea": [
-                {"option": " Amplifiers", "correct": false},
-                {"option": "Oscillators", "correct": false},
-                {"option": " Sine wave to square wave converters", "correct": true},
-                {"option": " Rectifiers", "correct": false} // no comma here
-            ],
-            "correct": "",
-            "incorrect": "" // no comma here
-       
-        }	,
-		{// Question 6 - Multiple Choice, Single True Answer
-            "preq": "  The speed of switching in the Schmitt trigger depends on ",
-            "prea": [
-                {"option": " Open loop gain ", "correct": true},
-                {"option": " Input resistor", "correct": false},
-                {"option": " Hysteresis", "correct": false},
-                {"option": "  Feedback resistor", "correct": false} // no comma here
+                {"option": " 630", "correct": false},
+                {"option": "3", "correct": false},
+                {"option": " 100", "correct": true},
+                {"option": " 19", "correct": false} // no comma here
             ],
             "correct": "",
             "incorrect": "" // no comma here

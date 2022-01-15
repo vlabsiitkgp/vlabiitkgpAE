@@ -64,13 +64,19 @@
 
                         <div class="content" id="experiment-article-section-3-content">
                             Objective of Experiment
+                           <ol>
+                               <li>To obtain the frequency response of the common source FET
+                                Amplifier</li>
+                                <li> To find the Bandwidth.</li>
+                           </ol>
+                          
                         </div>
                     </section>
                     <!------------------------------- First section of the article---------------------------------->
 					 <section id="experiment-article-section-1">
                       <div class="icon" id="experiment-article-section-1-icon">
                             <!-- Enclose the icon image of your lab. -->
-                            <img src="../images/quizzes.jpg"></div>
+                            <img src="../images/prequiz.png"></div>
                         <!-- The heading for the section can be enclosed in a div tag. -->
 
                         <div class="heading" id="experiment-article-section-1-heading">
@@ -80,16 +86,18 @@
                         <div class="content" id="experiment-article-section-1-content">
                  
 						
-                          <div id="vlab-quiz-wrapper">
+                            <div id="vlab-quiz-wrapper">
                                 <p style="text-align:left; font-size:18px; font-weight:bold;">Test Your Knowledge!!</p><br/>
                                 <div id="vlab-quiz-question-answer-options-pre"></div>  
 								<div id="vlab-quiz-result-pre"></div>								
                                 <br/>
+								<label id="labelyourname"> Enter Your Name : </label> <input type="text" name="nm" id="yourname"  value="" > 
                                 <div id="vlab-quiz-trigger">
+							
                                     <button id="vqt-start-pre" onclick="prequizInitializeAllQuestion()" style="display: block;">Start</button>  
 									<button id="vqt-try-again-pre" onclick="prequiztryAgain()" style="display: none;">Try Again!</button>									
                                 </div>            
-                            </div>  
+                            </div> 
                         </div>
                     </section>  
 					
@@ -108,8 +116,97 @@
                         </div>
 
                         <div class="content" id="experiment-article-section-2-content">
-                           
-                        </div>
+                            <b>Field-effect transistor (FET)</b><br><br>
+                            A field-effect transistor (FET) is a type of transistor commonly used for weak-signal
+amplification (for example, for amplifying wireless (signals). The device can amplify
+analog or digital signals. It can also switch DC or function as an oscillator.  A FET is a three terminal semiconductor device in which current
+conduction is by one type of carries & is controlled by the effect of electric field. In the FET,
+current flows along a semiconductor path called the channel. At one end of the channel,
+there is an electrode called the source. At the other end of the channel, there is an
+electrode called the drain. The physical diameter of the channel is fixed, but its effective
+electrical diameter can be varied by the application of a voltage to a control electrode
+called the gate.
+<br><br>
+
+                            There are two types of FET namely the junction FET (JFET) and the metal-oxide- semiconductor FET
+                            (MOSFET).The junction FET has a channel consisting of N-type semiconductor (Nchannel)
+                            or P-type semiconductor (P-channel) material; the gate is made of the opposite
+                            semiconductor type. In P-type material, electric charges are carried mainly in the form
+                            of electron deficiencies called holes. In N-type material, the charge carriers are
+                            primarily electrons.
+                            A N-channel JFET has a N-type semiconductor bar, the two ends of which make the Drain &
+                            source terminal. On the two sides of this bar, P-N junction is made. This P region makes gate.
+                            Usually, these two gates are connected together to form a single gate. The gate is given a –ve
+                            bias w.r.t source. The Drain is given +ve potential w.r.t source.
+                            <br><br>
+                            <b>Common Source Amplifier</b> <br><br>
+                            The Common Source Amplifier is one of the three basic FET transistor amplifier configurations. 
+                            In comparison to the BJT common-emitter amplifier,  the FET amplifier has much higher input impedance, but a lower voltage gain.
+                            The Junction Field Effect Transistor (JFET) offers very high input impedance along with very low noise figures. 
+                            It is very suitable for extremely low-level audio applications as in audio preamplifiers. The JFET is more expensive than conventional bipolar transistors but offers superior overall performance. Unlike bipolar transistors, current can flow through the drain and source in any direction equally.
+                             Often the drain and source can be reversed in a circuit with almost no effect on circuit operation.
+                      <br><br>
+                      The bias levels in amplifiers based on BJTs are often stabilized using the emitter degeneration technique; that is, a resistor is placed between the transistor‟s emitter and ground. The resistor creates negative feedback, which forces the quiescent collector current to remain at its design value regardless of changes in the transistor‟s parameters (such as βF).
+                    A similar technique can be used to stabilize the biasing of FET amplifiers.<br><br>
+                   <b>Frequency response of Common Source Amplifier</b> <br><br>
+                    A common-source JFET amplifier in which a resistor \(R_S\) has been added between the source and ground. 
+                    In this circuit the gate has been connected to ground through the resistor \(R_G\); thus, the gate is held at ground potential (0 V). 
+                    If the drain current \(I_D\) begins to rise above its intended quiescent value, the voltage drop across \(R_S\) will increase. Since the gate-source voltage \(V_{GS}\) is the difference between the gate potential (fixed at 0 V) and the voltage across RS, a rise in the voltage across \(R_S\) will cause \(V_{GS}\) to drop, lowering \(I_D\) back to its original value. The opposite chain of events occurs if \(I_D\) begins to drop below its design value. It is a common 
+                    practice in the design of circuits based on JFETs to tie the gate to ground potential via a large-valued resistor (typically around 1MΩ).
+                    The circuit for the common source amplifier is shown in figure 1.
+                    <div align="center">
+                        <p>
+<img src="image/csamp_thry.png" style="width: 600px; height: 330px;">
+                        </p><br>
+                        Figure 1
+                    </div>
+
+                    The external capacitors \(C_{C1}\) \(C_{C2}\) , and \(C_S\) will influence the low frequency
+                    response. The internal capacitances of the FET will affect the high frequency
+                    response of the amplifier.
+                    The midband gain, \(A_m\) , is obtained from the midband equivalent circuit of the
+common-source amplifier. This is shown in Figure 2. The equivalent circuit is obtained by short-circuiting all the external capacitors and opencircuiting
+all the internal capacitances of the FET.
+
+                    <div align="center">
+                        <p>
+<img src="image/csamp_thry1.png" style="width: 500px; height: 250px;">
+                        </p><br>
+                        Figure 2
+                    </div>
+
+                    Using voltage division
+                    $$V_{gs} =\frac{R_G}{R_G + R_I} \times V_s$$
+                    From Ohm’s Law,
+                    $$V_o=-g_m \times V_{gs} (r_{ds} || R_L || R_D) $$
+                    <br>  Output is taken at drain and gain is calculated by using the expression,
+                    \(A_v=\frac{V_0}{V_s}\)<br>
+$$ A_v=\frac{V_0}{V_s}=-g_m \times \frac{R_G}{R_G + R_I} (r_{ds} || R_L || R_D)$$
+
+                    Voltage gain in dB is calculated by using the expression,
+                    \(A_v=20log\frac{V_0}{V_s}\)<br>
+  <br>                 
+ It can be shown that the low frequency poles due to \(C_{C1}\) and \(C_{C2}\)  can be
+written as 
+$$ &#964;_1=\frac{1}{w_{L1}}=C_{C1} \times (R_G+R_{I}) $$
+$$ &#964;_2=\frac{1}{w_{L2}}=C_{C2} \times [R_{L}+(R_D || r_{ds})]  $$
+Assuming rd is very large, the pole due to the bypass capacitance CS can be
+shown to be 
+$$ &#964;_3=\frac{1}{w_{L3}}=C_S \times \frac{R_S}{1+g_m R_S}  $$
+and the zero of \(C_S\) is
+$$ w_Z=\frac{1}{R_S \times C_S} $$
+The 3-dB frequency at the low frequency can be approximated as
+$$ w_L&#8773;\sqrt(w_{L1})^2+(w_{L2})^2+(w_{L3})^2 $$
+For a single stage common-source amplifier, the source bypass capacitor is
+usually the determining factor in establishing the low 3-dB frequency.
+
+The high frequency poles are
+$$ w_{H1}=\frac{1}{C_1 (R_G || R_I)} $$
+$$ w_{H2}=\frac{1}{C_2 (R_D || R_D || r_{ds})} $$
+where, \(C_1= C_{gs} +C_{gd}(1+g_mR_L)\) and \(C_2=C_{ds}+C_{gd}\)<br>
+The approximate high frequency cut-off is
+$$wH= \frac{1}{\sqrt(\frac{1}{w_{H1}})^2+(\frac{1}{w_{H2}})^2} $$
+                            </div>
                         
                     </section>
                     
@@ -126,13 +223,31 @@
 
                         <div class="content" id="experiment-article-section-4-content">
                              <ol type="1">
-						
+                               
+                                    <li>Connect the components as mentioned below:<br>
+                                L1-L3, L4-L5, L6-L8, L6-L14, L6-L24, L7-L13, L9-L15, L10-L13, L11-L22,  L15-L17, L16-L25, L17-L19, L18-L16, L19-L21, L20-L23, L26-L11, L12-L9.(For eg. click on 1 and then drag to 3 and so on.)</li>
+                        <li> Click on  'Check Connection' button to check the connections.</li>
+        <li> If connected wrong, double click on the wrong connection.   Else click on 'Delete all connection' button to erase all the connections.	</li>	
+                                  
+                            
+                                    <li>The Input voltage (V<sub>in</sub>) is set to 50mV at 1 KHz frequency.</li>
+                                    <li>Keeping source voltage constant, vary the frequency from 50 Hz in regular steps.</li>
+                                    <li>Set Input Resistance (R<sub>I</sub>)=50&#937;.</li>
+                                    <li>Set Drain Resistance (R<sub>D</sub>)=8 k&#937;, Set Source Resistance (R<sub>S</sub>)=2 k&#937;, Set Load Resistance (R<sub>L</sub>)=10 k&#937;.  </li>
+                                    <li>Set Gate Resistance1 (R<sub>G1</sub>)=5 M&#937;, Set Gate Resistance2 (R<sub>G2</sub>)=5 M&#937;.</li>
+                                    <li>Set Coupling Capacitor1(C<sub>C1</sub>)=1 &#956;F, Set Coupling Capacitor2 (C<sub>C2</sub>) =1 &#956;F, Set Bypass Capacitance (C<sub>S</sub>)=50&#956;F.</li>
+                                    <li>Click on "Add to Table" button to add the readings to the table.</li>
+                                    <li>Vary the Frequency by keeping the resistances constant. </li>                           
+                                    <li>Click on "Plot" button to plot the Magnitude graph of the CS Amplifier, Frequency(Hz) along X-axis and Magnitude(dB) along Y-axis.</li>
+                                    <li>Click on "Clear" button to take another set of readings.</li>
+                                
                             
                         </ol> <br>
 						
 						 <div align="center">
+                          
                                 <p>
-                                    <img src="image/schmitttrg_prc.png" style ="width:500px;height:300px">
+                                    <img src="image/csamp_prc.png" style ="width:500px;height:350px">
                                 </p><br>
                                 Figure:1
                             </div><br>
@@ -151,7 +266,7 @@
                             Simulator
                         </div>
 
-                        <div class="content" id="experiment-article-section-5-content" style="background-color:Gainsboro;position:relative;top:-22px;width:500px;height:150px;left:210px;">
+                        <div class="content" id="experiment-article-section-5-content" style="background-color:rgb(230, 228, 228);position:relative;top:-22px;width:500px;height:150px;left:210px;">
 
                             <!--p style="text-align: justify; padding-bottom: 20px">
                                 Simulator for the Experiment
@@ -175,16 +290,17 @@
                         </div>
 
                         <div class="content" id="experiment-article-section-6-content">
-                           <div id="vlab-quiz-wrapper">
-                                            <p style="text-align:left; font-size:18px; font-weight:bold;">Test Your Knowledge!!</p><br/>
-                                            <div id="vlab-quiz-question-answer-options"></div>  
+                            <div id="vlab-quiz-wrapper">
+                                <p style="text-align:left; font-size:18px; font-weight:bold;">Test Your Knowledge!!</p><br/>
+                                <div id="vlab-quiz-question-answer-options"></div>  
 <div id="vlab-quiz-result"></div>											
-                                            <br/>
-                                            <div id="vlab-quiz-trigger">
-                                                <button id="vqt-start" onclick="quizInitializeAllQuestion()" style="display: block;">Start</button>  
+                                <br/>
+                                <label id="labelyournames"> Enter Your Name : </label> <input type="text" name="nms" id="yournames"  value="" > 
+                                <div id="vlab-quiz-trigger">
+                                    <button id="vqt-start" onclick="quizInitializeAllQuestion()" style="display: block;">Start</button>  
 <button id="vqt-try-again" onclick="tryAgain()" style="display: none;">Try Again!</button>													
-                                            </div>            
-                                        </div> 
+                                </div>            
+                            </div> 
                         </div>
                     </section>
                     <!-------------------------- Seventh section of the article---------------------------------------->
@@ -199,22 +315,14 @@
                         </div>
 
                         <div class="content" id="experiment-article-section-7-content">
-                            <strong>Books </strong>
                             <ol>
-                              <li></li>
-                              <li></li>
-                            </ol>
-                            <strong>Papers</strong>
-                            <ol>
-                              <li></li>
-                              <li></li>
-                            </ol>
-
-                            <strong>NPTEL</strong>
-                            <ol>
-                              <li></li>
-                              <li></li>
-                            </ol>
+                                <li>Boylestad / Nashelsky, Electronic Devices and Circuit Theory , Pearson Education India; 11 edition (2015)</li>
+   <li> Adel S. Sedra , Kenneth C. Smith , Arun N. Chandorkar , Microelectronic Circuits: Theory And Applications,Oxford University Press ,Seventh Edition, (1 June 2017)</li>
+  <li>Donald Neamen, Electronic Circuits: Analysis and Design, McGraw Hill Education; 3 edition (25 August 2006)</li>
+  <li>Jacob Millman , Christos Halkias , Chetan Parikh , Millman's Integrated Electronics, McGraw Hill Education; 2 edition (1 July 2017)</li>
+  <li>B.G. Streetman and S. Banerjee, Solid State Electronic Devices, Prentice Hall.</li>
+                               
+                              </ol>
                           </div>
                     </section>
 

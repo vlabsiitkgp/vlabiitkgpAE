@@ -118,6 +118,11 @@ jsPlumb.ready(function () {
                // jsPlumbUtil.consume(e);
 
             //});
+			//jsPlumb.deleteConnectionsForElement(elementId);
+			//jsPlumb.bind("click", function(conn) {
+			// // alert(JSON.stringify(data));
+			// jsPlumb.deleteConnection(conn); conn= connection
+ });
     });
 
     jsPlumb.fire("jsPlumbDemoLoaded", instance);

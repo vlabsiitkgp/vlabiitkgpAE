@@ -45,7 +45,7 @@
             <div style="font-size:30px; text-align:center;padding-right:100px; height:60px"> <b> Frequency Response of CS Amplifier </b></div>
             <div id="ckt_values1" style="position:absolute;top:80px;width:605px;height:450px;left:40px;">
                 <p>
-                    <img src ="image/ceamp_conntn.png" style="width:600px;height:400px;position:absolute;right:0px" /> 
+                    <img src ="image/csamp_conntn.png" style="width:600px;height:400px;position:absolute;right:0px" /> 
 <div class="jtk-demo-canvas canvas-wide animation-demo jtk-surface jtk-surface-nopan" id="canvas">
                 <div class="littledot" id="ld1"></br><a href="#" class="cmdLink detach" rel="ld1">1</a>
 </div>			
@@ -109,8 +109,8 @@
                     &nbsp;&nbsp; Bypass Capacitance(C<sub>S</sub>) : &nbsp;&nbsp;&nbsp;<input type="range" name="resis" id="bypscap" min="1" max="100" step="1" value="0" oninput="bypscpaChange()" style="width:180px"> &nbsp; &#956;f<br>
                     &nbsp;&nbsp; Frequency(Freq) : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="range" name="freqs" id="fq" min="1.8" max="7.9" step="0.04" value="1.8"  oninput="freqChange()" style="width:180px;"> &nbsp; Hz<br>
                    <br>
-                    <input type="button" id="add" value="Add to Table" onclick="tabled()"  style="position:absolute;  width:100px;  right:300px;cursor:pointer; "/>  
-                    <input type="button" id="plt" value="Plot" onclick="plot()"  style="position:absolute; width:100px; right:180px;cursor:pointer; "/>  
+                    <input type="button" id="add" value="Add to Table" onclick="tabled()" disabled=true  style="position:absolute;  width:100px;  right:300px;cursor:pointer; "/>  
+                    <input type="button" id="plt" value="Plot" onclick="plot()" disabled=true style="position:absolute; width:100px; right:180px;cursor:pointer; "/>  
                     <input type="button" id="clr" value="Clear" onclick="cleard()" disabled=true style="position:absolute; width:100px; right:50px;cursor:pointer;  "/>
 <button id="check-button" style="position:absolute; top:350px; width:100px; right:180px;cursor:pointer;  ">Check connection</button>
 <button  id="delete-connct"  onclick="deleteconnection()"  style="position:absolute; top:350px; width:100px; right:50px;cursor:pointer; ">Delete all connection</button>
@@ -134,12 +134,12 @@
 <li> If connected wrong, double click on the wrong connection.   Else click on 'Delete all connection' button to erase all the connections.	</li>	
                           
                     
-							<li>The source voltage (V<sub>S</sub>) is set to 50mV at 1 KHz frequency.</li>
+							<li>The Input voltage (V<sub>in</sub>) is set to 50mV at 1 KHz frequency.</li>
                             <li>Keeping source voltage constant, vary the frequency from 50 Hz in regular steps.</li>
-                            <li>Set Source Resistance(R<sub>S</sub>)=100&#937;.</li>
-                            <li>Set Collector Resistance(R<sub>C</sub>)=4000&#937;, Set Emitter Resistance(R<sub>E</sub>)=1000&#937;, Set Load Resistance(R<sub>L</sub>)=2000&#937;.  </li>
-                            <li>Set Base Resistance1(R<sub>B1</sub>)=47 K&#937;, Set Base Resistance2(R<sub>B2</sub>)=10K&#937;.</li>
-                            <li>Set Coupling Capacitor1(C<sub>C1</sub>)=10&#956;F, Set Coupling Capacitor2(C<sub>C2</sub>) =10&#956;F, Set Bypass Capacitance(C<sub>E</sub>)=10&#956;F.</li>
+                            <li>Set Input Resistance (R<sub>I</sub>)=50&#937;.</li>
+                            <li>Set Drain Resistance (R<sub>D</sub>)=8 k&#937;, Set Source Resistance (R<sub>S</sub>)=2 k&#937;, Set Load Resistance (R<sub>L</sub>)=10 k&#937;.  </li>
+                            <li>Set Gate Resistance1 (R<sub>G1</sub>)=5 M&#937;, Set Gate Resistance2 (R<sub>G2</sub>)=5 M&#937;.</li>
+                            <li>Set Coupling Capacitor1(C<sub>C1</sub>)=1 &#956;F, Set Coupling Capacitor2 (C<sub>C2</sub>) =1 &#956;F, Set Bypass Capacitance (C<sub>S</sub>)=50&#956;F.</li>
                             <li>Click on "Add to Table" button to add the readings to the table.</li>
                             <li>Vary the Frequency by keeping the resistances constant. </li>                           
                             <li>Click on "Plot" button to plot the Magnitude graph of the CS Amplifier, Frequency(Hz) along X-axis and Magnitude(dB) along Y-axis.</li>
